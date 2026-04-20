@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered detection of suspicious patterns in government procurement contracts. View anomaly detection results, risk scores, and SHAP explanations.">
+    <title>Procurement Anomaly Detection — Results Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">🔍</div>
+                <div>
+                    <h1 id="main-title">Procurement Anomaly Detection</h1>
+                    <p class="subtitle">AI-powered suspicious pattern detection in government contracts</p>
+                </div>
+            </div>
+            <div class="header-badge">
+                <span class="badge-dot"></span>
+                <span>Analysis Complete</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Loading State -->
+    <div class="loading-container" id="loadingContainer">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Loading analysis results...</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent" style="display:none;">
+
+        <!-- KPI Cards -->
+        <section class="kpi-section" id="kpi-section">
+            <div class="kpi-card" id="kpi-total">
+                <div class="kpi-icon">📋</div>
+                <div class="kpi-value" id="kpiTotal">—</div>
+                <div class="kpi-label">Total Contracts</div>
+                <div class="kpi-bar kpi-bar-blue"></div>
+            </div>
+            <div class="kpi-card" id="kpi-anomalies">
+                <div class="kpi-icon">🚨</div>
+                <div class="kpi-value" id="kpiAnomalies">—</div>
+                <div class="kpi-label">Anomalies Detected</div>
+                <div class="kpi-bar kpi-bar-red"></div>
+            </div>
+            <div class="kpi-card" id="kpi-highrisk">
+                <div class="kpi-icon">⚠️</div>
+                <div class="kpi-value" id="kpiHighRisk">—</div>
+                <div class="kpi-label">High Risk Contracts</div>
+                <div class="kpi-bar kpi-bar-orange"></div>
+            </div>
+            <div class="kpi-card" id="kpi-avgrisk">
+                <div class="kpi-icon">📊</div>
+                <div class="kpi-value" id="kpiAvgRisk">—</div>
+                <div class="kpi-label">Avg Risk Score</div>
+                <div class="kpi-bar kpi-bar-purple"></div>
+            </div>
+            <div class="kpi-card" id="kpi-rate">
+                <div class="kpi-icon">📈</div>
+                <div class="kpi-value" id="kpiRate">—</div>
+                <div class="kpi-label">Anomaly Rate</div>
+                <div class="kpi-bar kpi-bar-cyan"></div>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row">
+            <div class="chart-card" id="chart-risk-dist">
+                <h2 class="chart-title">Risk Score Distribution</h2>
+                <p class="chart-subtitle">Number of contracts per risk score range</p>
+                <canvas id="riskDistChart"></canvas>
+            </div>
+            <div class="chart-card" id="chart-dept">
+                <h2 class="chart-title">Anomalies by Department</h2>
+                <p class="chart-subtitle">Department-wise anomaly breakdown</p>
+                <canvas id="deptChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Feature Importance + Top Vendors -->
+        <section class="charts-row">
+            <div class="chart-card" id="chart-features">
+                <h2 class="chart-title">🧠 SHAP Feature Importance</h2>
+                <p class="chart-subtitle">Global mean |SHAP| values — which features drive anomaly predictions</p>
+                <canvas id="featureChart"></canvas>
+            </div>
+            <div class="chart-card" id="chart-vendors">
+                <h2 class="chart-title">🏢 Top Risky Vendors</h2>
+                <p class="chart-subtitle">Vendors ranked by average risk score</p>
+                <div class="vendor-list" id="vendorList"></div>
+            </div>
+        </section>
+
+        <!-- Contracts Table -->
+        <section class="table-section" id="table-section">
+            <div class="table-header">
+                <h2 class="chart-title">📋 Contract Details</h2>
+                <div class="table-controls">
+                    <div class="search-box">
+                        <span class="search-icon">🔎</span>
+                        <input type="text" id="searchInput" placeholder="Search contracts..." autocomplete="off">
+                    </div>
+                    <select id="riskFilter" class="filter-select">
+                        <option value="all">All Risk Levels</option>
+                        <option value="High">High Risk Only</option>
+                        <option value="Low">Low Risk Only</option>
+                    </select>
+                    <select id="deptFilter" class="filter-select">
+                        <option value="all">All Departments</option>
+                    </select>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table class="data-table" id="contractsTable">
+                    <thead>
+                        <tr>
+                            <th id="th-id">Contract ID</th>
+                            <th id="th-vendor">Vendor</th>
+                            <th id="th-dept">Department</th>
+                            <th id="th-amount">Amount (₹)</th>
+                            <th id="th-date">Award Date</th>
+                            <th id="th-risk">Risk Score</th>
+                            <th id="th-status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+            <div class="table-footer">
+                <span id="tableCount">Showing 0 contracts</span>
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </section>
+
+        <!-- Risk Formula -->
+        <section class="formula-section" id="formula-section">
+            <div class="formula-card">
+                <h2 class="chart-title">⚙️ Risk Score Formula</h2>
+                <div class="formula-display">
+                    <code>risk_score = 0.5 × anomaly_score + 0.3 × nlp_similarity + 0.2 × vendor_frequency</code>
+                </div>
+                <div class="formula-details">
+                    <div class="formula-item">
+                        <div class="formula-weight" style="--color: #ff6b9d">50%</div>
+                        <div>
+                            <strong>Anomaly Score</strong>
+                            <p>Isolation Forest + One-Class SVM ensemble</p>
+                        </div>
+                    </div>
+                    <div class="formula-item">
+                        <div class="formula-weight" style="--color: #c084fc">30%</div>
+                        <div>
+                            <strong>NLP Similarity</strong>
+                            <p>TF-IDF cosine similarity between descriptions</p>
+                        </div>
+                    </div>
+                    <div class="formula-item">
+                        <div class="formula-weight" style="--color: #60a5fa">20%</div>
+                        <div>
+                            <strong>Vendor Frequency</strong>
+                            <p>Number of contracts awarded to same vendor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Public Procurement Anomaly Detection System — BTech CS Project</p>
+        <p class="footer-sub">Powered by Isolation Forest, One-Class SVM, TF-IDF, and SHAP</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
