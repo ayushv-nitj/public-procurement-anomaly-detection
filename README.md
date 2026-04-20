@@ -586,4 +586,4 @@ This project is for academic purposes (BTech CS Project).
 
 ## Author
 
-**Ayush Verma** — NIT Jalandhar
+**Ayush Verma** — NIT Jamshedpur
