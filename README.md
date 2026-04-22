@@ -3,7 +3,7 @@
 > AI-powered detection of suspicious patterns in government procurement contracts — BTech CS Project
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://ayushv-nitj.github.io/public-procurement-anomaly-detection/)
-[![Streamlit App](https://img.shields.io/badge/📊_Streamlit-Dashboard-red?style=for-the-badge)](https://share.streamlit.io)
+[![Streamlit App](https://img.shields.io/badge/📊_Streamlit-Dashboard-red?style=for-the-badge)](https://public-procurement-anomaly-detection-atksofxwzcio5qeakrsqds.streamlit.app/)
 
 ---
 
