@@ -1188,7 +1188,7 @@ pip install flask-cors
 - **Leader:** Ayush Verma
 - **Members:** Ishaan Rai, Priyanshu Raj, Aditya Prakash
 
-**Institution:** NIT Jalandhar  
+**Institution:** NIT Jamshedpur 
 **Project Type:** Professional Lab Project
 
 **Repository:** [https://github.com/ayushv-nitj/public-procurement-anomaly-detection](https://github.com/ayushv-nitj/public-procurement-anomaly-detection)
