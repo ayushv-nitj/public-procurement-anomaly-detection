@@ -75,56 +75,114 @@ It then assigns each contract a **Risk Score (0–100)** and explains *why* each
 
 Understanding these terms is essential before diving into the pipeline:
 
-### Machine Learning Terms
+### Core Machine Learning Terms
 
-| Term | What It Means |
-|------|---------------|
-| **Anomaly Detection** | Finding data points that don't fit the expected pattern. Unlike classification (where you train with labelled examples), anomaly detection is *unsupervised* — it learns what "normal" looks like and flags anything unusual. |
-| **Isolation Forest** | A tree-based anomaly detection algorithm. It works by randomly selecting a feature and then randomly selecting a split value. Anomalies require fewer random splits to be "isolated" from the rest of the data, so they have shorter path lengths in the tree. |
-| **One-Class SVM** | Support Vector Machine trained on normal data only. It learns a boundary around normal data in high-dimensional space. Anything falling outside this boundary is flagged as an anomaly. |
-| **Ensemble** | Combining multiple models to get better results. In our case, we use a *union* strategy: a contract is flagged if **either** Isolation Forest **or** One-Class SVM flags it. This reduces the chance of missing anomalies. |
-| **Contamination** | The expected proportion of anomalies in the data. We set this to 0.1 (10%), meaning we expect about 10% of contracts to be anomalous. |
-| **Feature Engineering** | Transforming raw data into meaningful numerical features that ML models can learn from. Raw text and dates can't be fed directly into models — they need to be converted into numbers. |
-| **Unsupervised Learning** | ML where the model learns patterns without labelled examples. We don't tell the model which contracts are fraudulent — it discovers unusual patterns on its own. |
+| Term | What It Means | Why It Matters |
+|------|---------------|----------------|
+| **Supervised Learning** | Training a model with labeled data (input-output pairs). Example: Given contracts labeled as "fraud" or "normal", learn to predict labels for new contracts. | Most accurate when you have labeled data, but requires expensive manual labeling. |
+| **Unsupervised Learning** | ML where the model learns patterns without labeled examples. We don't tell the model which contracts are fraudulent — it discovers unusual patterns on its own. | Perfect for anomaly detection where labeled fraud examples are rare or unavailable. |
+| **Semi-Supervised Learning** | Combines small amount of labeled data with large amount of unlabeled data. Example: Use 50 confirmed fraud cases + 10,000 unlabeled contracts. | Best of both worlds — improves accuracy with minimal labeling effort. |
+| **Training Set** | The data used to train the model. The model learns patterns from this data. | Typically 70-80% of total data. Quality matters more than quantity. |
+| **Test Set** | Data held back to evaluate model performance. Never seen during training. | Simulates real-world performance. If test accuracy << training accuracy, model is overfitting. |
+| **Overfitting** | When a model memorizes training data instead of learning general patterns. Performs well on training data but poorly on new data. | Prevented by: cross-validation, regularization, more training data, simpler models. |
+| **Underfitting** | When a model is too simple to capture the underlying patterns. Performs poorly on both training and test data. | Fixed by: more complex models, better features, more training iterations. |
+| **Hyperparameters** | Settings that control how a model learns (e.g., number of trees in forest, learning rate). Set before training, not learned from data. | Tuned using grid search or random search. Example: `n_estimators=200` in Isolation Forest. |
+| **Cross-Validation** | Splitting data into K folds, training on K-1 folds and testing on the remaining fold. Repeat K times. | Gives more reliable performance estimates than single train-test split. We use K=5. |
+| **Bias-Variance Tradeoff** | Bias = error from wrong assumptions (underfitting). Variance = error from sensitivity to training data (overfitting). Goal: minimize both. | High bias → model too simple. High variance → model too complex. Sweet spot in the middle. |
 
-### NLP Terms
+### Anomaly Detection Specific Terms
 
-| Term | What It Means |
-|------|---------------|
-| **TF-IDF** | *Term Frequency–Inverse Document Frequency*. A numerical representation of text. Words that appear frequently in one document but rarely across all documents get higher scores. For example, "radar systems" appearing in only 2 out of 500 contracts would get a high TF-IDF score. |
-| **Cosine Similarity** | Measures how similar two text vectors are by computing the cosine of the angle between them. Ranges from 0 (completely different) to 1 (identical). Two contract descriptions with cosine similarity > 0.8 are flagged as suspiciously similar. |
-| **N-grams** | Sequences of N consecutive words. Unigrams = single words ("supply"), bigrams = word pairs ("annual maintenance"). Using bigrams helps capture phrases like "solar panels" as a single unit. |
-| **Stop Words** | Common words like "the", "is", "at" that carry no meaningful information. These are removed before vectorizing text. |
-| **Vectorization** | Converting text into numerical vectors (arrays of numbers) that ML algorithms can process. |
+| Term | What It Means | Technical Details |
+|------|---------------|-------------------|
+| **Anomaly Detection** | Finding data points that don't fit the expected pattern. Unlike classification (where you train with labeled examples), anomaly detection is *unsupervised* — it learns what "normal" looks like and flags anything unusual. | Also called: outlier detection, novelty detection, one-class classification. Used in: fraud detection, network intrusion, medical diagnosis. |
+| **Isolation Forest** | A tree-based anomaly detection algorithm. It works by randomly selecting a feature and then randomly selecting a split value. Anomalies require fewer random splits to be "isolated" from the rest of the data, so they have shorter path lengths in the tree. | **Time Complexity:** O(n log n) for training. **Space:** O(n). **Advantages:** Fast, handles high dimensions, no distance calculations. **Disadvantages:** Assumes anomalies are "few and different". |
+| **One-Class SVM** | Support Vector Machine trained on normal data only. It learns a boundary around normal data in high-dimensional space. Anything falling outside this boundary is flagged as an anomaly. | **Kernel:** RBF (Radial Basis Function) maps data to infinite dimensions. **Nu parameter:** Upper bound on fraction of outliers (we use 0.1 = 10%). **Advantages:** Handles non-linear boundaries. **Disadvantages:** Slow on large datasets, sensitive to scaling. |
+| **Ensemble** | Combining multiple models to get better results. In our case, we use a *union* strategy: a contract is flagged if **either** Isolation Forest **or** One-Class SVM flags it. This reduces the chance of missing anomalies. | **Strategies:** Union (OR logic, high recall), Intersection (AND logic, high precision), Voting (majority wins), Weighted average. We use union to maximize anomaly detection. |
+| **Contamination** | The expected proportion of anomalies in the data. We set this to 0.1 (10%), meaning we expect about 10% of contracts to be anomalous. | **Impact:** Higher contamination → more points flagged. Lower → fewer flags. Should match domain knowledge. Real fraud rates: credit cards ~0.1%, insurance ~5-10%. |
+| **Anomaly Score** | Continuous value indicating how anomalous a point is. Higher score = more anomalous. Threshold determines binary classification. | **Isolation Forest:** Based on path length (shorter = more anomalous). **One-Class SVM:** Distance from decision boundary (farther = more anomalous). |
+| **Local vs Global Anomalies** | **Local:** Anomalous within a neighborhood but not globally. **Global:** Anomalous compared to entire dataset. | Example: ₹10Cr contract is global anomaly. ₹10Cr in Defence is normal, but in Education is local anomaly. We detect both types. |
 
-### Explainability Terms
+### Feature Engineering Terms
 
-| Term | What It Means |
-|------|---------------|
-| **SHAP (SHapley Additive exPlanations)** | A game-theory based approach to explain individual predictions. For each contract, SHAP tells you how much each feature contributed to the anomaly score. Named after Shapley values from cooperative game theory. |
-| **SHAP Value** | The contribution of each feature to a specific prediction. Positive SHAP = pushes prediction toward "anomaly". Negative SHAP = pushes toward "normal". |
-| **TreeExplainer** | A fast SHAP algorithm optimized for tree-based models like Isolation Forest. Computes exact SHAP values in polynomial time. |
-| **Global Feature Importance** | The average |SHAP value| across all contracts for each feature. Shows which features are most influential *overall*. |
+| Term | What It Means | Implementation Details |
+|------|---------------|------------------------|
+| **Feature Engineering** | Transforming raw data into meaningful numerical features that ML models can learn from. Raw text and dates can't be fed directly into models — they need to be converted into numbers. | **Process:** Domain knowledge → feature ideas → implementation → validation. Good features can improve accuracy by 10-50%. |
+| **Feature Extraction** | Creating new features from raw data. Example: From date, extract day_of_week, month, is_weekend. | **Techniques:** Aggregations (sum, mean, count), transformations (log, sqrt), interactions (feature1 × feature2). |
+| **Feature Selection** | Choosing which features to keep and which to discard. Removes irrelevant/redundant features. | **Methods:** Correlation analysis, mutual information, recursive feature elimination, LASSO regularization. |
+| **Feature Scaling** | Transforming features to similar ranges so no single feature dominates. | **StandardScaler:** (x - mean) / std → mean=0, std=1. **MinMaxScaler:** (x - min) / (max - min) → range [0,1]. **RobustScaler:** Uses median and IQR, robust to outliers. |
+| **Label Encoding** | Converting categorical variables (text) to integers. Example: "Defence"→0, "Health"→1, "Education"→2. | **Limitation:** Implies ordering (Defence < Health < Education) which may not exist. Alternative: One-hot encoding. |
+| **One-Hot Encoding** | Converting categorical variable to binary columns. "Defence" → [1,0,0], "Health" → [0,1,0]. | **Advantage:** No false ordering. **Disadvantage:** High dimensionality (K categories → K columns). Use when K < 10-20. |
+| **Dimensionality Reduction** | Reducing number of features while preserving information. Example: 100 features → 10 principal components. | **Techniques:** PCA (linear), t-SNE (non-linear, visualization), UMAP (fast, preserves structure). |
 
-### Statistical Terms
+### Natural Language Processing (NLP) Terms
 
-| Term | What It Means |
-|------|---------------|
-| **Z-Score** | How many standard deviations a value is from the mean. A z-score of 3 means the value is 3 standard deviations above the mean — very unusual. We compute z-scores for contract amounts within each department. |
-| **Normalization** | Scaling values to a standard range (usually 0–1 or 0–100) so that features with different scales can be compared fairly. |
-| **Min-Max Scaling** | A normalization technique: `(value - min) / (max - min)`. Maps the smallest value to 0 and the largest to 1. |
-| **Standard Scaling** | Transforms features to have mean=0 and standard deviation=1. Required for algorithms like SVM that are sensitive to feature scales. |
-| **Log-Normal Distribution** | A probability distribution where the logarithm of values follows a normal distribution. Used for contract amounts because real financial data is typically right-skewed (many small amounts, few very large ones). |
+| Term | What It Means | Mathematical Foundation |
+|------|---------------|-------------------------|
+| **Tokenization** | Splitting text into individual units (tokens). Usually words, but can be characters or subwords. | Example: "Supply of laptops" → ["Supply", "of", "laptops"]. Handles punctuation, contractions, special characters. |
+| **Stop Words** | Common words like "the", "is", "at" that carry no meaningful information. These are removed before vectorizing text. | **Standard list:** ~150-200 words. **Custom:** Domain-specific (e.g., "contract", "supply" in procurement). Removal improves signal-to-noise ratio. |
+| **Stemming** | Reducing words to their root form. "running", "runs", "ran" → "run". Fast but crude. | **Algorithm:** Porter Stemmer (most common). **Limitation:** "university" → "univers" (not a real word). |
+| **Lemmatization** | Reducing words to dictionary form using linguistic rules. "running" → "run", "better" → "good". Slower but accurate. | **Requires:** Part-of-speech tagging. **Tool:** WordNet. **Advantage:** Always produces valid words. |
+| **N-grams** | Sequences of N consecutive words. Unigrams = single words ("supply"), bigrams = word pairs ("annual maintenance"). Using bigrams helps capture phrases like "solar panels" as a single unit. | **Formula:** Text of length L has (L - N + 1) N-grams. **Trade-off:** Higher N captures more context but increases dimensionality exponentially. |
+| **Bag of Words (BoW)** | Represents text as unordered collection of words, ignoring grammar and word order. | **Example:** "cat sat on mat" and "mat on sat cat" have identical BoW representations. Simple but loses context. |
+| **TF-IDF** | *Term Frequency–Inverse Document Frequency*. A numerical representation of text. Words that appear frequently in one document but rarely across all documents get higher scores. For example, "radar systems" appearing in only 2 out of 500 contracts would get a high TF-IDF score. | **Formula:** TF-IDF(word, doc) = TF(word, doc) × IDF(word). **TF:** (count of word in doc) / (total words in doc). **IDF:** log(total docs / docs containing word). **Range:** 0 to ~10. |
+| **Cosine Similarity** | Measures how similar two text vectors are by computing the cosine of the angle between them. Ranges from 0 (completely different) to 1 (identical). Two contract descriptions with cosine similarity > 0.8 are flagged as suspiciously similar. | **Formula:** cos(θ) = (A · B) / (‖A‖ × ‖B‖). **Advantage:** Ignores magnitude, only considers direction. "I love cats" and "I love love love cats" are very similar despite different lengths. |
+| **Vectorization** | Converting text into numerical vectors (arrays of numbers) that ML algorithms can process. | **Methods:** Count vectors (word frequencies), TF-IDF vectors (weighted frequencies), Word embeddings (dense semantic vectors). |
+| **Sparse Matrix** | Matrix where most values are zero. TF-IDF produces sparse matrices (most words don't appear in most documents). | **Storage:** Only store non-zero values. **Advantage:** Memory efficient. 500 docs × 5000 words = 2.5M values, but only ~50K non-zero. |
+| **Word Embeddings** | Dense vector representations where semantically similar words have similar vectors. "king" - "man" + "woman" ≈ "queen". | **Models:** Word2Vec (Google), GloVe (Stanford), FastText (Facebook). **Dimension:** Typically 50-300. **Advantage:** Captures semantic relationships. |
+| **Sentence Embeddings** | Vector representation of entire sentences/paragraphs. Captures meaning beyond individual words. | **Models:** BERT, Sentence-BERT, Universal Sentence Encoder. **Use case:** Better than TF-IDF for semantic similarity. Future enhancement for this project. |
 
-### Procurement Terms
+### Deep Learning Terms (Future Enhancements)
 
-| Term | What It Means |
-|------|---------------|
-| **Procurement** | The process by which government departments purchase goods, services, or works from vendors through competitive bidding. |
-| **Tender** | A formal invitation to vendors to submit bids for a contract. Each tender has a description of what is being procured. |
-| **Contract** | A legally binding agreement between a government department and a vendor. |
-| **Bid Rigging** | An illegal practice where competing vendors coordinate their bids to ensure a pre-selected vendor wins. |
-| **GeM** | Government e-Marketplace — India's online platform for government procurement. |
+| Term | What It Means | Potential Application |
+|------|---------------|----------------------|
+| **Neural Network** | ML model inspired by brain structure. Layers of interconnected neurons that learn hierarchical representations. | **For this project:** Could replace TF-IDF with LSTM/Transformer for description analysis. Better semantic understanding. |
+| **LSTM (Long Short-Term Memory)** | Type of recurrent neural network that can learn long-term dependencies in sequences. | **Use case:** Analyze temporal patterns in contract sequences. Detect unusual timing patterns across multiple contracts. |
+| **Transformer** | Modern neural architecture using attention mechanism. Foundation of BERT, GPT. | **Use case:** Fine-tune BERT on procurement text to detect subtle fraud indicators in descriptions. |
+| **Attention Mechanism** | Allows model to focus on relevant parts of input. "Which words in description are most important for fraud detection?" | **Advantage:** Interpretable — can visualize which words model focuses on. Better than black-box TF-IDF. |
+| **Transfer Learning** | Using a model pre-trained on large dataset and fine-tuning on your specific task. | **Example:** Start with BERT trained on Wikipedia, fine-tune on procurement contracts. Requires less labeled data. |
+| **Autoencoder** | Neural network that learns to compress data and reconstruct it. Anomalies have high reconstruction error. | **Use case:** Alternative to Isolation Forest. Learn normal contract patterns, flag contracts that can't be reconstructed well. |
+| **GAN (Generative Adversarial Network)** | Two networks competing: Generator creates fake data, Discriminator tries to detect fakes. | **Use case:** Generate synthetic fraudulent contracts for training. Augment limited fraud examples. |
+
+### Explainability & Interpretability Terms
+
+| Term | What It Means | Why Critical for Government AI |
+|------|---------------|-------------------------------|
+| **Explainable AI (XAI)** | ML models that can explain their decisions in human-understandable terms. | **Legal requirement:** Government decisions must be explainable. "Computer said so" is not acceptable in court. |
+| **SHAP (SHapley Additive exPlanations)** | A game-theory based approach to explain individual predictions. For each contract, SHAP tells you how much each feature contributed to the anomaly score. Named after Shapley values from cooperative game theory. | **Properties:** Consistent (if feature helps, SHAP value is positive), Local accuracy (explanations sum to prediction), Missingness (missing features have zero impact). |
+| **SHAP Value** | The contribution of each feature to a specific prediction. Positive SHAP = pushes prediction toward "anomaly". Negative SHAP = pushes toward "normal". | **Interpretation:** SHAP value of +0.3 for `amount` means this feature increased anomaly score by 0.3. Larger magnitude = more influential. |
+| **TreeExplainer** | A fast SHAP algorithm optimized for tree-based models like Isolation Forest. Computes exact SHAP values in polynomial time. | **Speed:** O(TLD²) where T=trees, L=leaves, D=depth. Much faster than model-agnostic methods. **Accuracy:** Exact, not approximate. |
+| **Global Feature Importance** | The average |SHAP value| across all contracts for each feature. Shows which features are most influential *overall*. | **Use case:** "Amount is the most important feature for detecting anomalies across all contracts." Guides feature engineering priorities. |
+| **Local Explanation** | Explanation for a single prediction. "Why was THIS contract flagged?" | **Example:** "Contract CTR-042 flagged because: amount (+0.38), days_since_last (+0.22), vendor_freq (+0.15)." |
+| **Feature Attribution** | Assigning credit/blame to each input feature for a prediction. | **Methods:** SHAP, LIME, Integrated Gradients, Attention weights. SHAP is theoretically grounded (Shapley values). |
+| **Counterfactual Explanation** | "What would need to change for the prediction to flip?" Example: "If amount was ₹5Cr instead of ₹50Cr, contract would not be flagged." | **Advantage:** Actionable. Tells you exactly what to change. **Challenge:** Finding realistic counterfactuals. |
+
+### Statistical & Mathematical Terms
+
+| Term | What It Means | Formula & Interpretation |
+|------|---------------|--------------------------|
+| **Z-Score (Standard Score)** | How many standard deviations a value is from the mean. A z-score of 3 means the value is 3 standard deviations above the mean — very unusual. We compute z-scores for contract amounts within each department. | **Formula:** z = (x - μ) / σ. **Interpretation:** |z| > 2 is unusual (~5% of data), |z| > 3 is very unusual (~0.3% of data). |
+| **Standard Deviation (σ)** | Measure of spread/variability in data. Low σ = data clustered near mean. High σ = data spread out. | **Formula:** σ = sqrt(Σ(x - μ)² / N). **Units:** Same as original data. ₹10Cr mean with ₹2Cr std means most contracts are ₹8-12Cr. |
+| **Mean (μ) vs Median** | **Mean:** Average (sum / count). Sensitive to outliers. **Median:** Middle value. Robust to outliers. | **Example:** Salaries [30K, 35K, 40K, 1M]. Mean = 276K (misleading). Median = 37.5K (representative). Use median for skewed data. |
+| **Normalization** | Scaling values to a standard range (usually 0–1 or 0–100) so that features with different scales can be compared fairly. | **Why needed:** Amount (₹1L-50Cr) and days_since_last (0-730) have different scales. Without normalization, amount dominates. |
+| **Min-Max Scaling** | A normalization technique: `(value - min) / (max - min)`. Maps the smallest value to 0 and the largest to 1. | **Formula:** x' = (x - x_min) / (x_max - x_min). **Range:** [0, 1]. **Limitation:** Sensitive to outliers (one extreme value affects all). |
+| **Standard Scaling (Z-score normalization)** | Transforms features to have mean=0 and standard deviation=1. Required for algorithms like SVM that are sensitive to feature scales. | **Formula:** x' = (x - μ) / σ. **Range:** Typically [-3, +3] but unbounded. **Advantage:** Preserves outliers (unlike min-max). |
+| **Log-Normal Distribution** | A probability distribution where the logarithm of values follows a normal distribution. Used for contract amounts because real financial data is typically right-skewed (many small amounts, few very large ones). | **Properties:** Always positive, right-skewed, multiplicative processes. **Example:** If log(amount) ~ Normal(μ, σ), then amount ~ LogNormal. |
+| **Correlation** | Measures linear relationship between two variables. Ranges from -1 (perfect negative) to +1 (perfect positive). 0 = no linear relationship. | **Formula:** r = Σ((x - x̄)(y - ȳ)) / sqrt(Σ(x - x̄)² × Σ(y - ȳ)²). **Interpretation:** |r| > 0.7 is strong, 0.3-0.7 is moderate, < 0.3 is weak. |
+| **Covariance** | Measures how two variables change together. Positive = both increase together. Negative = one increases, other decreases. | **Formula:** cov(X,Y) = Σ((x - x̄)(y - ȳ)) / N. **Limitation:** Scale-dependent. Correlation is normalized covariance. |
+| **Precision vs Recall** | **Precision:** Of flagged contracts, how many are actually fraudulent? (TP / (TP + FP)). **Recall:** Of all fraudulent contracts, how many did we flag? (TP / (TP + FN)). | **Trade-off:** High precision = few false alarms but miss some fraud. High recall = catch all fraud but many false alarms. We optimize for recall (union ensemble). |
+| **F1 Score** | Harmonic mean of precision and recall. Balances both metrics. | **Formula:** F1 = 2 × (precision × recall) / (precision + recall). **Range:** [0, 1]. **Use:** Single metric when you care equally about precision and recall. |
+
+### Procurement Domain Terms
+
+| Term | What It Means | Fraud Indicators |
+|------|---------------|------------------|
+| **Procurement** | The process by which government departments purchase goods, services, or works from vendors through competitive bidding. | **Fraud types:** Bid rigging, kickbacks, inflated pricing, phantom vendors, split purchases. |
+| **Tender** | A formal invitation to vendors to submit bids for a contract. Each tender has a description of what is being procured. | **Red flags:** Vague descriptions, short bidding windows, restrictive specifications favoring one vendor. |
+| **Contract** | A legally binding agreement between a government department and a vendor. | **Suspicious patterns:** Repeated amendments, cost overruns, delayed deliveries, substandard quality. |
+| **Bid Rigging** | An illegal practice where competing vendors coordinate their bids to ensure a pre-selected vendor wins. | **Detection:** Similar bid amounts, identical typos in bids, vendors taking turns winning, complementary bidding. |
+| **GeM (Government e-Marketplace)** | India's online platform for government procurement. Mandatory for purchases below ₹25 Lakh. | **Data:** 50+ Lakh products, 60 Lakh orders, ₹1 Lakh Crore+ transactions. Restricted access for research. |
+| **Single Source Procurement** | Awarding contract without competition. Legal in emergencies or for specialized items. | **Abuse:** Fake emergencies, inflated prices, vendor favoritism. Requires strong justification. |
+| **Split Purchases** | Breaking large purchase into smaller ones to avoid oversight thresholds. | **Example:** ₹10Cr purchase split into 10 × ₹1Cr to avoid approval requirements. **Detection:** Multiple similar contracts in short time. |
 
 ---
 
@@ -621,8 +679,48 @@ streamlit run dashboard/app.py
 
 ## Dashboards
 
+### 🎨 Interactive Streamlit Dashboard (Port 8501) - **RECOMMENDED**
+Modern, feature-rich dashboard with complete navigation and team information.
+
+**Run:**
+```bash
+streamlit run dashboard/app_interactive.py
+# OR
+start_streamlit_interactive.bat
+```
+
+**New Features:**
+- **🔝 Top Navbar**: GitHub link and About Us button for easy navigation
+- **👥 About Us Page**: Complete team information, project details, and tech stack
+- **📊 Multi-Source Data Loading**: Select from 5 data sources (Synthetic, CSV, JSON, XML, API)
+- **🎨 Modern Dark Theme**: Bluish-black gradient with purple accents
+- **📱 Redesigned Sidebar**: Better styling with icons, sections, and team info
+- **🔗 Footer**: Team info, quick links, contact information, and social links
+- **⚡ Real-time Processing**: Upload data and see results instantly
+
+**Visualizations:**
+- Risk Score Distribution with color coding (Low/High)
+- Anomalies by Department horizontal bar chart
+- SHAP Global Feature Importance
+- **Per-contract SHAP explainer** — select any flagged contract and see which features drove its anomaly score
+- **Suspiciously similar pairs table** — side-by-side comparison of near-duplicate descriptions
+- **Interactive scatter plot** — contract amount vs risk score with hover details
+- Flagged contracts table with filtering and sorting
+
+**Data Source Options:**
+1. **Generate Synthetic** - Creates 500 new random contracts each time
+2. **Upload CSV** - Drag & drop or browse CSV files
+3. **Upload JSON** - Load JSON format data
+4. **Upload XML** - Load XML format data
+5. **Fetch from API** - Connect to government data portals (requires API credentials)
+
 ### 🎨 Frontend Dashboard (Port 8080)
 Premium dark-themed static dashboard built with vanilla HTML/CSS/JS and Chart.js.
+
+**Run:**
+```bash
+cd frontend && python -m http.server 8080
+```
 
 **Features:**
 - Animated KPI counter cards (Total Contracts, Anomalies, High Risk, Avg Risk Score, Anomaly Rate)
@@ -636,15 +734,20 @@ Premium dark-themed static dashboard built with vanilla HTML/CSS/JS and Chart.js
 - Glassmorphism card effects
 - Fully responsive design
 
-### 🔬 Streamlit Dashboard (Port 8501)
-Interactive Python dashboard with Plotly charts.
+### 🔬 Flask Backend API (Port 8080)
+RESTful API for processing procurement data from multiple sources.
+
+**Run:**
+```bash
+python app.py
+```
 
 **Features:**
-- All visualizations from the frontend, plus:
-- **Per-contract SHAP explainer** — select any flagged contract and see which features drove its anomaly score
-- **Suspiciously similar pairs table** — side-by-side comparison of near-duplicate descriptions
-- **Interactive scatter plot** — contract amount vs risk score with hover details
-- Live pipeline execution (re-runs models on each load)
+- `/api/process` endpoint for data processing
+- Supports all 5 data sources
+- Server-side processing for security
+- JSON response with anomaly detection results
+- CORS support for frontend integration
 
 ---
 
@@ -735,4 +838,329 @@ This project is for academic purposes (BTech CS Project).
 
 ## Author
 
-**Ayush Verma** — NIT Jamshedpur
+**Team Leader:** Ayush Verma  
+**Team Members:** Ishaan Rai, Priyanshu Raj, Aditya Prakash  
+**Institution:** NIT Jalandhar  
+**Project Type:** Professional Lab Project
+
+**GitHub Repository:** [https://github.com/ayushv-nitj/public-procurement-anomaly-detection](https://github.com/ayushv-nitj/public-procurement-anomaly-detection)
+
+---
+
+## 🚀 Complete Application Workflow
+
+The application provides **three different interfaces** for maximum flexibility:
+
+### 1. Upload Interface (Port 8080) - Best for Demos & File Uploads
+
+**Start:**
+```bash
+python start_servers.py
+```
+
+**Access:** http://localhost:8080
+
+**Features:**
+- Modern drag & drop file upload interface
+- Support for all 5 data sources (Synthetic, CSV, JSON, XML, API)
+- Real-time processing with progress indicators
+- Automatic redirect to dashboard after analysis
+- Clean separation: Port 5000 (API) + Port 8080 (Frontend)
+
+**Workflow:**
+1. Open http://localhost:8080 (upload interface is the default page)
+2. Select data source from 5 options
+3. Upload file (drag & drop or browse) OR enter API credentials
+4. Click "Analyze" button
+5. View summary statistics
+6. Click "View Full Dashboard" → redirects to http://localhost:8080/dashboard.html
+7. Explore interactive visualizations
+
+**Architecture:**
+```
+Browser (8080) → Upload Page → POST to Flask API (5000)
+                                      ↓
+                              ML Pipeline Processing
+                                      ↓
+                              Results Saved
+                                      ↓
+Browser (8080) ← Dashboard Page ← Results Loaded
+```
+
+### 2. Streamlit Dashboard (Port 8501) - Best for Interactive Analysis
+
+**Start:**
+```bash
+streamlit run dashboard/app_interactive.py
+```
+
+**Access:** http://localhost:8501
+
+**Features:**
+- All-in-one interface with sidebar controls
+- File upload directly in sidebar (no separate upload page)
+- Real-time processing and visualization
+- Top navbar with GitHub link and About Us button
+- About Us page with complete team information
+- Footer with team info and quick links
+- Modern dark theme with bluish-black gradient
+
+**How to Upload in Streamlit:**
+1. Look at the **LEFT SIDEBAR**
+2. Find dropdown: "Select Data Source"
+3. Choose your source (CSV/JSON/XML/Synthetic/API)
+4. File uploader appears below the dropdown
+5. Click "Browse files" or drag & drop
+6. Data processes automatically
+7. Results appear in main area immediately
+
+**Navigation:**
+- Click "About Us" in top navbar to see team information
+- Click "GitHub" to view source code
+- Scroll to footer for quick links and contact info
+
+### 3. Command Line Interface - Best for Automation
+
+**Run:**
+```bash
+# Synthetic data
+python run_pipeline.py --source synthetic
+
+# CSV file
+python run_pipeline.py --source csv --filepath data/contracts.csv
+
+# JSON file
+python run_pipeline.py --source json --filepath data/sample_contracts.json
+
+# XML file
+python run_pipeline.py --source xml --filepath data/sample_contracts.xml
+
+# API
+python run_pipeline.py --source api \
+  --api-url "https://api.data.gov.in/resource/RESOURCE_ID" \
+  --api-key "YOUR_API_KEY" \
+  --format json --limit 100
+```
+
+**Features:**
+- Batch processing
+- Scriptable and automatable
+- Results saved to `frontend/results.json`
+- Terminal output with statistics
+- Perfect for CI/CD pipelines
+
+---
+
+## 📊 Comparison: Which Interface to Use?
+
+| Feature | Upload Interface (8080) | Streamlit (8501) | Command Line |
+|---------|------------------------|------------------|--------------|
+| **Best For** | Demos, presentations | Interactive analysis | Automation, scripts |
+| **File Upload** | ✅ Drag & drop | ✅ Browse in sidebar | ❌ File path only |
+| **Real-time** | ✅ Yes | ✅ Yes | ❌ Batch |
+| **Visualizations** | ✅ Dashboard page | ✅ Interactive charts | ❌ None |
+| **Navigation** | ✅ Multi-page | ✅ Navbar + pages | ❌ Terminal only |
+| **Team Info** | ❌ No | ✅ About Us page | ❌ No |
+| **Setup** | 2 servers (Flask + HTTP) | 1 server (Streamlit) | No server |
+| **Ease of Use** | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | ⭐⭐⭐ |
+
+---
+
+## 🎯 Quick Start Guide
+
+### For Professor Demo (Recommended):
+```bash
+# Option 1: Upload Interface
+python start_servers.py
+# Open: http://localhost:8080
+# Upload data → View dashboard
+
+# Option 2: Streamlit
+streamlit run dashboard/app_interactive.py
+# Open: http://localhost:8501
+# Use sidebar to upload → See results immediately
+```
+
+### For Development:
+```bash
+# Generate new synthetic data
+python data/generate_data.py
+
+# Run pipeline
+python run_pipeline.py --source synthetic
+
+# View results
+cd frontend && python -m http.server 8080
+```
+
+### For Testing All Data Sources:
+```bash
+# Test all 5 data sources
+python test_data_sources.py
+```
+
+---
+
+## 📖 Additional Documentation
+
+- **QUICK_REFERENCE.md** - Quick command reference for all features
+- **DEMO_SCRIPT.md** - Step-by-step demo guide for presentations
+- **COMPLETE_WORKFLOW.md** - Detailed explanation of all three workflows
+- **NAVIGATION_FEATURES.md** - UI enhancements and navigation guide
+- **setup.md** - Detailed setup instructions
+- **walkthrough.md** - Development walkthrough
+
+---
+
+## 🔧 Technical Architecture
+
+### Backend (Flask API - Port 5000)
+- **Purpose:** Process data and run ML pipeline
+- **Endpoints:**
+  - `/api/process` - Process uploaded data
+  - `/api/save-results` - Save results to file
+  - `/api/sample-data/<type>` - Get sample data
+- **Security:** API keys handled server-side, not exposed to browser
+- **CORS:** Enabled for frontend communication
+
+### Frontend (HTTP Server - Port 8080)
+- **Purpose:** Serve HTML/CSS/JS files
+- **Pages:**
+  - `index.html` - Upload interface (default page)
+  - `dashboard.html` - Results dashboard
+- **Technology:** Vanilla JavaScript, Chart.js, modern CSS
+- **Features:** Drag & drop, responsive design, animations
+
+### Streamlit (Port 8501)
+- **Purpose:** All-in-one interactive dashboard
+- **Technology:** Python, Streamlit, Plotly
+- **Features:** File upload, real-time processing, SHAP explanations
+- **Navigation:** Multi-page with navbar and footer
+
+---
+
+## 🎨 UI/UX Features
+
+### Modern Dark Theme
+- **Background:** Bluish-black gradient (#0a0e27 → #1a1f3a → #0f1419)
+- **Sidebar:** Purple gradient (#6366f1 → #8b5cf6)
+- **Accents:** Indigo and violet
+- **Typography:** Inter font family
+- **Contrast:** High contrast for accessibility
+
+### Navigation Elements
+- **Top Navbar:** Fixed position with GitHub link and About Us button
+- **Sidebar:** Redesigned with icons, sections, and team info
+- **Footer:** Team information, quick links, contact details
+- **About Us Page:** Complete team profiles and project information
+
+### Interactive Elements
+- **Drag & Drop:** File upload with visual feedback
+- **Hover Effects:** Smooth transitions on buttons and cards
+- **Loading States:** Spinners and progress indicators
+- **Error Handling:** Clear error messages with suggestions
+- **Responsive:** Works on desktop, tablet, and mobile
+
+---
+
+## 🔐 Security Considerations
+
+### API Key Handling
+- API keys are processed server-side (Flask backend)
+- Never exposed in browser or frontend JavaScript
+- Stored temporarily only during request processing
+- Not logged or persisted
+
+### Data Privacy
+- All processing happens locally (no external services)
+- Uploaded files are stored in temporary directories
+- Temporary files are deleted after processing
+- No data is sent to third-party servers
+
+### Input Validation
+- File type validation (CSV, JSON, XML only)
+- File size limits to prevent memory issues
+- API URL validation
+- SQL injection prevention (no database queries)
+- XSS prevention (sanitized outputs)
+
+---
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**1. "ModuleNotFoundError: No module named 'flask'"**
+```bash
+# Solution: Install dependencies
+pip install -r requirements.txt
+```
+
+**2. "Port already in use"**
+```bash
+# Solution: Kill process on port
+# Windows:
+netstat -ano | findstr :5000
+taskkill /PID <PID> /F
+
+# Linux/Mac:
+lsof -ti:5000 | xargs kill -9
+```
+
+**3. "CORS error" in browser console**
+```bash
+# Solution: Make sure Flask backend is running
+python app.py
+
+# And flask-cors is installed
+pip install flask-cors
+```
+
+**4. "File upload not working in Streamlit"**
+- Check that you've selected a data source from the dropdown first
+- File uploader appears in the SIDEBAR, not main area
+- Look below the "Select Data Source" dropdown
+
+**5. "API request failed: 400 Bad Request"**
+- Verify API URL is correct
+- Check if API key is valid
+- Ensure you have access approval from data portal
+- Try reducing the limit parameter
+
+**6. "Dashboard shows no data"**
+- Check if `frontend/results.json` exists
+- Try running the pipeline again
+- Clear browser cache and reload
+
+---
+
+## 📞 Support & Contact
+
+**Team:**
+- **Leader:** Ayush Verma
+- **Members:** Ishaan Rai, Priyanshu Raj, Aditya Prakash
+
+**Institution:** NIT Jalandhar  
+**Project Type:** Professional Lab Project
+
+**Repository:** [https://github.com/ayushv-nitj/public-procurement-anomaly-detection](https://github.com/ayushv-nitj/public-procurement-anomaly-detection)
+
+**For Issues:**
+- Open an issue on GitHub
+- Check existing documentation files
+- Review troubleshooting section above
+
+---
+
+## 🙏 Acknowledgments
+
+- **Data Source Inspiration:** Government e-Marketplace (GeM) India
+- **ML Techniques:** Scikit-learn documentation and research papers
+- **UI Design:** Modern web design principles and best practices
+- **Explainability:** SHAP library and interpretable ML research
+
+---
+
+## License
+
+This project is for academic purposes (BTech CS Project).

@@ -7,3 +7,5 @@ plotly
 fuzzywuzzy
 python-Levenshtein
 requests
+flask
+flask-cors

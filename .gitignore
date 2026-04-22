@@ -1,4 +1,65 @@
+# Python
 venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 .DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# Generated data files
+data/contracts.csv
+frontend/results.json
+
+# Logs
+*.log
+logs/
+*.out
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Jupyter Notebooks (if you add any)
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Streamlit
+.streamlit/secrets.toml

@@ -42,9 +42,91 @@ python run_pipeline.py --source api \
 ```
 
 
-### 3. Show the Dashboard (3 min)
+### 3. Show the Interactive Dashboard (4 min)
+
+**OPTION 1: Upload Interface at Port 8080 (RECOMMENDED FOR DEMO)**
 
 ```bash
+# Start both servers with one command
+python start_servers.py
+```
+
+**Then open**: http://localhost:8080
+
+**Demo the upload workflow:**
+
+1. **Upload Page** (http://localhost:8080)
+   - Show 5 data source options
+   - Select "Generate Synthetic"
+   - Click "🎲 Generate & Analyze"
+   - Wait for processing (~10 seconds)
+   - Show summary results (Total, Anomalies, High Risk, Avg Risk)
+
+2. **View Dashboard**
+   - Click "📊 View Full Dashboard" button
+   - Automatically redirects to http://localhost:8080/dashboard.html
+   - Dashboard loads with the generated data
+
+3. **Dashboard Features**
+   - KPI cards with animated counters
+   - Risk distribution histogram
+   - Anomalies by department chart
+   - SHAP feature importance
+   - Top risky vendors list
+   - Interactive contracts table with search/filter
+
+4. **Try Another Upload** (optional)
+   - Go back to http://localhost:8080
+   - Select "Upload JSON"
+   - Click "(Load Sample)" to load example data
+   - Click "Analyze Data"
+   - Show different results
+
+**OPTION 2: Streamlit Interactive Dashboard**
+
+```bash
+# Start the interactive dashboard
+streamlit run dashboard/app_interactive.py
+# Open http://localhost:8501
+```
+
+**Demo the new features:**
+
+1. **Top Navbar**
+   - Point out the GitHub link in the top navbar
+   - Click "About Us" button to show team information page
+
+2. **Data Source Selection**
+   - Show the redesigned sidebar with better styling
+   - Select "Generate Synthetic" from dropdown
+   - Click "🎲 Generate & Analyze" button
+   - Watch real-time processing
+
+3. **Interactive Visualizations**
+   - Risk score distribution with color coding
+   - Anomalies by department
+   - SHAP feature importance
+   - Per-contract explanations
+   - Similar descriptions detection
+   - Amount vs risk scatter plot
+
+4. **About Us Page**
+   - Click "About Us" in navbar
+   - Show team members and roles
+   - Project information and tech stack
+   - Links to GitHub and documentation
+
+5. **Footer**
+   - Scroll to bottom
+   - Show team info and quick links
+   - Contact information
+
+**OPTION 3: Flask Backend + Frontend (Manual)**
+```bash
+# Terminal 1: Start Flask backend
+python app.py
+
+# Terminal 2: Start frontend
 cd frontend && python -m http.server 8080
 # Open http://localhost:8080
 ```
