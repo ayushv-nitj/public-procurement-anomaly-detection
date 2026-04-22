@@ -1,35 +1,16 @@
 # 🔍 Public Procurement Anomaly Detection System
 
-> AI-powered detection of suspicious patterns in government procurement contracts — BTech CS Project
+> AI-powered detection of suspicious patterns in government procurement contracts
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-GitHub_Pages-blue?style=for-the-badge)](https://ayushv-nitj.github.io/public-procurement-anomaly-detection/)
 [![Streamlit App](https://img.shields.io/badge/📊_Streamlit-Dashboard-red?style=for-the-badge)](https://public-procurement-anomaly-detection-atksofxwzcio5qeakrsqds.streamlit.app/)
 
----
 
-## 🚀 Quick Start
+<img width="1487" height="967" alt="Screenshot 2026-04-23 030314" src="https://github.com/user-attachments/assets/f6b10941-3756-4ec6-a25b-f6aa5f271418" />
+<img width="1496" height="694" alt="Screenshot 2026-04-23 030359" src="https://github.com/user-attachments/assets/7bdd63c9-a3b8-4831-b9c2-014f8741a247" />
+<img width="1524" height="708" alt="Screenshot 2026-04-23 030337" src="https://github.com/user-attachments/assets/54cc8e27-babc-4cf2-b00a-b1fcf74ae035" />
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
 
-# Run with existing data (fastest)
-python run_pipeline.py --source csv --filepath data/contracts.csv
 
-# OR generate fresh synthetic data
-python run_pipeline.py --source synthetic
-
-# OR load from JSON/XML
-python run_pipeline.py --source json --filepath data/sample_contracts.json
-
-# OR fetch from API (requires API key)
-python run_pipeline.py --source api --api-url "..." --api-key "..."
-
-# View results
-cd frontend && python -m http.server 8080  # Open http://localhost:8080
-```
-
-**📖 See [USAGE_GUIDE.md](USAGE_GUIDE.md) for detailed examples and API integration**
 
 ---
 
@@ -57,6 +38,10 @@ cd frontend && python -m http.server 8080  # Open http://localhost:8080
 ---
 
 ## What This Project Does
+
+<img width="1894" height="981" alt="Screenshot 2026-04-23 030230" src="https://github.com/user-attachments/assets/9b9e99e6-f3ab-4295-9e48-50e9e56c4be4" />
+
+---
 
 Public procurement (government purchasing of goods and services) is a massive area prone to fraud, corruption, and inefficiency. This system automatically detects suspicious procurement contracts using machine learning and natural language processing.
 
@@ -618,6 +603,32 @@ The data loader automatically normalizes column names. You can use any of these 
 ---
 
 ## How to Run
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run with existing data (fastest)
+python run_pipeline.py --source csv --filepath data/contracts.csv
+
+# OR generate fresh synthetic data
+python run_pipeline.py --source synthetic
+
+# OR load from JSON/XML
+python run_pipeline.py --source json --filepath data/sample_contracts.json
+
+# OR fetch from API (requires API key)
+python run_pipeline.py --source api --api-url "..." --api-key "..."
+
+# View results
+cd frontend && python -m http.server 8080  # Open http://localhost:8080
+```
+
+**📖 See [USAGE_GUIDE.md](USAGE_GUIDE.md) for detailed examples and API integration**
+
+---
 
 ### Prerequisites
 - Python 3.9+
