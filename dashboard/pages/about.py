@@ -319,7 +319,7 @@ with col3:
 st.markdown("""
 <div style="margin-top: 5rem; padding: 2rem 0; border-top: 1px solid #334155; text-align: center;">
     <p style="color: #94a3b8; font-size: 0.9rem;">
-        © 2024 Procurement Anomaly Detection System | Professional Lab Project
+        © 2026 Procurement Anomaly Detection System | Professional Lab Project
     </p>
     <p style="color: #64748b; font-size: 0.85rem; margin-top: 0.5rem;">
         Developed with ❤️ by Team Ayush Verma

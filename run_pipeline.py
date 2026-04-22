@@ -31,8 +31,25 @@ def main(data_source='csv', **source_kwargs):
         main('xml', filepath='data/contracts.xml')
         main('api', api_url='https://...', api_key='...', params={'format': 'json'})
     """
-    # Load data from specified source
-    df = load_data(source=data_source, **source_kwargs)
+    # Load data from specified source (with validation)
+    df, validation_report = load_data(source=data_source, validate=True, **source_kwargs)
+    
+    # Print validation summary
+    if validation_report:
+        print(f"\n{'='*60}")
+        print("DATA VALIDATION SUMMARY")
+        print(f"{'='*60}")
+        print(f"Original rows: {validation_report['original_rows']}")
+        print(f"Final rows: {validation_report['final_rows']}")
+        print(f"Rows dropped: {validation_report['rows_dropped']}")
+        print(f"Data quality score: {validation_report['data_quality_score']:.2f}/100")
+        
+        if validation_report.get('vendor_normalization'):
+            vn = validation_report['vendor_normalization']
+            print(f"Vendor normalization: {vn['unique_before']} → {vn['unique_after']} "
+                  f"({vn['reduction']} merged)")
+        
+        print(f"{'='*60}\n")
 
     # Feature engineering
     df, feature_matrix, feature_names, scaler = build_feature_matrix(df)

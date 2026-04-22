@@ -49,7 +49,7 @@ def process_data():
         
         # Load data based on source
         if source == 'synthetic':
-            df = load_data(source='synthetic')
+            df, _ = load_data(source='synthetic', validate=False)  # Skip validation for synthetic
             
         elif source in ['csv', 'json', 'xml']:
             file_content = data.get('data')
@@ -62,7 +62,7 @@ def process_data():
                 tmp_path = tmp.name
             
             try:
-                df = load_data(source=source, filepath=tmp_path)
+                df, _ = load_data(source=source, filepath=tmp_path, validate=True)
             finally:
                 os.unlink(tmp_path)
                 
@@ -80,11 +80,12 @@ def process_data():
                 'limit': api_limit
             }
             
-            df = load_data(
+            df, _ = load_data(
                 source='api',
                 api_url=api_url,
                 api_key=api_key,
-                params=params
+                params=params,
+                validate=True
             )
         else:
             return jsonify({'error': f'Invalid source: {source}'}), 400
@@ -201,7 +202,21 @@ def save_results():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 if __name__ == '__main__':
+    import os
+    
     print("Starting Flask API server...")
     print("API Endpoints: http://localhost:5000/api")
     print("Note: Frontend is served separately on port 8080")
-    app.run(debug=True, port=5000)
+    print()
+    
+    # Check if debug mode should be enabled (default: False for production)
+    debug_mode = os.environ.get('FLASK_DEBUG', '0') == '1'
+    
+    if debug_mode:
+        print("⚠️  DEBUG MODE ENABLED - Not for production!")
+    
+    app.run(
+        debug=debug_mode,
+        port=5000,
+        use_reloader=False  # Disable reloader to prevent double start
+    )

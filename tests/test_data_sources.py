@@ -15,9 +15,11 @@ def test_csv():
     print("TEST 1: Loading from CSV")
     print("="*60)
     try:
-        df = load_data(source='csv', filepath='data/contracts.csv')
+        df, report = load_data(source='csv', filepath='data/contracts.csv', validate=True)
         print(f"✓ Success! Loaded {len(df)} contracts")
         print(f"  Columns: {list(df.columns)}")
+        if report:
+            print(f"  Quality Score: {report['data_quality_score']:.2f}/100")
         print(f"  Sample row:\n{df.iloc[0].to_dict()}")
         return True
     except Exception as e:
@@ -30,9 +32,11 @@ def test_json():
     print("TEST 2: Loading from JSON")
     print("="*60)
     try:
-        df = load_data(source='json', filepath='data/sample_contracts.json')
+        df, report = load_data(source='json', filepath='data/sample_contracts.json', validate=True)
         print(f"✓ Success! Loaded {len(df)} contracts")
         print(f"  Columns: {list(df.columns)}")
+        if report:
+            print(f"  Quality Score: {report['data_quality_score']:.2f}/100")
         print(f"  Sample row:\n{df.iloc[0].to_dict()}")
         return True
     except Exception as e:
@@ -45,9 +49,11 @@ def test_xml():
     print("TEST 3: Loading from XML")
     print("="*60)
     try:
-        df = load_data(source='xml', filepath='data/sample_contracts.xml')
+        df, report = load_data(source='xml', filepath='data/sample_contracts.xml', validate=True)
         print(f"✓ Success! Loaded {len(df)} contracts")
         print(f"  Columns: {list(df.columns)}")
+        if report:
+            print(f"  Quality Score: {report['data_quality_score']:.2f}/100")
         print(f"  Sample row:\n{df.iloc[0].to_dict()}")
         return True
     except Exception as e:
@@ -60,9 +66,11 @@ def test_synthetic():
     print("TEST 4: Generating Synthetic Data")
     print("="*60)
     try:
-        df = load_data(source='synthetic')
+        df, report = load_data(source='synthetic', validate=True)
         print(f"✓ Success! Generated {len(df)} contracts")
         print(f"  Columns: {list(df.columns)}")
+        if report:
+            print(f"  Quality Score: {report['data_quality_score']:.2f}/100")
         print(f"  Sample row:\n{df.iloc[0].to_dict()}")
         return True
     except Exception as e:

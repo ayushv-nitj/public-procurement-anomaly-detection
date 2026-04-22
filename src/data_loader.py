@@ -1,14 +1,22 @@
 """
 Data Loader Module
 Supports multiple data sources: synthetic generation, API, CSV, XML, JSON
+Includes data validation and cleaning
 """
 
 import pandas as pd
 import requests
 import json
 import xml.etree.ElementTree as ET
-from typing import Optional, Dict, Any
+from typing import Optional, Dict, Any, Tuple
 import os
+import logging
+
+# Import validator
+from src.data_validator import validate_data
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def load_from_synthetic() -> pd.DataFrame:
@@ -188,20 +196,23 @@ def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
     return df[required_cols]
 
 
-def load_data(source: str = 'synthetic', **kwargs) -> pd.DataFrame:
+def load_data(source: str = 'synthetic', validate: bool = True, **kwargs) -> Tuple[pd.DataFrame, Optional[Dict]]:
     """
-    Universal data loader supporting multiple sources.
+    Universal data loader supporting multiple sources with validation.
     
     Args:
         source: Data source type ('synthetic', 'csv', 'json', 'xml', 'api')
+        validate: Whether to validate and clean data (default: True)
         **kwargs: Source-specific parameters
             - For 'csv', 'json', 'xml': filepath='path/to/file'
             - For 'api': api_url='...', api_key='...', params={...}
     
     Returns:
-        Normalized DataFrame with standard schema
+        Tuple of (DataFrame, validation_report)
+        - DataFrame: Normalized and validated data
+        - validation_report: Dict with validation details (None if validate=False)
     """
-    print(f"Loading data from source: {source}")
+    logger.info(f"Loading data from source: {source}")
     
     if source == 'synthetic':
         df = load_from_synthetic()
@@ -220,9 +231,18 @@ def load_data(source: str = 'synthetic', **kwargs) -> pd.DataFrame:
     else:
         raise ValueError(f"Unknown data source: {source}. Supported: synthetic, csv, json, xml, api")
     
-    # Normalize columns if not from synthetic (synthetic already has correct schema)
-    if source != 'synthetic':
-        df = normalize_columns(df)
+    logger.info(f"Loaded {len(df)} raw contracts")
     
-    print(f"Loaded {len(df)} contracts")
-    return df
+    # Validate and clean data
+    validation_report = None
+    if validate:
+        logger.info("Starting data validation and cleaning...")
+        df, validation_report = validate_data(df)
+        logger.info(f"Validation complete. {len(df)} contracts after cleaning")
+        logger.info(f"Data quality score: {validation_report['data_quality_score']:.2f}/100")
+    else:
+        # Normalize columns if not from synthetic (synthetic already has correct schema)
+        if source != 'synthetic':
+            df = normalize_columns(df)
+    
+    return df, validation_report

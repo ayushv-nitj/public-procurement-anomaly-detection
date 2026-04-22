@@ -624,8 +624,12 @@ try:
         st.sidebar.info("💡 Generates 500 realistic contracts with anomalies. Data will be different each time!")
         if st.sidebar.button("🎲 Generate & Analyze", use_container_width=True):
             with st.spinner("Generating synthetic data..."):
-                df = load_data(source='synthetic')
+                df, validation_report = load_data(source='synthetic', validate=True)
                 st.sidebar.success(f"✅ Generated {len(df)} contracts")
+                
+                # Show validation info
+                if validation_report:
+                    st.sidebar.info(f"📊 Quality Score: {validation_report['data_quality_score']:.0f}/100")
     
     elif source_type == "Upload CSV":
         st.sidebar.markdown("---")
@@ -636,8 +640,10 @@ try:
                 tmp_path = tmp.name
             
             try:
-                df = load_data(source='csv', filepath=tmp_path)
+                df, validation_report = load_data(source='csv', filepath=tmp_path, validate=True)
                 st.sidebar.success(f"✅ Loaded {len(df)} contracts")
+                if validation_report:
+                    st.sidebar.info(f"📊 Quality Score: {validation_report['data_quality_score']:.0f}/100")
             finally:
                 os.unlink(tmp_path)
     
@@ -650,8 +656,10 @@ try:
                 tmp_path = tmp.name
             
             try:
-                df = load_data(source='json', filepath=tmp_path)
+                df, validation_report = load_data(source='json', filepath=tmp_path, validate=True)
                 st.sidebar.success(f"✅ Loaded {len(df)} contracts")
+                if validation_report:
+                    st.sidebar.info(f"📊 Quality Score: {validation_report['data_quality_score']:.0f}/100")
             finally:
                 os.unlink(tmp_path)
     
@@ -664,8 +672,10 @@ try:
                 tmp_path = tmp.name
             
             try:
-                df = load_data(source='xml', filepath=tmp_path)
+                df, validation_report = load_data(source='xml', filepath=tmp_path, validate=True)
                 st.sidebar.success(f"✅ Loaded {len(df)} contracts")
+                if validation_report:
+                    st.sidebar.info(f"📊 Quality Score: {validation_report['data_quality_score']:.0f}/100")
             finally:
                 os.unlink(tmp_path)
     
@@ -683,13 +693,16 @@ try:
             else:
                 with st.spinner("Fetching data from API..."):
                     params = {'format': api_format, 'limit': api_limit}
-                    df = load_data(
+                    df, validation_report = load_data(
                         source='api',
                         api_url=api_url,
                         api_key=api_key if api_key else None,
-                        params=params
+                        params=params,
+                        validate=True
                     )
                     st.sidebar.success(f"✅ Fetched {len(df)} contracts")
+                    if validation_report:
+                        st.sidebar.info(f"📊 Quality Score: {validation_report['data_quality_score']:.0f}/100")
 
 except Exception as e:
     error_message = str(e)
@@ -1164,7 +1177,7 @@ with col4:
 st.markdown("---")
 st.markdown(
     "<p style='text-align: center; color: #64748b; font-size: 0.85rem;'>"
-    "© 2024 Procurement Anomaly Detection System | Developed with ❤️ by Team Ayush Verma"
+    "© 2026 Procurement Anomaly Detection System | Developed with ❤️ by Team Ayush Verma"
     "</p>",
     unsafe_allow_html=True
 )
