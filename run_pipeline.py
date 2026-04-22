@@ -1,5 +1,6 @@
 """
 Run the full ML pipeline and export results for the frontend.
+Supports multiple data sources: synthetic, API, CSV, XML, JSON
 """
 import sys
 import os
@@ -8,16 +9,30 @@ import json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pandas as pd
+from src.data_loader import load_data
 from src.features import build_feature_matrix
 from src.models import run_anomaly_detection
 from src.nlp import run_nlp_analysis
 from src.risk_score import compute_risk_scores
 from src.explainer import get_shap_values, get_top_features, get_global_importance
 
-def main():
-    # Load data
-    df = pd.read_csv("data/contracts.csv")
-    print(f"Loaded {len(df)} contracts")
+def main(data_source='csv', **source_kwargs):
+    """
+    Run the ML pipeline with configurable data source.
+    
+    Args:
+        data_source: 'synthetic', 'csv', 'json', 'xml', or 'api'
+        **source_kwargs: Source-specific parameters
+    
+    Examples:
+        main('synthetic')
+        main('csv', filepath='data/contracts.csv')
+        main('json', filepath='data/contracts.json')
+        main('xml', filepath='data/contracts.xml')
+        main('api', api_url='https://...', api_key='...', params={'format': 'json'})
+    """
+    # Load data from specified source
+    df = load_data(source=data_source, **source_kwargs)
 
     # Feature engineering
     df, feature_matrix, feature_names, scaler = build_feature_matrix(df)
@@ -107,4 +122,47 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    
+    parser = argparse.ArgumentParser(description='Run procurement anomaly detection pipeline')
+    parser.add_argument('--source', type=str, default='csv', 
+                       choices=['synthetic', 'csv', 'json', 'xml', 'api'],
+                       help='Data source type')
+    parser.add_argument('--filepath', type=str, help='Path to data file (for csv/json/xml)')
+    parser.add_argument('--api-url', type=str, help='API endpoint URL')
+    parser.add_argument('--api-key', type=str, help='API key for authentication')
+    parser.add_argument('--format', type=str, help='API response format (json/xml/csv)')
+    parser.add_argument('--offset', type=int, default=0, help='API pagination offset')
+    parser.add_argument('--limit', type=int, default=100, help='API pagination limit')
+    
+    args = parser.parse_args()
+    
+    # Build kwargs based on source type
+    kwargs = {}
+    
+    if args.source in ['csv', 'json', 'xml']:
+        if args.filepath:
+            kwargs['filepath'] = args.filepath
+        elif args.source == 'csv':
+            kwargs['filepath'] = 'data/contracts.csv'  # default
+    
+    elif args.source == 'api':
+        if not args.api_url:
+            print("Error: --api-url is required for API source")
+            exit(1)
+        kwargs['api_url'] = args.api_url
+        if args.api_key:
+            kwargs['api_key'] = args.api_key
+        
+        # Build API params
+        params = {}
+        if args.format:
+            params['format'] = args.format
+        if args.offset:
+            params['offset'] = args.offset
+        if args.limit:
+            params['limit'] = args.limit
+        if params:
+            kwargs['params'] = params
+    
+    main(data_source=args.source, **kwargs)

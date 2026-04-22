@@ -1,501 +1,501 @@
 contract_id,vendor_name,dept,amount,award_date,description
-CTR-0001,Engineers India Ltd,Department of Atomic Energy,265926.15,2023-06-16,Consultancy services for electrical substations implementation in Atomic Energy
-CTR-0002,BEL Optronic Devices,Department of Atomic Energy,621526.15,2022-04-16,Installation and commissioning of medical equipment at Atomic Energy facilities
-CTR-0003,Cochin Shipyard Ltd,Ministry of Health,100000.0,2023-01-19,Turnkey project for medical equipment modernization at Health
-CTR-0004,BEL Optronic Devices,Ministry of IT,3802434.56,2022-02-14,Rate contract for supply of radar systems to IT for FY 2024-25
-CTR-0005,ABB India Ltd,Ministry of Agriculture,1615721.0,2022-04-07,Procurement of fire safety systems for government offices in Chennai
-CTR-0006,Tata Consulting Services,Ministry of Railways,408494.48,2023-02-21,Rate contract for supply of solar panels to Railways for FY 2024-25
-CTR-0007,Larsen & Toubro,Department of Atomic Energy,5164694.06,2022-04-04,Empanelment of vendors for satellite communication equipment supply to Atomic Energy
-CTR-0008,Rolta India,Ministry of IT,488474.22,2022-04-25,"Design, supply, and installation of electrical substations for IT"
-CTR-0009,Hindustan Aeronautics Ltd,Ministry of Power,228775.75,2023-07-21,Installation and commissioning of office furniture at Power facilities
-CTR-0010,RITES Ltd,Department of Atomic Energy,2447920.34,2022-10-06,Empanelment of vendors for surveillance cameras supply to Atomic Energy
-CTR-0011,IRCON International,Ministry of Finance,1425846.2,2022-06-12,"Design, supply, and installation of road construction materials for Finance"
-CTR-0012,Mphasis Ltd,Ministry of Agriculture,146858.29,2022-06-30,Empanelment of vendors for medical equipment supply to Agriculture
-CTR-0013,Cochin Shipyard Ltd,Ministry of Power,123123.73,2022-04-27,"Design, supply, and installation of power transformers for Power"
-CTR-0014,Garden Reach Shipbuilders,Ministry of Power,861193833.67,2023-09-01,Comprehensive maintenance of solar panels systems at Power locations
-CTR-0015,Zensar Technologies,Ministry of Health,574065.4,2022-06-07,Installation and commissioning of radar systems at Health facilities
-CTR-0016,Cummins India,Ministry of Education,776428.14,2023-08-04,Procurement of server infrastructure for government offices in Chennai
-CTR-0017,BEML Ltd,Ministry of Urban Development,7054386.51,2022-05-30,Consultancy services for air conditioning units implementation in Urban Development
-CTR-0018,ABB India Ltd,Department of Atomic Energy,100000.0,2023-03-26,Annual maintenance contract for server infrastructure across Atomic Energy offices
-CTR-0019,Tata Consulting Services,Department of Space,910283.65,2023-11-11,Procurement of bridge components for government offices in Hyderabad
-CTR-0020,Mphasis Ltd,Ministry of Home Affairs,2713744.75,2022-07-16,Procurement of laboratory equipment for government offices in Jaipur
-CTR-0021,Rolta India,Ministry of Railways,3939435.2,2022-12-22,Empanelment of vendors for satellite communication equipment supply to Railways
-CTR-0022,Tech Mahindra,Ministry of Railways,1287686.51,2022-06-01,Procurement of communication devices for government offices in Jaipur
-CTR-0023,Thermax Ltd,Ministry of Home Affairs,1221206.17,2023-06-04,Procurement of server infrastructure for government offices in Kolkata
-CTR-0024,Thermax Ltd,Ministry of Health,411874.05,2022-06-19,Consultancy services for security systems implementation in Health
-CTR-0025,Tata Consulting Services,Ministry of Urban Development,5871867.82,2022-10-20,Turnkey project for IT hardware modernization at Urban Development
-CTR-0026,Bharat Dynamics Ltd,Ministry of Finance,10603719.69,2022-10-14,Comprehensive maintenance of water treatment plants systems at Finance locations
-CTR-0027,HCL Technologies,Ministry of Home Affairs,226995310.21,2023-11-07,Supply of misc items for general use in department offices
-CTR-0028,Rail Vikas Nigam,Ministry of Railways,581664.38,2023-05-14,Empanelment of vendors for surveillance cameras supply to Railways
-CTR-0029,Zensar Technologies,Department of Space,514295.56,2022-01-30,Rate contract for supply of air conditioning units to Space for FY 2024-25
-CTR-0030,Cummins India,Ministry of Health,1733288.13,2023-06-05,Annual maintenance contract for railway signalling systems across Health offices
-CTR-0031,Cyient Ltd,Department of Space,1555103.13,2023-02-17,"Design, supply, and installation of office furniture for Space"
-CTR-0032,Reliance Jio Infocomm,Ministry of Finance,1247548602.59,2022-07-16,Comprehensive maintenance of medical equipment systems at Finance locations
-CTR-0033,Larsen & Toubro,Ministry of Home Affairs,107036.61,2022-12-03,Installation and commissioning of power transformers at Home Affairs facilities
-CTR-0034,Thermax Ltd,Ministry of Home Affairs,728139.66,2023-07-29,Comprehensive maintenance of solar panels systems at Home Affairs locations
-CTR-0035,Cyient Ltd,Ministry of Urban Development,3194965.59,2022-02-16,Supply of office furniture for Urban Development under annual maintenance contract
-CTR-0036,NTPC Limited,Ministry of Power,2603983.38,2022-12-13,Procurement of electrical substations for government offices in Hyderabad
-CTR-0037,Cyient Ltd,Ministry of Railways,2445735.46,2023-01-25,"Design, supply, and installation of communication devices for Railways"
-CTR-0038,Hindustan Aeronautics Ltd,Ministry of Education,289451068.37,2022-02-27,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0039,Schneider Electric India,Ministry of Agriculture,1514487.5,2023-01-29,Rate contract for supply of surveillance cameras to Agriculture for FY 2024-25
-CTR-0040,Zensar Technologies,Ministry of IT,6250457.87,2023-03-03,Installation and commissioning of solar panels at IT facilities
-CTR-0041,NBCC India Ltd,Ministry of Education,602619.85,2022-06-18,Turnkey project for air conditioning units modernization at Education
-CTR-0042,Infosys Ltd,Ministry of Defence,615522.99,2022-10-28,"Design, supply, and installation of communication devices for Defence"
-CTR-0043,ECIL Hyderabad,Department of Atomic Energy,3715038.31,2023-12-15,Consultancy services for solar panels implementation in Atomic Energy
-CTR-0044,Cummins India,Department of Space,2447037.45,2023-04-30,Empanelment of vendors for satellite communication equipment supply to Space
-CTR-0045,Garden Reach Shipbuilders,Ministry of Finance,4070568.3,2022-05-08,Consultancy services for office furniture implementation in Finance
-CTR-0046,Cochin Shipyard Ltd,Ministry of IT,719224.07,2023-03-02,Supply of bridge components for IT under annual maintenance contract
-CTR-0047,Cochin Shipyard Ltd,Ministry of Agriculture,347720.26,2022-12-15,Comprehensive maintenance of water treatment plants systems at Agriculture locations
-CTR-0048,BEML Ltd,Ministry of Education,1106462.39,2023-05-31,Consultancy services for server infrastructure implementation in Education
-CTR-0049,Mazagon Dock Shipbuilders,Ministry of IT,964547.08,2022-04-27,Supply of IT hardware for IT under annual maintenance contract
-CTR-0050,Thermax Ltd,Ministry of Health,12571783.85,2022-02-09,Rate contract for supply of office furniture to Health for FY 2024-25
-CTR-0051,RITES Ltd,Ministry of Power,12297439.25,2022-08-25,Procurement of surveillance cameras for government offices in Hyderabad
-CTR-0052,Central Electronics Ltd,Department of Space,187827.03,2022-09-16,Comprehensive maintenance of air conditioning units systems at Space locations
-CTR-0053,Godrej & Boyce,Ministry of Defence,901178.43,2022-09-02,Installation and commissioning of radar systems at Defence facilities
-CTR-0054,Garden Reach Shipbuilders,Ministry of Education,10836960.88,2023-05-21,Procurement of medical equipment for government offices in Lucknow
-CTR-0055,BEL Optronics Devices,Department of Atomic Energy,654650959.84,2022-08-12,Empanelment of vendors for medical equipment supply to Atomic Energy
-CTR-0056,Power Grid Corp,Ministry of Health,3843719.52,2023-12-22,Annual maintenance contract for air conditioning units across Health offices
-CTR-0057,Rail Vikas Nigam,Ministry of Finance,1779037.26,2023-05-02,Rate contract for supply of water treatment plants to Finance for FY 2024-25
-CTR-0058,Schneider Electric India,Ministry of Education,1463162.67,2022-06-06,Procurement of railway signalling systems for government offices in Jaipur
-CTR-0059,Kirloskar Brothers,Ministry of Agriculture,1392364.79,2022-10-20,Empanelment of vendors for radar systems supply to Agriculture
-CTR-0060,Siemens India,Ministry of Education,100000.0,2022-11-09,Annual maintenance contract for water treatment plants across Education offices
-CTR-0061,Rail Vikas Nigam,Ministry of Home Affairs,100000.0,2022-10-24,Procurement of air conditioning units for government offices in Pune
-CTR-0062,HCL Technologies,Ministry of Finance,16734972.74,2023-08-10,Empanelment of vendors for road construction materials supply to Finance
-CTR-0063,Godrej & Boyce,Department of Atomic Energy,1343974.96,2023-11-08,Turnkey project for office furniture modernization at Atomic Energy
-CTR-0064,Cyient Ltd,Ministry of Finance,242454.5,2022-05-18,Empanelment of vendors for road construction materials supply to Finance
-CTR-0065,Cummins India,Ministry of Education,1391115.25,2022-01-26,Supply of power transformers for Education under annual maintenance contract
-CTR-0066,Hindustan Aeronautics Ltd,Ministry of Agriculture,1430467.61,2023-09-13,"Design, supply, and installation of medical equipment for Agriculture"
-CTR-0067,Rolta India,Ministry of Power,4074570.2,2022-10-31,Annual maintenance contract for office furniture across Power offices
-CTR-0068,Larsen & Toubro,Ministry of IT,12849548.38,2023-01-25,Procurement of office furniture for government offices in Mumbai
-CTR-0069,Garden Reach Shipbuilders,Ministry of Health,366304.01,2023-08-24,Empanelment of vendors for bridge components supply to Health
-CTR-0070,BEL Optronics Devices,Ministry of Health,164644354.39,2023-03-08,Consultancy services for fire safety systems implementation in Health
-CTR-0071,NTPC Limited,Ministry of Education,1751072.96,2022-03-18,Installation and commissioning of railway signalling systems at Education facilities
-CTR-0072,L&T Infotech,Department of Space,9196743.78,2022-02-15,Supply of fire safety systems for Space under annual maintenance contract
-CTR-0073,Mahindra Defence Systems,Ministry of Health,1079474.4,2023-03-29,Empanelment of vendors for IT hardware supply to Health
-CTR-0074,Mahindra Defence Systems,Ministry of Power,565116.12,2023-07-24,Supply of radar systems for Power under annual maintenance contract
-CTR-0075,Ashok Leyland,Ministry of Education,1145048.87,2023-11-08,Empanelment of vendors for surveillance cameras supply to Education
-CTR-0076,WAPCOS Ltd,Ministry of Home Affairs,11811034.56,2022-07-23,Empanelment of vendors for network equipment supply to Home Affairs
-CTR-0077,Reliance Jio Infocomm,Ministry of Finance,880122.71,2022-02-08,"Design, supply, and installation of bridge components for Finance"
-CTR-0078,WAPCOS Ltd,Ministry of Finance,299420.52,2023-02-11,Supply of laboratory equipment for Finance under annual maintenance contract
-CTR-0079,Ashok Leyland,Ministry of Urban Development,100000.0,2022-04-29,Turnkey project for radar systems modernization at Urban Development
-CTR-0080,Tech Mahindra,Ministry of Power,1370341.59,2023-02-14,Empanelment of vendors for laboratory equipment supply to Power
-CTR-0081,Siemens India,Department of Atomic Energy,2139533.07,2023-08-15,Comprehensive maintenance of satellite communication equipment systems at Atomic Energy locations
-CTR-0082,ITI Ltd,Ministry of Education,867593.18,2023-03-16,Supply of medical equipment for Education under annual maintenance contract
-CTR-0083,Wipro Technologies,Department of Space,600113.13,2022-03-23,Annual maintenance contract for solar panels across Space offices
-CTR-0084,Mazagon Dock Shipbuilders,Ministry of Finance,802823.16,2022-01-04,Supply of medical equipment for Finance under annual maintenance contract
-CTR-0085,ECIL Hyderabad,Ministry of Finance,192670.07,2022-08-14,Supply of solar panels for Finance under annual maintenance contract
-CTR-0086,Tata Consulting Services,Ministry of Education,61333040.44,2023-05-06,Miscellaneous procurement of items for departmental offices
-CTR-0087,Mphasis Ltd,Ministry of Finance,10995914.2,2023-10-03,Consultancy services for IT hardware implementation in Finance
-CTR-0088,Reliance Jio Infocomm,Ministry of Health,5101597.04,2023-12-12,Rate contract for supply of communication devices to Health for FY 2024-25
-CTR-0089,Central Electronics Ltd,Ministry of IT,2604031.89,2022-01-15,Consultancy services for security systems implementation in IT
-CTR-0090,ABB India Ltd,Department of Space,1330782.57,2023-06-23,Rate contract for supply of radar systems to Space for FY 2024-25
-CTR-0091,Cochin Shipyard Ltd,Ministry of Health,3283790.07,2022-07-08,Empanelment of vendors for surveillance cameras supply to Health
-CTR-0092,Siemens India,Ministry of Defence,4126143.52,2022-12-03,Consultancy services for power transformers implementation in Defence
-CTR-0093,Power Grid Corp,Department of Atomic Energy,516284.46,2023-11-30,"Design, supply, and installation of water treatment plants for Atomic Energy"
-CTR-0094,Mphasis Ltd,Ministry of Power,12319919.27,2022-08-15,Annual maintenance contract for laboratory equipment across Power offices
-CTR-0095,Siemens India,Ministry of Railways,198700.79,2023-01-12,Procurement of laboratory equipment for government offices in Lucknow
-CTR-0096,HCL Technologies,Ministry of Railways,7699950.57,2023-04-29,Procurement of fire safety systems for government offices in Kolkata
-CTR-0097,ONGC Videsh,Ministry of Agriculture,6884242.27,2023-03-29,Consultancy services for security systems implementation in Agriculture
-CTR-0098,IRCON International,Department of Space,139553.98,2022-11-27,"Design, supply, and installation of satellite communication equipment for Space"
-CTR-0099,Garden Reach Shipbuilders,Ministry of Health,189795.7,2023-12-27,Empanelment of vendors for surveillance cameras supply to Health
-CTR-0100,HCL Technologies,Ministry of Power,100000.0,2022-08-05,Rate contract for supply of air conditioning units to Power for FY 2024-25
-CTR-0101,ONGC Videsh,Ministry of Health,827822.28,2023-03-29,Procurement of communication devices for government offices in Lucknow
-CTR-0102,Cochin Shipyard Ltd,Ministry of Home Affairs,188070.83,2022-08-20,Empanelment of vendors for radar systems supply to Home Affairs
-CTR-0103,BEML Ltd,Ministry of Agriculture,201399.29,2023-09-05,Supply of water treatment plants for Agriculture under annual maintenance contract
-CTR-0104,Ashok Leyland,Ministry of Health,1396496.35,2022-12-30,Consultancy services for electrical substations implementation in Health
-CTR-0105,Engineers India Ltd,Ministry of Education,2234207.6,2022-03-17,Rate contract for supply of office furniture to Education for FY 2024-25
-CTR-0106,Rail Vikas Nigam,Ministry of Education,1704839734.05,2023-09-12,Comprehensive maintenance of security systems systems at Education locations
-CTR-0107,Engineers India Ltd,Ministry of Urban Development,750040815.88,2022-04-08,Empanelment of vendors for communication devices supply to Urban Development
-CTR-0108,Hindustan Aeronautics Ltd,Department of Space,341524.16,2022-11-20,Procurement of surveillance cameras for government offices in Ahmedabad
-CTR-0109,Cummins India,Ministry of Power,69836778.34,2023-05-25,Supply of misc items for general use in department offices
-CTR-0110,BEL Optronic Devices,Ministry of Railways,1241096.43,2023-11-04,Procurement of laboratory equipment for government offices in Chennai
-CTR-0111,Godrej & Boyce,Ministry of Urban Development,1866561.84,2022-08-19,Installation and commissioning of office furniture at Urban Development facilities
-CTR-0112,Hindustan Aeronautics Ltd,Department of Atomic Energy,977353.36,2022-03-31,Comprehensive maintenance of office furniture systems at Atomic Energy locations
-CTR-0113,Tech Mahindra,Ministry of Education,337664.95,2022-04-03,Turnkey project for surveillance cameras modernization at Education
-CTR-0114,Rail Vikas Nigam,Ministry of Finance,5418336.17,2022-03-19,Installation and commissioning of network equipment at Finance facilities
-CTR-0115,BEML Ltd,Ministry of Railways,594685.77,2023-07-20,Consultancy services for air conditioning units implementation in Railways
-CTR-0116,Garden Reach Shipbuilders,Department of Atomic Energy,1677290106.47,2023-10-16,Procurement of bridge components for government offices in Jaipur
-CTR-0117,L&T Infotech,Ministry of Education,128018117.88,2022-12-12,Miscellaneous procurement of items for departmental offices
-CTR-0118,Reliance Jio Infocomm,Department of Space,123961.85,2022-06-20,Consultancy services for office furniture implementation in Space
-CTR-0119,Tech Mahindra,Ministry of Railways,4319499.09,2023-03-19,Procurement of security systems for government offices in Mumbai
-CTR-0120,IRCON International,Ministry of Railways,5192259.93,2023-06-27,"Design, supply, and installation of satellite communication equipment for Railways"
-CTR-0121,Central Electronics Ltd,Ministry of IT,5003437.62,2023-01-21,"Design, supply, and installation of electrical substations for IT"
-CTR-0122,ITI Ltd,Ministry of Urban Development,944179.37,2022-12-27,Consultancy services for electrical substations implementation in Urban Development
-CTR-0123,Cummins India,Ministry of Finance,1390945.02,2023-04-30,Consultancy services for air conditioning units implementation in Finance
-CTR-0124,BEL Optronics Devices,Ministry of Power,433758081.59,2022-04-06,Turnkey project for security systems modernization at Power
-CTR-0125,Ashok Leyland,Ministry of Education,1926799.7,2023-10-21,Rate contract for supply of electrical substations to Education for FY 2024-25
-CTR-0126,Larsen & Toubro,Ministry of Finance,164016.27,2023-08-14,Rate contract for supply of medical equipment to Finance for FY 2024-25
-CTR-0127,ABB India Ltd,Department of Atomic Energy,353728.37,2023-07-19,Supply of railway signalling systems for Atomic Energy under annual maintenance contract
-CTR-0128,Larsen & Toubro,Ministry of Home Affairs,1050910831.82,2022-03-20,Consultancy services for medical equipment implementation in Home Affairs
-CTR-0129,ITI Ltd,Ministry of Education,865006.39,2023-12-27,Turnkey project for IT hardware modernization at Education
-CTR-0130,MECON Ltd,Ministry of Education,117477.82,2023-02-21,Rate contract for supply of security systems to Education for FY 2024-25
-CTR-0131,WAPCOS Ltd,Ministry of Railways,213952.57,2023-09-16,Annual maintenance contract for surveillance cameras across Railways offices
-CTR-0132,Rolta India,Ministry of Defence,151728.47,2023-11-20,Supply of water treatment plants for Defence under annual maintenance contract
-CTR-0133,Schneider Electric India,Ministry of Education,1211863.95,2023-05-12,Annual maintenance contract for IT hardware across Education offices
-CTR-0134,Power Grid Corp,Department of Atomic Energy,496805.0,2023-03-25,Supply of radar systems for Atomic Energy under annual maintenance contract
-CTR-0135,ONGC Videsh,Ministry of Power,308033.52,2023-07-29,Empanelment of vendors for medical equipment supply to Power
-CTR-0136,Tech Mahindra,Ministry of Agriculture,3509558.28,2023-10-01,Turnkey project for IT hardware modernization at Agriculture
-CTR-0137,ITI Ltd,Ministry of Power,3885391.5,2022-05-02,Empanelment of vendors for security systems supply to Power
-CTR-0138,Zensar Technologies,Ministry of Finance,1769708.83,2023-08-30,Comprehensive maintenance of network equipment systems at Finance locations
-CTR-0139,IRCON International,Ministry of Defence,3166267.24,2023-06-10,Turnkey project for water treatment plants modernization at Defence
-CTR-0140,Cochin Shipyard Ltd,Ministry of Defence,332456.29,2023-12-24,Turnkey project for communication devices modernization at Defence
-CTR-0141,Hindustan Aeronautics Ltd,Department of Space,8543780.35,2022-01-13,Comprehensive maintenance of electrical substations systems at Space locations
-CTR-0142,ABB India Ltd,Ministry of Defence,1012760.4,2023-10-16,Annual maintenance contract for road construction materials across Defence offices
-CTR-0143,L&T Infotech,Ministry of Defence,274298989.52,2023-10-14,General supply of sundry materials for office requirements
-CTR-0144,BEL Optronics Devices,Ministry of Health,126336854.47,2022-11-05,Consultancy services for medical equipment implementation in Health
-CTR-0145,Cochin Shipyard Ltd,Ministry of IT,4301193.69,2023-09-18,Consultancy services for solar panels implementation in IT
-CTR-0146,BEL Optronic Devices,Ministry of Finance,18759074.17,2022-05-05,Comprehensive maintenance of IT hardware systems at Finance locations
-CTR-0147,ABB India Ltd,Ministry of Health,3366520.53,2022-03-12,Empanelment of vendors for satellite communication equipment supply to Health
-CTR-0148,Rolta India,Ministry of IT,1168785.45,2022-01-30,Procurement of satellite communication equipment for government offices in New Delhi
-CTR-0149,Bharat Dynamics Ltd,Ministry of Finance,4636173.06,2022-06-15,Annual maintenance contract for road construction materials across Finance offices
-CTR-0150,MECON Ltd,Department of Atomic Energy,26459395.94,2023-08-01,Procurement of laboratory equipment for government offices in Mumbai
-CTR-0151,BEML Ltd,Ministry of Power,531482.69,2022-10-28,Turnkey project for communication devices modernization at Power
-CTR-0152,HCL Technologies,Ministry of Health,29012411.97,2022-02-20,Procurement of railway signalling systems for government offices in Jaipur
-CTR-0153,Godrej & Boyce,Ministry of Finance,832274.69,2023-05-26,Rate contract for supply of laboratory equipment to Finance for FY 2024-25
-CTR-0154,Infossys Ltd,Department of Space,452829906.36,2023-09-26,Consultancy services for air conditioning units implementation in Space
-CTR-0155,Schneider Electric India,Ministry of Defence,1380065.01,2023-03-21,"Design, supply, and installation of office furniture for Defence"
-CTR-0156,Tata Consulting Services,Ministry of Agriculture,2143554.67,2022-06-11,Procurement of surveillance cameras for government offices in Lucknow
-CTR-0157,Cyient Ltd,Ministry of Railways,100000.0,2023-07-01,Annual maintenance contract for radar systems across Railways offices
-CTR-0158,Engineers India Ltd,Ministry of Home Affairs,887985.79,2023-10-10,Empanelment of vendors for bridge components supply to Home Affairs
-CTR-0159,BEL Optronic Devices,Ministry of Home Affairs,3086407.23,2023-10-17,Supply of fire safety systems for Home Affairs under annual maintenance contract
-CTR-0160,Mphasis Ltd,Ministry of Health,1955681.98,2023-04-14,Supply of medical equipment for Health under annual maintenance contract
-CTR-0161,Mphasis Ltd,Ministry of Power,4068515.44,2022-09-15,Supply of road construction materials for Power under annual maintenance contract
-CTR-0162,Mphasis Ltd,Ministry of Home Affairs,419542.6,2023-05-22,Turnkey project for power transformers modernization at Home Affairs
-CTR-0163,Infossys Ltd,Ministry of Finance,178165690.54,2022-01-28,Rate contract for supply of railway signalling systems to Finance for FY 2024-25
-CTR-0164,Cummins India,Ministry of Home Affairs,8174378.38,2022-09-25,"Design, supply, and installation of satellite communication equipment for Home Affairs"
-CTR-0165,Central Electronics Ltd,Ministry of Urban Development,1071261.45,2022-04-27,Rate contract for supply of security systems to Urban Development for FY 2024-25
-CTR-0166,BEL Optronic Devices,Ministry of Power,226766572.06,2023-01-18,General supply of sundry materials for office requirements
-CTR-0167,MECON Ltd,Ministry of Agriculture,860101.62,2023-02-24,Installation and commissioning of network equipment at Agriculture facilities
-CTR-0168,NTPC Limited,Ministry of Defence,674938.31,2022-07-10,Procurement of road construction materials for government offices in Mumbai
-CTR-0169,Zensar Technologies,Ministry of Urban Development,185607.93,2023-05-25,Comprehensive maintenance of radar systems systems at Urban Development locations
-CTR-0170,Zensar Technologies,Ministry of Defence,13837921.53,2022-03-10,Procurement of solar panels for government offices in Chennai
-CTR-0171,NBCC India Ltd,Ministry of Defence,6605072.42,2022-12-02,Comprehensive maintenance of radar systems systems at Defence locations
-CTR-0172,Central Electronics Ltd,Department of Atomic Energy,8174232.15,2023-03-10,Procurement of radar systems for government offices in Lucknow
-CTR-0173,Rail Vikas Nigam,Ministry of IT,3640748.57,2023-04-24,Supply of fire safety systems for IT under annual maintenance contract
-CTR-0174,Hindustan Aeronautics Ltd,Department of Space,19354147.14,2022-06-19,Consultancy services for electrical substations implementation in Space
-CTR-0175,Mazagon Dock Shipbuilders,Department of Atomic Energy,27745408.18,2022-12-14,Installation and commissioning of water treatment plants at Atomic Energy facilities
-CTR-0176,Infossys Ltd,Ministry of IT,786783962.68,2023-05-06,"Design, supply, and installation of radar systems for IT"
-CTR-0177,BEL Optronic Devices,Ministry of Education,1324333.71,2022-01-17,Installation and commissioning of satellite communication equipment at Education facilities
-CTR-0178,NTPC Limited,Ministry of Agriculture,1420307.4,2023-05-28,Installation and commissioning of network equipment at Agriculture facilities
-CTR-0179,Cummins India,Ministry of Agriculture,3528252.92,2023-06-29,Turnkey project for bridge components modernization at Agriculture
-CTR-0180,BEML Ltd,Ministry of Power,150511665.71,2023-12-16,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0181,Thermax Ltd,Ministry of Urban Development,1821254.67,2022-09-07,Rate contract for supply of electrical substations to Urban Development for FY 2024-25
-CTR-0182,Rolta India,Department of Space,1969177.82,2023-03-29,Rate contract for supply of communication devices to Space for FY 2024-25
-CTR-0183,ECIL Hyderabad,Ministry of Urban Development,2831552.67,2023-11-23,Annual maintenance contract for laboratory equipment across Urban Development offices
-CTR-0184,Engineers India Ltd,Ministry of Railways,1775911.18,2022-06-05,Installation and commissioning of satellite communication equipment at Railways facilities
-CTR-0185,HCL Technologies,Ministry of Power,2565030.48,2022-12-27,Procurement of radar systems for government offices in Hyderabad
-CTR-0186,Reliance Jio Infocomm,Ministry of Agriculture,3333044.22,2023-09-22,Supply of road construction materials for Agriculture under annual maintenance contract
-CTR-0187,Wiproo Technologies,Department of Atomic Energy,179239903.4,2023-05-06,Annual maintenance contract for bridge components across Atomic Energy offices
-CTR-0188,Cummins India,Ministry of Agriculture,341265.91,2022-12-06,Procurement of network equipment for government offices in Kolkata
-CTR-0189,Cummins India,Ministry of Health,873120.86,2023-12-28,Annual maintenance contract for railway signalling systems across Health offices
-CTR-0190,Ashok Leyland,Department of Space,445663.87,2022-06-06,Rate contract for supply of IT hardware to Space for FY 2024-25
-CTR-0191,Tech Mahindra,Ministry of Railways,360677672.88,2022-07-22,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0192,Cyient Ltd,Department of Atomic Energy,312505.7,2023-05-11,Annual maintenance contract for IT hardware across Atomic Energy offices
-CTR-0193,Wiproo Technologies,Ministry of Railways,263821376.52,2022-01-07,Turnkey project for medical equipment modernization at Railways
-CTR-0194,NBCC India Ltd,Ministry of Education,100000.0,2022-10-05,Empanelment of vendors for power transformers supply to Education
-CTR-0195,IRCON International,Ministry of Urban Development,203844.4,2023-12-01,Empanelment of vendors for air conditioning units supply to Urban Development
-CTR-0196,Wipro Technologies,Ministry of Health,1290410.43,2022-02-07,Turnkey project for fire safety systems modernization at Health
-CTR-0197,Tata Consulting Services,Ministry of Education,416022.99,2022-05-21,Consultancy services for surveillance cameras implementation in Education
-CTR-0198,L&T Infotech,Ministry of Health,107411136.26,2022-04-20,Supply of misc items for general use in department offices
-CTR-0199,ABB India Ltd,Ministry of Agriculture,5142076.2,2023-04-12,Turnkey project for radar systems modernization at Agriculture
-CTR-0200,Bharat Dynamics Ltd,Ministry of Agriculture,1621057.94,2022-02-12,Rate contract for supply of satellite communication equipment to Agriculture for FY 2024-25
-CTR-0201,IRCON International,Department of Atomic Energy,316705.74,2022-01-30,Comprehensive maintenance of electrical substations systems at Atomic Energy locations
-CTR-0202,NBCC India Ltd,Ministry of Education,2084203.59,2023-12-26,Installation and commissioning of solar panels at Education facilities
-CTR-0203,NTPC Limited,Ministry of Power,208351.73,2022-01-27,Consultancy services for office furniture implementation in Power
-CTR-0204,Hindustan Aeronautics Ltd,Ministry of Finance,294567.2,2023-05-29,Consultancy services for laboratory equipment implementation in Finance
-CTR-0205,Cochin Shipyard Ltd,Department of Atomic Energy,7052874.17,2023-07-05,Annual maintenance contract for bridge components across Atomic Energy offices
-CTR-0206,L&T Infotech,Ministry of Power,1204323364.72,2023-12-30,Installation and commissioning of medical equipment at Power facilities
-CTR-0207,Siemens India,Ministry of Education,939458705.09,2022-10-05,Supply of satellite communication equipment for Education under annual maintenance contract
-CTR-0208,Mphasis Ltd,Ministry of Railways,2533395.94,2022-09-08,Annual maintenance contract for network equipment across Railways offices
-CTR-0209,Power Grid Corp,Ministry of Finance,6832261.64,2022-04-16,Procurement of surveillance cameras for government offices in Kolkata
-CTR-0210,Cummins India,Ministry of Finance,552713.28,2022-12-01,Turnkey project for surveillance cameras modernization at Finance
-CTR-0211,ONGC Videsh,Ministry of Railways,67690462.93,2023-05-29,Supply of miscellaneous items for general departmental use
-CTR-0212,Schneider Electric India,Ministry of IT,1141589.73,2023-09-14,Procurement of railway signalling systems for government offices in Jaipur
-CTR-0213,Schneider Electric India,Ministry of Urban Development,120430.58,2022-10-01,"Design, supply, and installation of solar panels for Urban Development"
-CTR-0214,Thermax Ltd,Ministry of Defence,10641809.74,2023-08-25,Comprehensive maintenance of surveillance cameras systems at Defence locations
-CTR-0215,Mphasis Ltd,Ministry of Railways,140756.67,2022-07-18,"Design, supply, and installation of road construction materials for Railways"
-CTR-0216,BEL Optronic Devices,Ministry of Finance,1917171.25,2022-09-14,Annual maintenance contract for surveillance cameras across Finance offices
-CTR-0217,Central Electronics Ltd,Ministry of Education,1332869.19,2023-04-04,Supply of electrical substations for Education under annual maintenance contract
-CTR-0218,Larsen & Toubro,Ministry of Urban Development,360982.26,2023-12-14,Supply of air conditioning units for Urban Development under annual maintenance contract
-CTR-0219,MECON Ltd,Ministry of Power,141899.98,2023-11-28,Procurement of bridge components for government offices in New Delhi
-CTR-0220,Kirloskar Brothers,Ministry of Education,989332.17,2022-02-12,"Design, supply, and installation of server infrastructure for Education"
-CTR-0221,Cummins India,Ministry of Agriculture,5842697.09,2023-01-09,Installation and commissioning of server infrastructure at Agriculture facilities
-CTR-0222,Thermax Ltd,Ministry of Health,6837230.9,2023-10-13,Rate contract for supply of satellite communication equipment to Health for FY 2024-25
-CTR-0223,Schneider Electric India,Department of Atomic Energy,144573.66,2023-08-21,Turnkey project for satellite communication equipment modernization at Atomic Energy
-CTR-0224,Kirloskar Brothers,Department of Atomic Energy,165984.58,2022-11-21,Rate contract for supply of power transformers to Atomic Energy for FY 2024-25
-CTR-0225,Central Electronics Ltd,Ministry of Home Affairs,1875114.75,2023-09-20,Empanelment of vendors for communication devices supply to Home Affairs
-CTR-0226,Engineers India Ltd,Ministry of Education,20363993.03,2023-05-13,Supply of IT hardware for Education under annual maintenance contract
-CTR-0227,Siemens India,Ministry of Urban Development,100000.0,2022-03-04,Empanelment of vendors for surveillance cameras supply to Urban Development
-CTR-0228,Kirloskar Brothers,Department of Space,779971.02,2022-09-08,Turnkey project for surveillance cameras modernization at Space
-CTR-0229,Rail Vikas Nigam,Ministry of Health,3066905.79,2023-04-03,Supply of water treatment plants for Health under annual maintenance contract
-CTR-0230,Central Electronics Ltd,Ministry of Education,2538280.49,2022-10-23,Procurement of laboratory equipment for government offices in Lucknow
-CTR-0231,Tech Mahindra,Department of Atomic Energy,1645073.12,2022-03-11,Supply of server infrastructure for Atomic Energy under annual maintenance contract
-CTR-0232,Rail Vikas Nigam,Department of Atomic Energy,32142298.75,2022-11-27,Annual maintenance contract for satellite communication equipment across Atomic Energy offices
-CTR-0233,Bharat Dynamics Ltd,Ministry of Health,385116.44,2023-08-10,Procurement of solar panels for government offices in New Delhi
-CTR-0234,Bharat Electronics Ltd,Department of Space,2006149.88,2022-10-26,Empanelment of vendors for medical equipment supply to Space
-CTR-0235,Hindustan Aeronautics Ltd,Ministry of Urban Development,3754455.52,2023-11-18,Empanelment of vendors for water treatment plants supply to Urban Development
-CTR-0236,ONGC Videsh,Ministry of Education,1559337.16,2023-04-16,Consultancy services for water treatment plants implementation in Education
-CTR-0237,Central Electronics Ltd,Ministry of IT,1012461.79,2022-12-29,Turnkey project for office furniture modernization at IT
-CTR-0238,WAPCOS Ltd,Ministry of Finance,4074523.86,2023-02-04,Rate contract for supply of bridge components to Finance for FY 2024-25
-CTR-0239,Tech Mahindra,Department of Space,11037852.58,2022-11-18,Procurement of communication devices for government offices in Jaipur
-CTR-0240,Bharat Dynamics Ltd,Department of Space,241267.43,2022-02-07,Installation and commissioning of medical equipment at Space facilities
-CTR-0241,Mahindra Defence Systems,Ministry of Railways,100000.0,2022-10-13,Rate contract for supply of road construction materials to Railways for FY 2024-25
-CTR-0242,Thermax Ltd,Ministry of Power,199923.5,2022-12-18,Annual maintenance contract for radar systems across Power offices
-CTR-0243,Cummins India,Ministry of Urban Development,246085.33,2023-06-14,Rate contract for supply of laboratory equipment to Urban Development for FY 2024-25
-CTR-0244,MECON Ltd,Ministry of Health,556376.01,2022-09-19,Annual maintenance contract for air conditioning units across Health offices
-CTR-0245,Mazagon Dock Shipbuilders,Ministry of Defence,258698.49,2023-09-25,Rate contract for supply of communication devices to Defence for FY 2024-25
-CTR-0246,ABB India Ltd,Ministry of Power,2515239.93,2022-08-19,Consultancy services for bridge components implementation in Power
-CTR-0247,WAPCOS Ltd,Ministry of Defence,20690588.11,2023-02-28,Supply of bridge components for Defence under annual maintenance contract
-CTR-0248,Mazagon Dock Shipbuilders,Department of Space,391315.8,2023-12-08,Procurement of road construction materials for government offices in Hyderabad
-CTR-0249,Cummins India,Ministry of Agriculture,1951439.46,2022-06-11,Rate contract for supply of security systems to Agriculture for FY 2024-25
-CTR-0250,Kirloskar Brothers,Ministry of Education,495163.32,2022-02-18,Annual maintenance contract for surveillance cameras across Education offices
-CTR-0251,Rolta India,Ministry of Urban Development,3112318.59,2023-11-02,Empanelment of vendors for office furniture supply to Urban Development
-CTR-0252,IRCON International,Ministry of IT,92295012.68,2022-05-16,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0253,Kirloskar Brothers,Ministry of Education,2788952.93,2022-08-13,Annual maintenance contract for radar systems across Education offices
-CTR-0254,ITI Ltd,Department of Space,1658029.85,2022-06-29,Procurement of railway signalling systems for government offices in Bangalore
-CTR-0255,Zensar Technologies,Department of Space,589825.51,2023-09-16,Consultancy services for bridge components implementation in Space
-CTR-0256,Wipro Technologies,Department of Space,2936519.33,2023-01-01,Supply of power transformers for Space under annual maintenance contract
-CTR-0257,Central Electronics Ltd,Department of Space,2013585.32,2022-07-14,Consultancy services for electrical substations implementation in Space
-CTR-0258,Godrej & Boyce,Ministry of IT,371431.62,2023-12-08,Installation and commissioning of office furniture at IT facilities
-CTR-0259,Cummins India,Ministry of Home Affairs,2631099.42,2023-09-17,Procurement of radar systems for government offices in New Delhi
-CTR-0260,NBCC India Ltd,Ministry of Finance,1703294.55,2023-08-12,Procurement of fire safety systems for government offices in Pune
-CTR-0261,Kirloskar Brothers,Department of Space,2233703.19,2022-02-07,Rate contract for supply of air conditioning units to Space for FY 2024-25
-CTR-0262,L&T Infotech,Ministry of Health,3092354.28,2023-06-10,Installation and commissioning of IT hardware at Health facilities
-CTR-0263,HCL Technologies,Ministry of Power,1586357.06,2022-03-08,Turnkey project for electrical substations modernization at Power
-CTR-0264,Ashok Leyland,Ministry of Health,32110845.59,2022-11-03,Comprehensive maintenance of air conditioning units systems at Health locations
-CTR-0265,L&T Infotech,Department of Atomic Energy,487692.36,2023-06-30,Installation and commissioning of electrical substations at Atomic Energy facilities
-CTR-0266,Mahindra Defence Systems,Department of Space,245531.3,2023-01-15,Procurement of security systems for government offices in Ahmedabad
-CTR-0267,Thermax Ltd,Ministry of Finance,976940523.33,2022-07-03,"Design, supply, and installation of satellite communication equipment for Finance"
-CTR-0268,BEML Ltd,Ministry of Defence,5883349.09,2022-02-02,Consultancy services for security systems implementation in Defence
-CTR-0269,Tech Mahindra,Ministry of Defence,3365466.65,2023-12-19,Procurement of fire safety systems for government offices in Kolkata
-CTR-0270,Hindustan Aeronautics Ltd,Ministry of Defence,110013.52,2023-02-21,Rate contract for supply of bridge components to Defence for FY 2024-25
-CTR-0271,Mahindra Defence Systems,Ministry of Finance,71146646.59,2023-04-12,"Design, supply, and installation of bridge components for Finance"
-CTR-0272,Bharat Dynamics Ltd,Ministry of IT,1562607.91,2023-04-24,Installation and commissioning of air conditioning units at IT facilities
-CTR-0273,Rail Vikas Nigam,Department of Space,307404.21,2023-06-03,"Design, supply, and installation of laboratory equipment for Space"
-CTR-0274,Wipro Technologies,Department of Space,267321.13,2023-10-29,Annual maintenance contract for satellite communication equipment across Space offices
-CTR-0275,HCL Technologies,Ministry of IT,169956.15,2022-11-23,Turnkey project for air conditioning units modernization at IT
-CTR-0276,Tech Mahindra,Ministry of Agriculture,130903.67,2022-02-21,Empanelment of vendors for bridge components supply to Agriculture
-CTR-0277,ECIL Hyderabad,Department of Atomic Energy,1052122.32,2023-07-24,Rate contract for supply of railway signalling systems to Atomic Energy for FY 2024-25
-CTR-0278,Cochin Shipyard Ltd,Ministry of Home Affairs,489388.06,2023-09-04,Rate contract for supply of surveillance cameras to Home Affairs for FY 2024-25
-CTR-0279,ITI Ltd,Ministry of Home Affairs,3061069.43,2022-10-19,Rate contract for supply of office furniture to Home Affairs for FY 2024-25
-CTR-0280,Kirloskar Brothers,Ministry of Agriculture,1165484.7,2023-04-05,Comprehensive maintenance of medical equipment systems at Agriculture locations
-CTR-0281,RITES Ltd,Ministry of Railways,1021578.74,2022-09-11,Installation and commissioning of IT hardware at Railways facilities
-CTR-0282,L&T Infotech,Ministry of Power,272173.64,2023-04-21,Comprehensive maintenance of water treatment plants systems at Power locations
-CTR-0283,Power Grid Corp,Ministry of Agriculture,506178.43,2023-07-14,"Design, supply, and installation of bridge components for Agriculture"
-CTR-0284,Engineers India Ltd,Ministry of Home Affairs,843042.03,2022-02-03,"Design, supply, and installation of fire safety systems for Home Affairs"
-CTR-0285,Ashok Leyland,Ministry of IT,1155714.34,2023-03-08,Consultancy services for air conditioning units implementation in IT
-CTR-0286,L&T Infotech,Ministry of Finance,674704.17,2022-09-11,Rate contract for supply of railway signalling systems to Finance for FY 2024-25
-CTR-0287,Schneider Electric India,Ministry of Health,6159005.61,2022-05-15,Supply of office furniture for Health under annual maintenance contract
-CTR-0288,HCL Technologies,Ministry of Railways,857122.0,2023-11-28,Turnkey project for medical equipment modernization at Railways
-CTR-0289,ITI Ltd,Department of Space,488783.38,2023-09-12,Rate contract for supply of power transformers to Space for FY 2024-25
-CTR-0290,Cochin Shipyard Ltd,Department of Atomic Energy,2007968.28,2023-05-29,Comprehensive maintenance of power transformers systems at Atomic Energy locations
-CTR-0291,WAPCOS Ltd,Ministry of Health,1335348.85,2022-04-16,"Design, supply, and installation of server infrastructure for Health"
-CTR-0292,Godrej & Boyce,Ministry of Education,741853.99,2023-08-27,Empanelment of vendors for electrical substations supply to Education
-CTR-0293,Mazagon Dock Shipbuilders,Ministry of IT,1247641.17,2022-02-22,Comprehensive maintenance of server infrastructure systems at IT locations
-CTR-0294,Tata Consulting Services,Ministry of Agriculture,756290.95,2022-04-13,Procurement of radar systems for government offices in Jaipur
-CTR-0295,Rail Vikas Nigam,Ministry of Finance,409353.21,2023-06-15,Installation and commissioning of server infrastructure at Finance facilities
-CTR-0296,Garden Reach Shipbuilders,Ministry of Power,3246850.51,2022-12-13,Comprehensive maintenance of air conditioning units systems at Power locations
-CTR-0297,Engineers India Ltd,Ministry of Defence,1683084.57,2023-06-02,Rate contract for supply of security systems to Defence for FY 2024-25
-CTR-0298,Cochin Shipyard Ltd,Department of Space,2732277.51,2022-03-06,Procurement of radar systems for government offices in Ahmedabad
-CTR-0299,ABB India Ltd,Ministry of Education,1225535.69,2022-02-19,Supply of satellite communication equipment for Education under annual maintenance contract
-CTR-0300,Tata Consulting Services,Ministry of Power,4747378.73,2023-03-17,Comprehensive maintenance of surveillance cameras systems at Power locations
-CTR-0301,Hindustan Aeronautics Ltd,Department of Space,100000.0,2022-07-02,Empanelment of vendors for laboratory equipment supply to Space
-CTR-0302,Schneider Electric India,Ministry of Power,742606.25,2023-09-19,Consultancy services for water treatment plants implementation in Power
-CTR-0303,NBCC India Ltd,Department of Space,1890441.61,2022-08-12,Rate contract for supply of office furniture to Space for FY 2024-25
-CTR-0304,Hindustan Aeronautics Ltd,Ministry of Power,1691607.64,2023-07-21,Consultancy services for server infrastructure implementation in Power
-CTR-0305,Ashok Leyland,Ministry of Urban Development,263222.07,2022-08-05,Comprehensive maintenance of IT hardware systems at Urban Development locations
-CTR-0306,Larsen & Toubro,Department of Space,1877547.59,2023-11-08,Procurement of power transformers for government offices in Hyderabad
-CTR-0307,L&T Infotech,Ministry of Agriculture,1316313.15,2022-02-23,"Design, supply, and installation of network equipment for Agriculture"
-CTR-0308,Siemens India,Department of Space,517398.53,2022-08-23,Supply of communication devices for Space under annual maintenance contract
-CTR-0309,Godrej & Boyce,Ministry of Education,472574.52,2022-03-21,Consultancy services for medical equipment implementation in Education
-CTR-0310,Reliance Jio Infocomm,Ministry of Education,1011077.93,2023-07-04,Rate contract for supply of power transformers to Education for FY 2024-25
-CTR-0311,Wipro Technologies,Ministry of Home Affairs,435503.2,2023-01-15,"Design, supply, and installation of medical equipment for Home Affairs"
-CTR-0312,Tech Mahindra,Ministry of Education,1347426.23,2023-01-28,Comprehensive maintenance of laboratory equipment systems at Education locations
-CTR-0313,Schneider Electric India,Ministry of Defence,238800.28,2023-06-23,Procurement of medical equipment for government offices in Pune
-CTR-0314,Tech Mahindra,Department of Space,1889221360.74,2023-02-27,Installation and commissioning of server infrastructure at Space facilities
-CTR-0315,Cummins India,Department of Atomic Energy,4764927.69,2023-09-03,Procurement of communication devices for government offices in Jaipur
-CTR-0316,BEML Ltd,Ministry of Railways,389002853.09,2023-11-20,Consultancy services for water treatment plants implementation in Railways
-CTR-0317,Thermax Ltd,Ministry of Agriculture,5658661.23,2023-09-14,Rate contract for supply of fire safety systems to Agriculture for FY 2024-25
-CTR-0318,Kirloskar Brothers,Ministry of IT,2340158.32,2023-05-25,Turnkey project for office furniture modernization at IT
-CTR-0319,L&T Infotech,Department of Space,2906545.47,2023-01-06,Supply of fire safety systems for Space under annual maintenance contract
-CTR-0320,Bharat Electronics Ltd,Ministry of Education,1736617.57,2023-05-21,Supply of medical equipment for Education under annual maintenance contract
-CTR-0321,Thermax Ltd,Ministry of Agriculture,845868.59,2022-08-29,Consultancy services for security systems implementation in Agriculture
-CTR-0322,Rail Vikas Nigam,Ministry of Health,456945.94,2023-01-09,Supply of server infrastructure for Health under annual maintenance contract
-CTR-0323,Tata Consulting Services,Ministry of Health,16990779.29,2023-11-05,Turnkey project for medical equipment modernization at Health
-CTR-0324,Cochin Shipyard Ltd,Ministry of Education,846419.13,2022-10-12,Supply of water treatment plants for Education under annual maintenance contract
-CTR-0325,WAPCOS Ltd,Ministry of Home Affairs,2479849.98,2023-03-27,Procurement of communication devices for government offices in Mumbai
-CTR-0326,ONGC Videsh,Ministry of IT,2112847.3,2023-06-28,Supply of railway signalling systems for IT under annual maintenance contract
-CTR-0327,BEML Ltd,Ministry of IT,755095.77,2023-12-14,Rate contract for supply of railway signalling systems to IT for FY 2024-25
-CTR-0328,Cyient Ltd,Ministry of Defence,1212100.73,2022-08-26,Empanelment of vendors for security systems supply to Defence
-CTR-0329,ITI Ltd,Ministry of Defence,3916178.66,2023-06-16,Rate contract for supply of railway signalling systems to Defence for FY 2024-25
-CTR-0330,BEL Optronic Devices,Department of Atomic Energy,350343.51,2023-07-10,Consultancy services for security systems implementation in Atomic Energy
-CTR-0331,Cochin Shipyard Ltd,Ministry of Home Affairs,12079916.64,2022-06-16,Installation and commissioning of medical equipment at Home Affairs facilities
-CTR-0332,Bharat Dynamics Ltd,Ministry of Agriculture,165928.97,2023-08-26,Turnkey project for water treatment plants modernization at Agriculture
-CTR-0333,Infosys Ltd,Ministry of Urban Development,282833.82,2022-08-12,Comprehensive maintenance of IT hardware systems at Urban Development locations
-CTR-0334,Power Grid Corp,Ministry of Home Affairs,566574.83,2023-02-20,Empanelment of vendors for satellite communication equipment supply to Home Affairs
-CTR-0335,ONGC Videsh,Ministry of IT,29489654.41,2023-11-11,Installation and commissioning of security systems at IT facilities
-CTR-0336,NTPC Limited,Ministry of Agriculture,658796.06,2023-05-26,Consultancy services for road construction materials implementation in Agriculture
-CTR-0337,ONGC Videsh,Ministry of Education,300543301.86,2023-07-05,Miscellaneous procurement of items for departmental offices
-CTR-0338,Kirloskar Brothers,Ministry of Railways,2405227.88,2023-09-01,Empanelment of vendors for security systems supply to Railways
-CTR-0339,L&T Infotech,Department of Atomic Energy,194603.04,2023-03-17,Comprehensive maintenance of fire safety systems systems at Atomic Energy locations
-CTR-0340,Tech Mahindra,Ministry of Health,2207723.75,2023-06-28,Annual maintenance contract for network equipment across Health offices
-CTR-0341,NBCC India Ltd,Department of Atomic Energy,20060359.44,2023-06-16,Annual maintenance contract for server infrastructure across Atomic Energy offices
-CTR-0342,Cochin Shipyard Ltd,Ministry of Home Affairs,377287.27,2023-11-02,Procurement of medical equipment for government offices in Pune
-CTR-0343,IRCON International,Ministry of IT,319404.58,2023-10-17,Turnkey project for satellite communication equipment modernization at IT
-CTR-0344,HCL Technologies,Ministry of Health,89114129.64,2023-07-24,General supply of sundry materials for office requirements
-CTR-0345,BEL Optronic Devices,Ministry of Education,2068001.85,2022-12-29,Empanelment of vendors for solar panels supply to Education
-CTR-0346,WAPCOS Ltd,Ministry of Urban Development,380400.02,2022-02-16,Supply of road construction materials for Urban Development under annual maintenance contract
-CTR-0347,Cummins India,Ministry of Agriculture,749450.94,2022-08-29,Empanelment of vendors for office furniture supply to Agriculture
-CTR-0348,Mahindra Defence Systems,Ministry of Finance,30394544.29,2022-07-23,Comprehensive maintenance of laboratory equipment systems at Finance locations
-CTR-0349,Central Electronics Ltd,Ministry of Railways,113268050.51,2022-11-29,Supply of misc items for general use in department offices
-CTR-0350,ITI Ltd,Ministry of Education,1304784179.2,2022-09-25,Empanelment of vendors for medical equipment supply to Education
-CTR-0351,Wipro Technologies,Ministry of Defence,197373808.48,2023-05-30,Supply of misc items for general use in department offices
-CTR-0352,ABB India Ltd,Ministry of Health,735647.82,2023-03-12,Annual maintenance contract for network equipment across Health offices
-CTR-0353,Bharat Electronics Ltd,Ministry of Education,409734679.51,2022-06-24,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0354,Rolta India,Department of Atomic Energy,19749954.92,2023-03-26,Procurement of satellite communication equipment for government offices in Hyderabad
-CTR-0355,Tata Consulting Services,Ministry of Urban Development,9861920.32,2023-03-20,"Design, supply, and installation of electrical substations for Urban Development"
-CTR-0356,BEML Ltd,Department of Atomic Energy,586095.86,2023-11-01,Empanelment of vendors for surveillance cameras supply to Atomic Energy
-CTR-0357,Hindustan Aeronautics Ltd,Department of Atomic Energy,4450295.05,2023-06-16,Rate contract for supply of communication devices to Atomic Energy for FY 2024-25
-CTR-0358,BEML Ltd,Ministry of Defence,2068747.76,2023-07-20,Installation and commissioning of laboratory equipment at Defence facilities
-CTR-0359,ABB India Ltd,Ministry of Health,3386190.12,2022-11-17,Annual maintenance contract for communication devices across Health offices
-CTR-0360,Bharatt Electronics Ltd,Ministry of Agriculture,705183968.08,2023-10-20,Supply of railway signalling systems for Agriculture under annual maintenance contract
-CTR-0361,Bharat Dynamics Ltd,Ministry of Railways,3689274.59,2022-01-29,"Design, supply, and installation of laboratory equipment for Railways"
-CTR-0362,Engineers India Ltd,Ministry of Health,612253.56,2022-01-10,Consultancy services for surveillance cameras implementation in Health
-CTR-0363,Wipro Technologies,Ministry of Education,433636.94,2023-12-21,Rate contract for supply of surveillance cameras to Education for FY 2024-25
-CTR-0364,Garden Reach Shipbuilders,Ministry of Finance,11984304.21,2022-11-23,Annual maintenance contract for bridge components across Finance offices
-CTR-0365,Hindustan Aeronautics Ltd,Ministry of Home Affairs,593292.34,2022-11-13,Turnkey project for security systems modernization at Home Affairs
-CTR-0366,Larsen & Toubro,Ministry of Finance,543268.9,2023-11-06,Procurement of electrical substations for government offices in Bangalore
-CTR-0367,ECIL Hyderabad,Department of Atomic Energy,3344840.13,2022-02-15,"Design, supply, and installation of communication devices for Atomic Energy"
-CTR-0368,ECIL Hyderabad,Ministry of Agriculture,546542.56,2023-10-07,Comprehensive maintenance of railway signalling systems systems at Agriculture locations
-CTR-0369,Godrej & Boyce,Department of Atomic Energy,3074033.26,2023-01-28,Annual maintenance contract for solar panels across Atomic Energy offices
-CTR-0370,RITES Ltd,Ministry of Defence,293660.71,2023-03-03,Empanelment of vendors for bridge components supply to Defence
-CTR-0371,Bharat Electronics Ltd,Ministry of Education,213387033.38,2022-04-16,Supply of misc items for general use in department offices
-CTR-0372,Rail Vikas Nigam,Ministry of Railways,346801.37,2022-12-24,Supply of solar panels for Railways under annual maintenance contract
-CTR-0373,Wiproo Technologies,Ministry of Education,208586005.25,2023-11-25,Empanelment of vendors for satellite communication equipment supply to Education
-CTR-0374,L&T Infotech,Ministry of Finance,4147948.88,2023-06-23,Empanelment of vendors for laboratory equipment supply to Finance
-CTR-0375,Reliance Jio Infocomm,Ministry of Education,1312327.82,2023-01-03,Comprehensive maintenance of air conditioning units systems at Education locations
-CTR-0376,Tata Consulting Services,Ministry of Railways,1434018.32,2022-08-09,Installation and commissioning of network equipment at Railways facilities
-CTR-0377,L&T Infotech,Ministry of Education,278724.05,2022-01-22,Consultancy services for satellite communication equipment implementation in Education
-CTR-0378,Rail Vikas Nigam,Ministry of Finance,3497022.03,2023-02-15,Procurement of communication devices for government offices in Mumbai
-CTR-0379,Power Grid Corp,Department of Space,10447883.02,2023-08-01,Comprehensive maintenance of electrical substations systems at Space locations
-CTR-0380,Bharat Dynamics Ltd,Ministry of Urban Development,181438.87,2022-06-11,"Design, supply, and installation of water treatment plants for Urban Development"
-CTR-0381,Garden Reach Shipbuilders,Ministry of Finance,562184.43,2023-04-24,Empanelment of vendors for satellite communication equipment supply to Finance
-CTR-0382,MECON Ltd,Ministry of IT,302810.86,2022-12-05,"Design, supply, and installation of fire safety systems for IT"
-CTR-0383,Siemens India,Ministry of Education,11450404.08,2022-06-08,Consultancy services for water treatment plants implementation in Education
-CTR-0384,Bharat Dynamics Ltd,Ministry of Home Affairs,29976255.23,2023-04-10,Empanelment of vendors for road construction materials supply to Home Affairs
-CTR-0385,Mahindra Defence Systems,Ministry of IT,143910.07,2022-05-22,Installation and commissioning of bridge components at IT facilities
-CTR-0386,L&T Infotech,Ministry of IT,4127119.4,2022-04-29,Turnkey project for IT hardware modernization at IT
-CTR-0387,Mphasis Ltd,Department of Atomic Energy,1078149.42,2022-02-06,Comprehensive maintenance of electrical substations systems at Atomic Energy locations
-CTR-0388,Power Grid Corp,Ministry of Health,222578.89,2022-09-12,Supply of electrical substations for Health under annual maintenance contract
-CTR-0389,Cummins India,Ministry of Agriculture,275884.35,2022-02-28,"Design, supply, and installation of water treatment plants for Agriculture"
-CTR-0390,Rolta India,Ministry of Railways,435659.82,2022-05-03,Comprehensive maintenance of solar panels systems at Railways locations
-CTR-0391,Godrej & Boyce,Ministry of IT,425336.38,2023-04-18,Consultancy services for satellite communication equipment implementation in IT
-CTR-0392,MECON Ltd,Ministry of Home Affairs,1178501.37,2023-07-07,Annual maintenance contract for fire safety systems across Home Affairs offices
-CTR-0393,Thermax Ltd,Ministry of Health,9164139.65,2023-08-24,Annual maintenance contract for office furniture across Health offices
-CTR-0394,Bharatt Electronics Ltd,Ministry of Urban Development,348391699.28,2023-01-09,Procurement of IT hardware for government offices in Pune
-CTR-0395,Kirloskar Brothers,Ministry of Agriculture,107880.04,2022-12-15,Installation and commissioning of electrical substations at Agriculture facilities
-CTR-0396,Tata Consulitng Services,Ministry of Power,550668303.89,2023-09-10,Supply of air conditioning units for Power under annual maintenance contract
-CTR-0397,Infosys Ltd,Ministry of Railways,1075537.53,2023-04-18,Installation and commissioning of fire safety systems at Railways facilities
-CTR-0398,ONGC Videsh,Ministry of IT,2620877.57,2023-02-13,Installation and commissioning of communication devices at IT facilities
-CTR-0399,Rail Vikas Nigam,Ministry of Defence,3177269.72,2022-08-12,Annual maintenance contract for network equipment across Defence offices
-CTR-0400,Kirloskar Brothers,Department of Atomic Energy,216543.03,2023-11-06,Turnkey project for surveillance cameras modernization at Atomic Energy
-CTR-0401,Garden Reach Shipbuilders,Ministry of Finance,1359749.72,2023-02-12,Consultancy services for laboratory equipment implementation in Finance
-CTR-0402,Reliance Jio Infocomm,Department of Atomic Energy,3004300.73,2022-05-21,Supply of communication devices for Atomic Energy under annual maintenance contract
-CTR-0403,MECON Ltd,Ministry of Power,402097.57,2022-03-04,Rate contract for supply of water treatment plants to Power for FY 2024-25
-CTR-0404,Siemens India,Ministry of Urban Development,639877.49,2022-03-07,Turnkey project for medical equipment modernization at Urban Development
-CTR-0405,Wipro Technologies,Department of Space,8522482.34,2022-09-17,Supply of air conditioning units for Space under annual maintenance contract
-CTR-0406,ONGC Videsh,Ministry of Home Affairs,1583286.03,2022-12-02,Comprehensive maintenance of road construction materials systems at Home Affairs locations
-CTR-0407,NTPC Limited,Ministry of Agriculture,100000.0,2023-10-18,Empanelment of vendors for air conditioning units supply to Agriculture
-CTR-0408,Zensar Technologies,Ministry of Power,6104744.81,2023-10-05,Supply of medical equipment for Power under annual maintenance contract
-CTR-0409,Cyient Ltd,Department of Space,100000.0,2022-02-21,"Design, supply, and installation of radar systems for Space"
-CTR-0410,Power Grid Corp,Ministry of Agriculture,348625.73,2023-07-30,Procurement of road construction materials for government offices in Pune
-CTR-0411,Ashok Leyland,Department of Space,3943164.14,2023-04-02,Comprehensive maintenance of surveillance cameras systems at Space locations
-CTR-0412,ABB India Ltd,Ministry of Railways,133883.81,2023-04-21,Empanelment of vendors for water treatment plants supply to Railways
-CTR-0413,Power Grid Corp,Department of Atomic Energy,667862.62,2022-02-21,Empanelment of vendors for road construction materials supply to Atomic Energy
-CTR-0414,Cyient Ltd,Ministry of IT,352451.74,2023-01-12,Turnkey project for IT hardware modernization at IT
-CTR-0415,RITES Ltd,Ministry of Railways,2599108.15,2023-11-24,Turnkey project for medical equipment modernization at Railways
-CTR-0416,RITES Ltd,Department of Space,1440417.34,2022-01-15,"Design, supply, and installation of IT hardware for Space"
-CTR-0417,ITI Ltd,Department of Space,6677366.44,2022-07-23,Procurement of air conditioning units for government offices in Pune
-CTR-0418,Larsen & Toubro,Ministry of Urban Development,100000.0,2023-02-28,"Design, supply, and installation of water treatment plants for Urban Development"
-CTR-0419,Larsen & Toubro,Ministry of Agriculture,580679.75,2023-01-07,Procurement of water treatment plants for government offices in Chennai
-CTR-0420,Cummins India,Ministry of Finance,957731.13,2022-05-11,Empanelment of vendors for air conditioning units supply to Finance
-CTR-0421,L&T Infotech,Ministry of Health,100417505.98,2023-10-14,Miscellaneous procurement of items for departmental offices
-CTR-0422,Tata Consulting Services,Ministry of Finance,2054758.45,2023-01-08,Turnkey project for bridge components modernization at Finance
-CTR-0423,HCL Technologies,Department of Space,12981362.39,2022-12-04,Procurement of communication devices for government offices in Mumbai
-CTR-0424,Kirloskar Brothers,Ministry of Finance,2597087.41,2022-04-06,Annual maintenance contract for radar systems across Finance offices
-CTR-0425,Garden Reach Shipbuilders,Ministry of Railways,823359.15,2022-09-07,Turnkey project for fire safety systems modernization at Railways
-CTR-0426,Cyient Ltd,Ministry of Power,2900186.61,2023-05-11,Rate contract for supply of radar systems to Power for FY 2024-25
-CTR-0427,Mahindra Defence Systems,Ministry of Finance,357736.72,2023-05-17,Comprehensive maintenance of road construction materials systems at Finance locations
-CTR-0428,Kirloskar Brothers,Ministry of Finance,357631.93,2023-03-07,Turnkey project for medical equipment modernization at Finance
-CTR-0429,Kirloskar Brothers,Ministry of Home Affairs,2601654.77,2023-09-18,Turnkey project for power transformers modernization at Home Affairs
-CTR-0430,ABB India Ltd,Ministry of Power,279519036.85,2023-01-22,General supply of sundry materials for office requirements
-CTR-0431,Schneider Electric India,Ministry of Education,4861804.28,2022-09-29,Turnkey project for communication devices modernization at Education
-CTR-0432,Tech Mahindra,Ministry of Defence,350889448.97,2023-02-26,Procurement of sundry materials for miscellaneous departmental needs
-CTR-0433,BEL Optronics Devices,Ministry of Education,116526900.32,2022-10-17,Turnkey project for bridge components modernization at Education
-CTR-0434,Reliance Jio Infocomm,Ministry of Urban Development,598035.48,2023-10-13,"Design, supply, and installation of IT hardware for Urban Development"
-CTR-0435,BEML Ltd,Ministry of Education,1976612.63,2022-05-16,"Design, supply, and installation of road construction materials for Education"
-CTR-0436,Reliance Jio Infocomm,Ministry of Defence,2196921.42,2023-09-23,Turnkey project for surveillance cameras modernization at Defence
-CTR-0437,ABB India Ltd,Ministry of Defence,1979729.98,2022-11-11,Installation and commissioning of office furniture at Defence facilities
-CTR-0438,ABB India Ltd,Department of Space,861861247.98,2023-10-25,Comprehensive maintenance of laboratory equipment systems at Space locations
-CTR-0439,Tech Mahindra,Department of Space,1703815.23,2023-10-03,Comprehensive maintenance of solar panels systems at Space locations
-CTR-0440,Bharat Electronics Ltd,Ministry of Education,4130121.44,2022-12-13,Supply of solar panels for Education under annual maintenance contract
-CTR-0441,L&T Infotech,Ministry of Agriculture,351152.73,2022-12-08,"Design, supply, and installation of laboratory equipment for Agriculture"
-CTR-0442,Mazagon Dock Shipbuilders,Ministry of Urban Development,1663921.77,2023-12-31,Rate contract for supply of office furniture to Urban Development for FY 2024-25
-CTR-0443,ITI Ltd,Ministry of Urban Development,1169667.75,2023-05-25,Empanelment of vendors for radar systems supply to Urban Development
-CTR-0444,Tata Consulting Services,Ministry of Railways,377182.84,2022-09-28,"Design, supply, and installation of fire safety systems for Railways"
-CTR-0445,Rolta India,Ministry of Defence,592497.66,2022-05-14,Empanelment of vendors for IT hardware supply to Defence
-CTR-0446,Larsen & Toubro,Ministry of Defence,100000.0,2022-03-04,"Design, supply, and installation of satellite communication equipment for Defence"
-CTR-0447,ITI Ltd,Ministry of Finance,4406682.92,2023-11-04,Rate contract for supply of power transformers to Finance for FY 2024-25
-CTR-0448,L&T Infotech,Ministry of Railways,213921437.47,2023-01-17,General supply of sundry materials for office requirements
-CTR-0449,BEML Ltd,Ministry of Finance,1118660943.91,2022-01-18,Empanelment of vendors for fire safety systems supply to Finance
-CTR-0450,Mahindra Defence Systems,Ministry of Education,13916934.36,2022-03-20,Empanelment of vendors for communication devices supply to Education
-CTR-0451,Bharat Dynamics Ltd,Ministry of Urban Development,2204643.3,2023-09-10,Annual maintenance contract for bridge components across Urban Development offices
-CTR-0452,NBCC India Ltd,Department of Space,489401.0,2022-11-25,Consultancy services for power transformers implementation in Space
-CTR-0453,Hindustan Aeronautics Ltd,Ministry of Power,452525.54,2023-07-16,"Design, supply, and installation of radar systems for Power"
-CTR-0454,Central Electronics Ltd,Ministry of Health,4158956.97,2023-09-06,Empanelment of vendors for air conditioning units supply to Health
-CTR-0455,Rail Vikas Nigam,Department of Atomic Energy,3219801.96,2022-09-14,Supply of communication devices for Atomic Energy under annual maintenance contract
-CTR-0456,Engineers India Ltd,Ministry of Health,808563.71,2023-05-11,"Design, supply, and installation of water treatment plants for Health"
-CTR-0457,Cochin Shipyard Ltd,Ministry of Defence,1139683.26,2023-02-26,Annual maintenance contract for railway signalling systems across Defence offices
-CTR-0458,Zensar Technologies,Ministry of Railways,5070278.17,2023-02-08,"Design, supply, and installation of medical equipment for Railways"
-CTR-0459,RITES Ltd,Ministry of Home Affairs,9369284.93,2023-04-19,Consultancy services for server infrastructure implementation in Home Affairs
-CTR-0460,Tech Mahindra,Ministry of Education,5195574.12,2022-06-11,Rate contract for supply of laboratory equipment to Education for FY 2024-25
-CTR-0461,Hindustan Aeronautics Ltd,Ministry of Urban Development,765545.9,2023-04-19,Annual maintenance contract for railway signalling systems across Urban Development offices
-CTR-0462,Siemens India,Department of Space,5030362.69,2023-12-19,Consultancy services for security systems implementation in Space
-CTR-0463,Tata Consulting Services,Ministry of Urban Development,2022150.92,2023-04-27,Consultancy services for water treatment plants implementation in Urban Development
-CTR-0464,ABB India Ltd,Ministry of Home Affairs,3010192.03,2023-09-27,Procurement of radar systems for government offices in New Delhi
-CTR-0465,Infosys Ltd,Ministry of Health,451353.51,2022-12-14,"Design, supply, and installation of IT hardware for Health"
-CTR-0466,NTPC Limited,Ministry of IT,1728809.2,2023-11-18,Consultancy services for laboratory equipment implementation in IT
-CTR-0467,Hindustan Aeronautics Ltd,Ministry of Railways,1226288.69,2022-12-15,Empanelment of vendors for IT hardware supply to Railways
-CTR-0468,Mahindra Defence Systems,Ministry of Defence,767956.96,2022-07-02,Comprehensive maintenance of office furniture systems at Defence locations
-CTR-0469,Cummins India,Ministry of Defence,8043434.48,2023-09-06,Supply of solar panels for Defence under annual maintenance contract
-CTR-0470,ECIL Hyderabad,Ministry of Home Affairs,946089.27,2023-11-06,Comprehensive maintenance of medical equipment systems at Home Affairs locations
-CTR-0471,Cochin Shipyard Ltd,Ministry of Defence,519035.96,2023-01-18,Annual maintenance contract for air conditioning units across Defence offices
-CTR-0472,BEL Optronic Devices,Ministry of Health,145627.07,2022-07-06,Installation and commissioning of bridge components at Health facilities
-CTR-0473,Wipro Technologies,Ministry of Power,594952.31,2023-03-29,Consultancy services for security systems implementation in Power
-CTR-0474,RITES Ltd,Ministry of Urban Development,1590694.82,2022-11-17,Turnkey project for fire safety systems modernization at Urban Development
-CTR-0475,Thermax Ltd,Ministry of Defence,2056839.3,2023-09-13,Rate contract for supply of satellite communication equipment to Defence for FY 2024-25
-CTR-0476,Garden Reach Shipbuilders,Ministry of Urban Development,4345268.85,2023-06-28,Turnkey project for medical equipment modernization at Urban Development
-CTR-0477,Tech Mahindra,Ministry of Agriculture,411286.13,2023-06-10,Comprehensive maintenance of water treatment plants systems at Agriculture locations
-CTR-0478,Cochin Shipyard Ltd,Ministry of Urban Development,296089422.15,2022-09-06,Miscellaneous procurement of items for departmental offices
-CTR-0479,IRCON International,Ministry of Education,2054459.24,2022-11-13,Rate contract for supply of bridge components to Education for FY 2024-25
-CTR-0480,Zensar Technologies,Ministry of Finance,4353494.59,2023-10-19,Installation and commissioning of security systems at Finance facilities
-CTR-0481,Rolta India,Ministry of Health,1906823.41,2023-10-19,Rate contract for supply of IT hardware to Health for FY 2024-25
-CTR-0482,BEL Optronic Devices,Ministry of Power,100000.0,2023-09-02,Procurement of air conditioning units for government offices in Bangalore
-CTR-0483,ECIL Hyderabad,Ministry of Urban Development,185039.62,2023-02-10,Consultancy services for road construction materials implementation in Urban Development
-CTR-0484,Schneider Electric India,Department of Space,100000.0,2022-08-22,Supply of satellite communication equipment for Space under annual maintenance contract
-CTR-0485,Rail Vikas Nigam,Ministry of Defence,1099880.36,2022-11-17,Comprehensive maintenance of water treatment plants systems at Defence locations
-CTR-0486,Siemens India,Department of Space,48392875.9,2022-02-01,Annual maintenance contract for security systems across Space offices
-CTR-0487,L&T Infotech,Ministry of Power,244395.83,2023-12-10,Annual maintenance contract for solar panels across Power offices
-CTR-0488,HCL Technologies,Ministry of Defence,1955440.32,2023-05-30,Empanelment of vendors for satellite communication equipment supply to Defence
-CTR-0489,NTPC Limited,Department of Atomic Energy,846439.97,2022-10-12,Installation and commissioning of fire safety systems at Atomic Energy facilities
-CTR-0490,Cochin Shipyard Ltd,Department of Space,5646233.73,2023-06-20,"Design, supply, and installation of satellite communication equipment for Space"
-CTR-0491,Godrej & Boyce,Ministry of Railways,38724686.55,2023-11-10,Annual maintenance contract for water treatment plants across Railways offices
-CTR-0492,RITES Ltd,Ministry of Power,971338.96,2022-12-05,Installation and commissioning of power transformers at Power facilities
-CTR-0493,HCL Technologies,Ministry of Education,388246.51,2022-05-15,Consultancy services for IT hardware implementation in Education
-CTR-0494,Godrej & Boyce,Ministry of Defence,1506938.52,2023-03-05,Installation and commissioning of water treatment plants at Defence facilities
-CTR-0495,L&T Infotech,Ministry of Power,152283.01,2022-06-29,Annual maintenance contract for communication devices across Power offices
-CTR-0496,Infosys Ltd,Ministry of Health,313050.08,2022-02-05,Installation and commissioning of radar systems at Health facilities
-CTR-0497,Hindustan Aeronautics Ltd,Ministry of IT,137018.81,2023-04-23,Empanelment of vendors for security systems supply to IT
-CTR-0498,Tech Mahindra,Department of Space,1180713.93,2023-06-10,Installation and commissioning of air conditioning units at Space facilities
-CTR-0499,Garden Reach Shipbuilders,Ministry of Power,1833042.66,2022-12-16,Rate contract for supply of railway signalling systems to Power for FY 2024-25
-CTR-0500,Rolta India,Ministry of Railways,1330801.97,2023-09-03,Rate contract for supply of air conditioning units to Railways for FY 2024-25
+CTR-0001,NBCC India Ltd,Ministry of Urban Development,1732499.79,2022-06-10,Rate contract for supply of water treatment plants to Urban Development for FY 2024-25
+CTR-0002,Bharat Electronics Ltd,Ministry of Railways,190743.43,2022-01-03,"Design, supply, and installation of fire safety systems for Railways"
+CTR-0003,Bharat Electronics Ltd,Ministry of Power,162945.8,2023-08-31,"Design, supply, and installation of railway signalling systems for Power"
+CTR-0004,ITI Ltd,Ministry of Power,131205.61,2023-05-01,Supply of electrical substations for Power under annual maintenance contract
+CTR-0005,Rolta India,Ministry of Railways,1474681.53,2023-04-30,Empanelment of vendors for communication devices supply to Railways
+CTR-0006,ITI Ltd,Ministry of Power,100000.0,2023-11-12,Comprehensive maintenance of bridge components systems at Power locations
+CTR-0007,ONGC Videsh,Ministry of Finance,250572.39,2022-11-14,Supply of communication devices for Finance under annual maintenance contract
+CTR-0008,BEL Optronic Devices,Ministry of Agriculture,3251683.0,2023-08-22,Installation and commissioning of communication devices at Agriculture facilities
+CTR-0009,Wipro Technologies,Ministry of Railways,485064948.61,2022-02-08,General supply of sundry materials for office requirements
+CTR-0010,Rail Vikas Nigam,Ministry of Urban Development,238708.8,2022-12-29,Rate contract for supply of laboratory equipment to Urban Development for FY 2024-25
+CTR-0011,L&T Infotech,Ministry of Agriculture,2656305.75,2023-11-05,Annual maintenance contract for power transformers across Agriculture offices
+CTR-0012,Tata Consulting Services,Ministry of Finance,1828706.07,2022-12-08,Annual maintenance contract for satellite communication equipment across Finance offices
+CTR-0013,Cummins India,Ministry of Agriculture,8399049.92,2023-01-12,Empanelment of vendors for laboratory equipment supply to Agriculture
+CTR-0014,WAPCOS Ltd,Department of Atomic Energy,376922.3,2023-11-06,Installation and commissioning of communication devices at Atomic Energy facilities
+CTR-0015,ABB India Ltd,Ministry of Education,3212820.51,2022-04-14,Rate contract for supply of air conditioning units to Education for FY 2024-25
+CTR-0016,Power Grid Corp,Ministry of Home Affairs,7165349.4,2023-08-06,Annual maintenance contract for communication devices across Home Affairs offices
+CTR-0017,ECIL Hyderabad,Department of Space,2024448.39,2022-03-04,"Design, supply, and installation of surveillance cameras for Space"
+CTR-0018,Ashok Leyland,Ministry of Defence,347921.82,2023-06-27,Consultancy services for surveillance cameras implementation in Defence
+CTR-0019,NBCC India Ltd,Ministry of Power,6963983.99,2022-10-08,Installation and commissioning of electrical substations at Power facilities
+CTR-0020,Cyient Ltd,Ministry of Railways,1139639431.68,2023-06-01,Annual maintenance contract for solar panels across Railways offices
+CTR-0021,NBCC India Ltd,Department of Atomic Energy,1961389.0,2022-07-06,Consultancy services for power transformers implementation in Atomic Energy
+CTR-0022,Mahindra Defence Systems,Ministry of Agriculture,160647.0,2022-04-12,Installation and commissioning of office furniture at Agriculture facilities
+CTR-0023,Mphasis Ltd,Ministry of Defence,1712742.79,2023-12-25,Comprehensive maintenance of fire safety systems systems at Defence locations
+CTR-0024,Siemens India,Ministry of Agriculture,1022843.27,2022-06-21,Procurement of railway signalling systems for government offices in Mumbai
+CTR-0025,Tata Consulting Services,Ministry of Urban Development,6145364.32,2022-02-06,Installation and commissioning of solar panels at Urban Development facilities
+CTR-0026,Larsen & Toubro,Ministry of Education,2118694.47,2023-07-03,"Design, supply, and installation of IT hardware for Education"
+CTR-0027,Hindustan Aeronautics Ltd,Ministry of Urban Development,4928160.21,2023-11-20,Turnkey project for medical equipment modernization at Urban Development
+CTR-0028,NBCC India Ltd,Ministry of IT,196662.87,2023-08-28,Consultancy services for radar systems implementation in IT
+CTR-0029,L&T Infotech,Ministry of Defence,266668.13,2023-05-26,Consultancy services for electrical substations implementation in Defence
+CTR-0030,Bharat Electronics Ltd,Ministry of Urban Development,2466599.69,2023-03-01,Rate contract for supply of server infrastructure to Urban Development for FY 2024-25
+CTR-0031,ABB India Ltd,Ministry of Urban Development,3807993.65,2022-04-09,Rate contract for supply of office furniture to Urban Development for FY 2024-25
+CTR-0032,L&T Infotech,Ministry of Agriculture,5681415.38,2023-07-29,Installation and commissioning of road construction materials at Agriculture facilities
+CTR-0033,Mahindra Defence Systems,Ministry of Power,2897020.38,2022-12-01,Procurement of radar systems for government offices in Pune
+CTR-0034,ECIL Hyderabad,Ministry of Defence,2239471.12,2023-10-21,Procurement of server infrastructure for government offices in Bangalore
+CTR-0035,Schneider Electric India,Ministry of Agriculture,1200563.44,2022-10-28,Empanelment of vendors for power transformers supply to Agriculture
+CTR-0036,ABB India Ltd,Ministry of Urban Development,1046271.53,2022-10-26,Procurement of fire safety systems for government offices in Lucknow
+CTR-0037,NBCC India Ltd,Ministry of Agriculture,3383528.93,2023-09-23,"Design, supply, and installation of medical equipment for Agriculture"
+CTR-0038,HCL Technologies,Department of Space,744093.03,2022-10-24,Supply of radar systems for Space under annual maintenance contract
+CTR-0039,NTPC Limited,Ministry of Finance,1217145.41,2023-06-21,Comprehensive maintenance of electrical substations systems at Finance locations
+CTR-0040,BEML Ltd,Ministry of Agriculture,4718858.14,2022-07-22,Procurement of bridge components for government offices in Ahmedabad
+CTR-0041,Bharat Electronics Ltd,Ministry of Health,2553929.87,2022-05-14,"Design, supply, and installation of satellite communication equipment for Health"
+CTR-0042,Central Electronics Ltd,Department of Atomic Energy,3321038.14,2023-01-05,Comprehensive maintenance of security systems systems at Atomic Energy locations
+CTR-0043,Central Electronics Ltd,Ministry of Urban Development,1165065.13,2022-04-02,Annual maintenance contract for laboratory equipment across Urban Development offices
+CTR-0044,Central Electronics Ltd,Ministry of Defence,737115.06,2022-10-01,Empanelment of vendors for water treatment plants supply to Defence
+CTR-0045,Cyient Ltd,Ministry of IT,926242033.73,2022-03-15,Empanelment of vendors for IT hardware supply to IT
+CTR-0046,Rolta India,Ministry of Health,1800085.94,2022-11-27,Supply of railway signalling systems for Health under annual maintenance contract
+CTR-0047,MECON Ltd,Ministry of Urban Development,1440515.28,2023-06-22,Annual maintenance contract for water treatment plants across Urban Development offices
+CTR-0048,ABB India Ltd,Ministry of Agriculture,427095.89,2023-04-29,"Design, supply, and installation of fire safety systems for Agriculture"
+CTR-0049,L&T Infotech,Department of Atomic Energy,242051.24,2022-03-06,Installation and commissioning of server infrastructure at Atomic Energy facilities
+CTR-0050,Thermax Ltd,Ministry of IT,4046580.0,2022-06-03,Annual maintenance contract for bridge components across IT offices
+CTR-0051,Mphasis Ltd,Ministry of Finance,1034507.78,2023-01-12,Comprehensive maintenance of bridge components systems at Finance locations
+CTR-0052,Central Electronics Ltd,Ministry of Home Affairs,1260800153.98,2022-08-28,Consultancy services for fire safety systems implementation in Home Affairs
+CTR-0053,IRCON International,Ministry of Finance,441177.69,2022-10-13,Procurement of laboratory equipment for government offices in Ahmedabad
+CTR-0054,Siemens India,Ministry of Home Affairs,4198315.58,2023-06-08,Annual maintenance contract for server infrastructure across Home Affairs offices
+CTR-0055,RITES Ltd,Department of Space,2207176.67,2022-05-21,Installation and commissioning of security systems at Space facilities
+CTR-0056,Zensar Technologies,Ministry of Agriculture,1882361.01,2023-05-05,Supply of fire safety systems for Agriculture under annual maintenance contract
+CTR-0057,Kirloskar Brothers,Ministry of Home Affairs,1878503.11,2023-10-12,Consultancy services for road construction materials implementation in Home Affairs
+CTR-0058,Mphasis Ltd,Ministry of Defence,163012.67,2022-10-19,Procurement of radar systems for government offices in Pune
+CTR-0059,RITES Ltd,Ministry of Agriculture,914043.48,2023-11-06,Comprehensive maintenance of radar systems systems at Agriculture locations
+CTR-0060,MECON Ltd,Ministry of Railways,608629745.44,2023-03-27,Procurement of surveillance cameras for government offices in Hyderabad
+CTR-0061,Mphasis Ltd,Ministry of Urban Development,2129619.23,2022-03-13,Supply of security systems for Urban Development under annual maintenance contract
+CTR-0062,Garden Reach Shipbuilders,Ministry of Finance,267616.87,2023-11-13,Supply of power transformers for Finance under annual maintenance contract
+CTR-0063,L&T Infotech,Ministry of Defence,5498297.02,2023-10-30,"Design, supply, and installation of security systems for Defence"
+CTR-0064,Mphasis Ltd,Ministry of Urban Development,872635.44,2022-02-01,Supply of railway signalling systems for Urban Development under annual maintenance contract
+CTR-0065,Infosys Ltd,Ministry of IT,745555.37,2022-06-14,Turnkey project for railway signalling systems modernization at IT
+CTR-0066,Siemens India,Ministry of Defence,2253243.41,2022-04-05,Consultancy services for road construction materials implementation in Defence
+CTR-0067,Larsen & Toubro,Ministry of Railways,1953527.15,2022-10-20,Rate contract for supply of water treatment plants to Railways for FY 2024-25
+CTR-0068,IRCON International,Ministry of Education,27792800.98,2022-03-19,Rate contract for supply of satellite communication equipment to Education for FY 2024-25
+CTR-0069,Godrej & Boyce,Ministry of Power,2316700.03,2022-06-11,"Design, supply, and installation of bridge components for Power"
+CTR-0070,Zensar Technologies,Ministry of IT,2077695.98,2022-01-28,Installation and commissioning of solar panels at IT facilities
+CTR-0071,Ashok Leyland,Ministry of IT,1758810.46,2022-07-02,Comprehensive maintenance of water treatment plants systems at IT locations
+CTR-0072,Garden Reach Shipbuilders,Ministry of Urban Development,1907413.94,2023-10-31,"Design, supply, and installation of railway signalling systems for Urban Development"
+CTR-0073,Zensar Technologies,Department of Atomic Energy,566246.09,2022-11-13,Installation and commissioning of medical equipment at Atomic Energy facilities
+CTR-0074,Cummins India,Ministry of Health,379840.64,2022-06-24,Empanelment of vendors for road construction materials supply to Health
+CTR-0075,ECIL Hyderabad,Ministry of Education,322691.38,2023-03-15,"Design, supply, and installation of security systems for Education"
+CTR-0076,Infosys Ltd,Ministry of Defence,3835906.29,2023-05-20,Empanelment of vendors for laboratory equipment supply to Defence
+CTR-0077,Hindustan Aeronautics Ltd,Ministry of Defence,100000.0,2023-04-15,Comprehensive maintenance of railway signalling systems systems at Defence locations
+CTR-0078,Cyient Ltd,Ministry of IT,1480978.9,2023-12-06,Procurement of bridge components for government offices in New Delhi
+CTR-0079,MECON Ltd,Department of Space,1645877.3,2022-10-28,Procurement of fire safety systems for government offices in Bangalore
+CTR-0080,Wipro Technologies,Ministry of Health,136099081.7,2022-09-24,Supply of misc items for general use in department offices
+CTR-0081,Schneider Electric India,Department of Atomic Energy,259567946.92,2022-12-06,Supply of misc items for general use in department offices
+CTR-0082,Infosys Ltd,Ministry of Railways,181361.9,2022-03-30,Procurement of power transformers for government offices in Mumbai
+CTR-0083,Garden Reach Shipbuilders,Department of Space,271923.91,2023-09-03,Consultancy services for electrical substations implementation in Space
+CTR-0084,Mphasis Ltd,Ministry of Agriculture,43548672.25,2022-10-01,"Design, supply, and installation of air conditioning units for Agriculture"
+CTR-0085,Infossys Ltd,Ministry of Defence,760453509.67,2023-11-29,Comprehensive maintenance of bridge components systems at Defence locations
+CTR-0086,Wiproo Technologies,Ministry of Health,586813598.54,2022-05-04,Annual maintenance contract for railway signalling systems across Health offices
+CTR-0087,Mazagon Dock Shipbuilders,Department of Atomic Energy,54401516.15,2022-01-13,Annual maintenance contract for fire safety systems across Atomic Energy offices
+CTR-0088,Godrej & Boyce,Ministry of Health,100000.0,2023-05-08,Installation and commissioning of bridge components at Health facilities
+CTR-0089,ABB India Ltd,Ministry of Power,8753267.09,2022-03-17,Annual maintenance contract for railway signalling systems across Power offices
+CTR-0090,Larsen & Toubro,Department of Space,1252969.65,2023-02-14,Installation and commissioning of electrical substations at Space facilities
+CTR-0091,MECON Ltd,Ministry of Power,100000.0,2023-09-03,Turnkey project for network equipment modernization at Power
+CTR-0092,Reliance Jio Infocomm,Ministry of Education,237263746.75,2022-04-08,Supply of miscellaneous items for general departmental use
+CTR-0093,ONGC Videsh,Ministry of Agriculture,385575.14,2022-11-22,"Design, supply, and installation of power transformers for Agriculture"
+CTR-0094,Reliance Jio Infocomm,Ministry of Defence,443510426.76,2022-06-09,General supply of sundry materials for office requirements
+CTR-0095,Tata Consulting Services,Ministry of Health,419096874.64,2023-08-27,Supply of misc items for general use in department offices
+CTR-0096,NTPC Limited,Ministry of Finance,624664.76,2023-12-12,Comprehensive maintenance of railway signalling systems systems at Finance locations
+CTR-0097,NBCC India Ltd,Ministry of Education,1056830.77,2023-02-14,Annual maintenance contract for laboratory equipment across Education offices
+CTR-0098,NBCC India Ltd,Ministry of Finance,323309.05,2022-02-14,Consultancy services for solar panels implementation in Finance
+CTR-0099,Mphasis Ltd,Department of Atomic Energy,162760.14,2022-03-25,Empanelment of vendors for radar systems supply to Atomic Energy
+CTR-0100,ECIL Hyderabad,Ministry of Health,255322.05,2022-09-04,Supply of fire safety systems for Health under annual maintenance contract
+CTR-0101,Kirloskar Brothers,Ministry of Railways,181009.83,2023-04-08,"Design, supply, and installation of solar panels for Railways"
+CTR-0102,Rail Vikas Nigam,Ministry of Defence,776579.88,2022-12-04,Annual maintenance contract for power transformers across Defence offices
+CTR-0103,Mazagon Dock Shipbuilders,Ministry of Railways,9005616.52,2022-06-28,Installation and commissioning of medical equipment at Railways facilities
+CTR-0104,Schneider Electric India,Ministry of IT,3615039.8,2022-09-25,Annual maintenance contract for server infrastructure across IT offices
+CTR-0105,Cummins India,Ministry of Health,1173918710.34,2022-01-12,Consultancy services for water treatment plants implementation in Health
+CTR-0106,Wipro Technologies,Ministry of Urban Development,5968612.06,2023-07-17,Procurement of IT hardware for government offices in Kolkata
+CTR-0107,Garden Reach Shipbuilders,Ministry of Power,4776919.11,2023-12-06,Procurement of railway signalling systems for government offices in Lucknow
+CTR-0108,Cochin Shipyard Ltd,Ministry of Defence,105335.95,2023-11-23,Annual maintenance contract for electrical substations across Defence offices
+CTR-0109,Mahindra Defence Systems,Ministry of IT,2904758.95,2023-06-11,Supply of laboratory equipment for IT under annual maintenance contract
+CTR-0110,Hindustan Aeronautics Ltd,Department of Space,897086.49,2022-09-04,Annual maintenance contract for server infrastructure across Space offices
+CTR-0111,BEML Ltd,Ministry of Power,100000.0,2023-09-07,Procurement of medical equipment for government offices in Jaipur
+CTR-0112,Larsen & Toubro,Ministry of Health,152267.68,2022-03-09,Procurement of solar panels for government offices in Jaipur
+CTR-0113,NTPC Limited,Ministry of Health,1443985.23,2022-04-25,Supply of server infrastructure for Health under annual maintenance contract
+CTR-0114,Mazagon Dock Shipbuilders,Ministry of Health,9317261.6,2023-08-20,Consultancy services for network equipment implementation in Health
+CTR-0115,Cochin Shipyard Ltd,Ministry of Railways,1787177.71,2023-01-29,Empanelment of vendors for network equipment supply to Railways
+CTR-0116,Mazagon Dock Shipbuilders,Ministry of Railways,354656.78,2022-03-26,Comprehensive maintenance of air conditioning units systems at Railways locations
+CTR-0117,Tech Mahindra,Ministry of Power,109947859.76,2022-06-08,Annual maintenance contract for bridge components across Power offices
+CTR-0118,Mazagon Dock Shipbuilders,Department of Space,3135778.98,2022-03-03,Consultancy services for network equipment implementation in Space
+CTR-0119,Zensar Technologies,Ministry of Health,1486353.72,2023-02-28,Empanelment of vendors for medical equipment supply to Health
+CTR-0120,Bharat Electronics Ltd,Ministry of Power,1825617.13,2022-12-16,Turnkey project for laboratory equipment modernization at Power
+CTR-0121,NTPC Limited,Ministry of Defence,260768.39,2022-01-08,Rate contract for supply of fire safety systems to Defence for FY 2024-25
+CTR-0122,Mazagon Dock Shipbuilders,Ministry of Finance,812294019.79,2022-08-23,Comprehensive maintenance of medical equipment systems at Finance locations
+CTR-0123,L&T Infotech,Department of Atomic Energy,621141.21,2022-06-24,Comprehensive maintenance of network equipment systems at Atomic Energy locations
+CTR-0124,Reliance Jio Infocomm,Ministry of Defence,566212.33,2023-01-03,Procurement of solar panels for government offices in Hyderabad
+CTR-0125,Siemens India,Department of Atomic Energy,741214.48,2023-10-11,Consultancy services for IT hardware implementation in Atomic Energy
+CTR-0126,NBCC India Ltd,Ministry of Power,5730309.78,2022-06-29,Consultancy services for power transformers implementation in Power
+CTR-0127,IRCON International,Ministry of Agriculture,818982614.44,2023-10-17,Procurement of bridge components for government offices in Hyderabad
+CTR-0128,Infosys Ltd,Ministry of Urban Development,2753743.82,2022-02-16,Consultancy services for surveillance cameras implementation in Urban Development
+CTR-0129,Thermax Ltd,Ministry of Home Affairs,2558265.16,2022-05-13,Consultancy services for electrical substations implementation in Home Affairs
+CTR-0130,Reliance Jio Infocomm,Ministry of Urban Development,250472.6,2023-09-27,Installation and commissioning of railway signalling systems at Urban Development facilities
+CTR-0131,Larsen & Toubro,Ministry of Railways,1774187.11,2022-10-02,Supply of server infrastructure for Railways under annual maintenance contract
+CTR-0132,Central Electronics Ltd,Ministry of Power,2027897.66,2023-08-08,Procurement of railway signalling systems for government offices in Chennai
+CTR-0133,Power Grid Corp,Ministry of Power,1348195.58,2023-08-25,Empanelment of vendors for radar systems supply to Power
+CTR-0134,Mahindra Defence Systems,Department of Space,1246579.9,2023-04-19,Empanelment of vendors for railway signalling systems supply to Space
+CTR-0135,Garden Reach Shipbuilders,Ministry of Education,6356468.72,2022-03-30,Installation and commissioning of communication devices at Education facilities
+CTR-0136,ONGC Videsh,Ministry of Health,5412052.76,2023-11-05,Annual maintenance contract for power transformers across Health offices
+CTR-0137,Thermax Ltd,Ministry of Education,1460736.36,2022-11-24,"Design, supply, and installation of laboratory equipment for Education"
+CTR-0138,Infosys Ltd,Ministry of Home Affairs,1294971.43,2023-05-26,Consultancy services for railway signalling systems implementation in Home Affairs
+CTR-0139,RITES Ltd,Ministry of Railways,458683.77,2022-01-15,"Design, supply, and installation of railway signalling systems for Railways"
+CTR-0140,HCL Technologies,Ministry of Health,12364922.67,2022-05-28,Annual maintenance contract for office furniture across Health offices
+CTR-0141,Tata Consulting Services,Department of Atomic Energy,1614819.06,2022-10-07,Rate contract for supply of satellite communication equipment to Atomic Energy for FY 2024-25
+CTR-0142,Engineers India Ltd,Ministry of Defence,260467.02,2022-08-01,Consultancy services for satellite communication equipment implementation in Defence
+CTR-0143,BEML Ltd,Ministry of Agriculture,2670553.44,2023-08-11,Turnkey project for communication devices modernization at Agriculture
+CTR-0144,Siemens India,Department of Space,405379.33,2022-01-06,Turnkey project for electrical substations modernization at Space
+CTR-0145,Rail Vikas Nigam,Ministry of Power,1104017.1,2022-11-01,Empanelment of vendors for medical equipment supply to Power
+CTR-0146,Reliance Jio Infocomm,Department of Space,2482042.59,2022-06-05,"Design, supply, and installation of radar systems for Space"
+CTR-0147,Bharatt Electronics Ltd,Department of Space,138717018.67,2022-08-11,Empanelment of vendors for IT hardware supply to Space
+CTR-0148,Reliance Jio Infocomm,Ministry of Railways,362352361.55,2023-11-21,Supply of miscellaneous items for general departmental use
+CTR-0149,Tata Consulting Services,Department of Space,676531.47,2023-02-07,Installation and commissioning of fire safety systems at Space facilities
+CTR-0150,NTPC Limited,Ministry of Finance,379915.92,2022-10-14,Comprehensive maintenance of power transformers systems at Finance locations
+CTR-0151,Siemens India,Ministry of Agriculture,334040.55,2022-03-21,Procurement of air conditioning units for government offices in Bangalore
+CTR-0152,Bharat Dynamics Ltd,Ministry of Education,1890373.61,2022-04-07,Rate contract for supply of electrical substations to Education for FY 2024-25
+CTR-0153,Rail Vikas Nigam,Ministry of Finance,100000.0,2023-09-01,Installation and commissioning of air conditioning units at Finance facilities
+CTR-0154,ABB India Ltd,Ministry of Railways,551023.01,2023-05-02,Rate contract for supply of medical equipment to Railways for FY 2024-25
+CTR-0155,MECON Ltd,Ministry of Education,139285.34,2023-01-16,"Design, supply, and installation of railway signalling systems for Education"
+CTR-0156,Larsen & Toubro,Ministry of Home Affairs,135762.21,2022-03-27,Rate contract for supply of road construction materials to Home Affairs for FY 2024-25
+CTR-0157,BEL Optronic Devices,Ministry of Home Affairs,1192256.04,2022-12-30,Supply of water treatment plants for Home Affairs under annual maintenance contract
+CTR-0158,Thermax Ltd,Ministry of Health,776533.06,2023-10-11,Procurement of laboratory equipment for government offices in Jaipur
+CTR-0159,Ashok Leyland,Ministry of Home Affairs,7318461.92,2022-08-13,Consultancy services for IT hardware implementation in Home Affairs
+CTR-0160,Cochin Shipyard Ltd,Department of Space,39863273.42,2022-05-26,Miscellaneous procurement of items for departmental offices
+CTR-0161,NBCC India Ltd,Ministry of Education,836822.94,2022-03-16,Rate contract for supply of office furniture to Education for FY 2024-25
+CTR-0162,NBCC India Ltd,Department of Atomic Energy,22544008.63,2023-07-26,Installation and commissioning of road construction materials at Atomic Energy facilities
+CTR-0163,Hindustan Aeronautics Ltd,Department of Space,226523.51,2022-09-17,Annual maintenance contract for server infrastructure across Space offices
+CTR-0164,RITES Ltd,Ministry of Finance,216468.15,2022-05-21,Installation and commissioning of solar panels at Finance facilities
+CTR-0165,Mahindra Defence Systems,Ministry of Power,7062078.13,2023-03-03,"Design, supply, and installation of water treatment plants for Power"
+CTR-0166,Zensar Technologies,Ministry of Agriculture,8860507.11,2023-09-14,Consultancy services for bridge components implementation in Agriculture
+CTR-0167,NTPC Limited,Department of Atomic Energy,230789995.77,2022-06-07,Miscellaneous procurement of items for departmental offices
+CTR-0168,ONGC Videsh,Ministry of Railways,2219328.06,2023-07-29,Procurement of office furniture for government offices in Bangalore
+CTR-0169,Mazagon Dock Shipbuilders,Ministry of Education,1985724.5,2022-07-11,Procurement of road construction materials for government offices in Pune
+CTR-0170,Rail Vikas Nigam,Ministry of Education,143609.65,2023-07-31,Consultancy services for satellite communication equipment implementation in Education
+CTR-0171,Godrej & Boyce,Ministry of Power,3673536.13,2022-12-12,Supply of solar panels for Power under annual maintenance contract
+CTR-0172,Mazagon Dock Shipbuilders,Ministry of Agriculture,594459.56,2022-06-28,Supply of power transformers for Agriculture under annual maintenance contract
+CTR-0173,Bharat Dynamics Ltd,Ministry of Power,990813.64,2022-12-19,Procurement of radar systems for government offices in Jaipur
+CTR-0174,Larsen & Toubro,Ministry of Railways,77997988.35,2023-12-14,Comprehensive maintenance of bridge components systems at Railways locations
+CTR-0175,NBCC India Ltd,Ministry of Railways,100000.0,2023-04-15,Procurement of communication devices for government offices in New Delhi
+CTR-0176,RITES Ltd,Ministry of IT,140026956.84,2023-07-30,Supply of miscellaneous items for general departmental use
+CTR-0177,Bharat Electronics Ltd,Ministry of Home Affairs,7566735.57,2022-01-12,Turnkey project for security systems modernization at Home Affairs
+CTR-0178,HCL Technologies,Ministry of Urban Development,1588900.43,2022-03-14,Consultancy services for security systems implementation in Urban Development
+CTR-0179,ABB India Ltd,Department of Atomic Energy,190575.62,2023-01-20,Empanelment of vendors for communication devices supply to Atomic Energy
+CTR-0180,MECON Ltd,Ministry of Agriculture,11086738.57,2022-07-03,Comprehensive maintenance of water treatment plants systems at Agriculture locations
+CTR-0181,Reliance Jio Infocomm,Ministry of Health,1227379518.87,2023-09-04,"Design, supply, and installation of communication devices for Health"
+CTR-0182,Zensar Technologies,Ministry of Education,8522333.69,2022-12-24,Annual maintenance contract for IT hardware across Education offices
+CTR-0183,Ashok Leyland,Ministry of Home Affairs,1056707.08,2023-08-06,"Design, supply, and installation of server infrastructure for Home Affairs"
+CTR-0184,Bharat Electronics Ltd,Ministry of Railways,171357.42,2023-06-05,Consultancy services for railway signalling systems implementation in Railways
+CTR-0185,Power Grid Corp,Ministry of Health,320694.78,2023-09-09,Procurement of IT hardware for government offices in Kolkata
+CTR-0186,BEML Ltd,Ministry of Education,2194200.75,2022-03-12,"Design, supply, and installation of water treatment plants for Education"
+CTR-0187,Hindustan Aeronautics Ltd,Ministry of Power,50273475.18,2023-03-02,Supply of misc items for general use in department offices
+CTR-0188,Larsen & Toubro,Department of Atomic Energy,229855.27,2023-08-12,Turnkey project for network equipment modernization at Atomic Energy
+CTR-0189,WAPCOS Ltd,Ministry of IT,1162748.56,2022-08-16,Consultancy services for power transformers implementation in IT
+CTR-0190,Wiproo Technologies,Ministry of Power,461063293.82,2022-08-09,Procurement of railway signalling systems for government offices in Lucknow
+CTR-0191,Power Grid Corp,Ministry of IT,4156214.64,2023-05-15,Annual maintenance contract for road construction materials across IT offices
+CTR-0192,L&T Infotech,Ministry of Health,556471.93,2022-10-22,Installation and commissioning of railway signalling systems at Health facilities
+CTR-0193,Mahindra Defence Systems,Ministry of Defence,11841893.7,2022-07-05,Comprehensive maintenance of laboratory equipment systems at Defence locations
+CTR-0194,WAPCOS Ltd,Department of Atomic Energy,5029793.16,2023-03-01,Turnkey project for electrical substations modernization at Atomic Energy
+CTR-0195,Central Electronics Ltd,Ministry of Health,437170.08,2022-10-12,Annual maintenance contract for laboratory equipment across Health offices
+CTR-0196,Tech Mahindra,Ministry of Power,1229815.02,2022-05-11,Installation and commissioning of laboratory equipment at Power facilities
+CTR-0197,Ashok Leyland,Ministry of Railways,1075579.24,2022-03-06,Annual maintenance contract for air conditioning units across Railways offices
+CTR-0198,Mazagon Dock Shipbuilders,Ministry of Home Affairs,1167203.25,2023-08-24,Procurement of surveillance cameras for government offices in Kolkata
+CTR-0199,Engineers India Ltd,Ministry of Agriculture,6810319.9,2022-02-12,"Design, supply, and installation of IT hardware for Agriculture"
+CTR-0200,ABB India Ltd,Ministry of Education,827147.89,2023-07-09,Supply of medical equipment for Education under annual maintenance contract
+CTR-0201,Rolta India,Department of Space,1926180.56,2023-10-05,Procurement of medical equipment for government offices in Ahmedabad
+CTR-0202,Garden Reach Shipbuilders,Ministry of Power,2404717.89,2023-11-07,Empanelment of vendors for office furniture supply to Power
+CTR-0203,Kirloskar Brothers,Department of Space,833069.93,2022-07-04,Annual maintenance contract for communication devices across Space offices
+CTR-0204,ABB India Ltd,Department of Space,1443995.66,2023-10-05,Procurement of IT hardware for government offices in Jaipur
+CTR-0205,Larsen & Toubro,Ministry of Defence,14303211.3,2022-11-26,Comprehensive maintenance of bridge components systems at Defence locations
+CTR-0206,Mazagon Dock Shipbuilders,Ministry of Power,561431.16,2023-06-18,Rate contract for supply of medical equipment to Power for FY 2024-25
+CTR-0207,NTPC Limited,Ministry of Urban Development,308836.88,2022-09-08,Turnkey project for solar panels modernization at Urban Development
+CTR-0208,Bharat Dynamics Ltd,Ministry of Defence,19813400.03,2022-11-06,Procurement of server infrastructure for government offices in Hyderabad
+CTR-0209,Wipro Technologies,Ministry of Urban Development,168066.01,2022-09-04,Comprehensive maintenance of road construction materials systems at Urban Development locations
+CTR-0210,Reliance Jio Infocomm,Ministry of Home Affairs,657250.56,2022-11-07,Installation and commissioning of security systems at Home Affairs facilities
+CTR-0211,Tech Mahindra,Ministry of IT,105475242.75,2022-08-09,Procurement of sundry materials for miscellaneous departmental needs
+CTR-0212,NBCC India Ltd,Ministry of Power,719390.77,2023-11-30,Supply of electrical substations for Power under annual maintenance contract
+CTR-0213,Power Grid Corp,Ministry of Defence,100000.0,2022-01-17,Empanelment of vendors for satellite communication equipment supply to Defence
+CTR-0214,Mphasis Ltd,Ministry of Railways,6178862.87,2023-03-19,Turnkey project for medical equipment modernization at Railways
+CTR-0215,BEML Ltd,Ministry of Health,5294513.42,2023-09-11,Procurement of electrical substations for government offices in Lucknow
+CTR-0216,Ashok Leyland,Ministry of Railways,2376688.61,2022-02-03,Supply of medical equipment for Railways under annual maintenance contract
+CTR-0217,MECON Ltd,Ministry of Home Affairs,105439217.26,2022-11-04,Procurement of sundry materials for miscellaneous departmental needs
+CTR-0218,Larsen & Toubro,Department of Atomic Energy,218590655.31,2022-05-26,Supply of misc items for general use in department offices
+CTR-0219,Cyient Ltd,Ministry of Agriculture,23128553.82,2023-12-04,"Design, supply, and installation of water treatment plants for Agriculture"
+CTR-0220,Cyient Ltd,Ministry of Education,1823804.71,2023-03-17,Installation and commissioning of air conditioning units at Education facilities
+CTR-0221,Infossys Ltd,Ministry of Health,585353145.29,2023-07-01,Empanelment of vendors for IT hardware supply to Health
+CTR-0222,Hindustan Aeronautics Ltd,Ministry of Health,21161240.31,2023-10-05,Procurement of water treatment plants for government offices in Mumbai
+CTR-0223,Zensar Technologies,Ministry of Power,1511932.69,2022-01-29,Annual maintenance contract for communication devices across Power offices
+CTR-0224,NBCC India Ltd,Department of Atomic Energy,1391576.46,2023-04-01,Rate contract for supply of fire safety systems to Atomic Energy for FY 2024-25
+CTR-0225,WAPCOS Ltd,Ministry of Health,3260351.06,2022-05-23,Turnkey project for fire safety systems modernization at Health
+CTR-0226,Infossys Ltd,Ministry of Education,754739368.36,2022-12-27,Supply of surveillance cameras for Education under annual maintenance contract
+CTR-0227,WAPCOS Ltd,Ministry of Finance,23106586.07,2023-03-21,Procurement of power transformers for government offices in Jaipur
+CTR-0228,HCL Technologies,Ministry of IT,925826.93,2022-01-21,"Design, supply, and installation of IT hardware for IT"
+CTR-0229,NBCC India Ltd,Ministry of Agriculture,11044254.52,2023-08-06,Empanelment of vendors for server infrastructure supply to Agriculture
+CTR-0230,Thermax Ltd,Ministry of Education,7037691.22,2022-03-03,Turnkey project for communication devices modernization at Education
+CTR-0231,Thermax Ltd,Ministry of Defence,2304510.14,2023-04-21,Installation and commissioning of IT hardware at Defence facilities
+CTR-0232,BEML Ltd,Ministry of Railways,3899951.62,2023-12-02,Rate contract for supply of communication devices to Railways for FY 2024-25
+CTR-0233,BEL Optronic Devices,Ministry of Railways,5160238.31,2023-06-15,Empanelment of vendors for server infrastructure supply to Railways
+CTR-0234,Bharat Electronics Ltd,Ministry of Power,6541967.83,2023-05-27,Procurement of server infrastructure for government offices in Chennai
+CTR-0235,Wipro Technologies,Department of Atomic Energy,8642417.66,2023-11-06,Turnkey project for railway signalling systems modernization at Atomic Energy
+CTR-0236,Larsen & Toubro,Ministry of Finance,100000.0,2022-10-30,Supply of road construction materials for Finance under annual maintenance contract
+CTR-0237,MECON Ltd,Department of Atomic Energy,21605583.8,2022-09-08,Supply of misc items for general use in department offices
+CTR-0238,NBCC India Ltd,Ministry of Railways,997165.4,2022-06-30,Annual maintenance contract for bridge components across Railways offices
+CTR-0239,Bharat Dynamics Ltd,Department of Atomic Energy,2463715.71,2023-04-03,Annual maintenance contract for laboratory equipment across Atomic Energy offices
+CTR-0240,Infosys Ltd,Ministry of Defence,232247630.7,2022-12-24,General supply of sundry materials for office requirements
+CTR-0241,Garden Reach Shipbuilders,Ministry of Health,3071748.1,2022-05-06,Procurement of road construction materials for government offices in Mumbai
+CTR-0242,Godrej & Boyce,Ministry of Railways,1061634.95,2023-10-08,Comprehensive maintenance of air conditioning units systems at Railways locations
+CTR-0243,Zensar Technologies,Department of Atomic Energy,7002724.47,2022-03-19,Turnkey project for railway signalling systems modernization at Atomic Energy
+CTR-0244,MECON Ltd,Ministry of Home Affairs,795329.0,2023-01-07,Turnkey project for server infrastructure modernization at Home Affairs
+CTR-0245,WAPCOS Ltd,Ministry of Urban Development,10565232.16,2022-12-21,Rate contract for supply of server infrastructure to Urban Development for FY 2024-25
+CTR-0246,Godrej & Boyce,Department of Space,2796681.68,2022-11-25,Procurement of electrical substations for government offices in New Delhi
+CTR-0247,ABB India Ltd,Ministry of Railways,192966.22,2022-03-13,Consultancy services for network equipment implementation in Railways
+CTR-0248,NBCC India Ltd,Ministry of IT,100000.0,2022-09-25,Rate contract for supply of power transformers to IT for FY 2024-25
+CTR-0249,ABB India Ltd,Ministry of Health,100000.0,2022-12-11,Consultancy services for medical equipment implementation in Health
+CTR-0250,RITES Ltd,Ministry of Defence,11901323.87,2022-01-20,Turnkey project for radar systems modernization at Defence
+CTR-0251,NBCC India Ltd,Ministry of IT,327602.32,2023-04-28,Comprehensive maintenance of laboratory equipment systems at IT locations
+CTR-0252,Mazagon Dock Shipbuilders,Ministry of Urban Development,1092050.41,2022-10-21,Rate contract for supply of IT hardware to Urban Development for FY 2024-25
+CTR-0253,RITES Ltd,Department of Space,2936365.73,2023-09-28,Consultancy services for bridge components implementation in Space
+CTR-0254,WAPCOS Ltd,Ministry of Education,266205323.76,2022-07-12,Miscellaneous procurement of items for departmental offices
+CTR-0255,Engineers India Ltd,Ministry of IT,2818730.07,2022-11-09,Empanelment of vendors for radar systems supply to IT
+CTR-0256,ABB India Ltd,Ministry of IT,443177.22,2023-09-02,Supply of road construction materials for IT under annual maintenance contract
+CTR-0257,Power Grid Corp,Ministry of Education,17130058.73,2022-03-08,Installation and commissioning of surveillance cameras at Education facilities
+CTR-0258,IRCON International,Ministry of Agriculture,363867.34,2023-05-15,Consultancy services for electrical substations implementation in Agriculture
+CTR-0259,Engineers India Ltd,Ministry of Finance,2850240.04,2023-12-07,Annual maintenance contract for IT hardware across Finance offices
+CTR-0260,L&T Infotech,Ministry of Urban Development,2555762.87,2023-08-05,Comprehensive maintenance of radar systems systems at Urban Development locations
+CTR-0261,ABB India Ltd,Department of Space,409580.7,2023-05-19,Consultancy services for road construction materials implementation in Space
+CTR-0262,NTPC Limited,Department of Atomic Energy,610409.86,2022-10-10,Consultancy services for bridge components implementation in Atomic Energy
+CTR-0263,ECIL Hyderabad,Ministry of Railways,8523737.08,2022-04-09,Comprehensive maintenance of laboratory equipment systems at Railways locations
+CTR-0264,Hindustan Aeronautics Ltd,Ministry of Railways,669845610.65,2022-03-28,Comprehensive maintenance of radar systems systems at Railways locations
+CTR-0265,HCL Technologies,Ministry of Urban Development,2420267.48,2022-08-23,Annual maintenance contract for water treatment plants across Urban Development offices
+CTR-0266,Cochin Shipyard Ltd,Department of Atomic Energy,847636.45,2022-01-04,Turnkey project for surveillance cameras modernization at Atomic Energy
+CTR-0267,Wipro Technologies,Ministry of Finance,1425650.37,2022-04-01,Empanelment of vendors for satellite communication equipment supply to Finance
+CTR-0268,ABB India Ltd,Ministry of Defence,21552117.17,2023-06-27,Turnkey project for water treatment plants modernization at Defence
+CTR-0269,Cyient Ltd,Department of Space,4431221.26,2022-05-13,Installation and commissioning of IT hardware at Space facilities
+CTR-0270,Rail Vikas Nigam,Ministry of Education,467694.09,2022-08-14,Turnkey project for fire safety systems modernization at Education
+CTR-0271,Reliance Jio Infocomm,Department of Space,4290688.11,2023-04-24,Supply of electrical substations for Space under annual maintenance contract
+CTR-0272,Wipro Technologies,Ministry of Education,1531824.72,2022-11-08,Empanelment of vendors for radar systems supply to Education
+CTR-0273,Cummins India,Ministry of Power,2009331.6,2023-12-20,Turnkey project for medical equipment modernization at Power
+CTR-0274,Siemens India,Ministry of Education,100000.0,2023-03-19,Empanelment of vendors for radar systems supply to Education
+CTR-0275,IRCON International,Ministry of Railways,1163431.11,2022-01-19,Turnkey project for road construction materials modernization at Railways
+CTR-0276,NTPC Limited,Ministry of Health,429019.19,2022-01-24,Comprehensive maintenance of surveillance cameras systems at Health locations
+CTR-0277,ONGC Videsh,Ministry of Agriculture,7075735.83,2023-06-15,Procurement of security systems for government offices in Kolkata
+CTR-0278,Mphasis Ltd,Department of Atomic Energy,658347587.27,2022-09-24,Annual maintenance contract for IT hardware across Atomic Energy offices
+CTR-0279,MECON Ltd,Ministry of Health,100000.0,2023-03-19,Installation and commissioning of satellite communication equipment at Health facilities
+CTR-0280,BEL Optronics Devices,Ministry of Finance,92124620.07,2022-09-22,Comprehensive maintenance of office furniture systems at Finance locations
+CTR-0281,Larsen & Toubro,Ministry of Urban Development,100000.0,2023-06-06,Installation and commissioning of office furniture at Urban Development facilities
+CTR-0282,Mahindra Defence Systems,Department of Space,201004.4,2023-06-20,Rate contract for supply of fire safety systems to Space for FY 2024-25
+CTR-0283,Infosys Ltd,Ministry of Health,1685817.73,2022-10-11,Turnkey project for air conditioning units modernization at Health
+CTR-0284,HCL Technologies,Ministry of Power,1172889.54,2022-10-02,Empanelment of vendors for network equipment supply to Power
+CTR-0285,Rolta India,Ministry of Education,6313965.94,2022-08-04,Rate contract for supply of medical equipment to Education for FY 2024-25
+CTR-0286,Rolta India,Ministry of Finance,963338.62,2023-02-16,Comprehensive maintenance of medical equipment systems at Finance locations
+CTR-0287,Wipro Technologies,Ministry of Finance,4300198.97,2023-05-15,Empanelment of vendors for radar systems supply to Finance
+CTR-0288,MECON Ltd,Ministry of Health,3216141.77,2023-04-18,Turnkey project for network equipment modernization at Health
+CTR-0289,Power Grid Corp,Ministry of IT,1021719.93,2023-02-07,Consultancy services for medical equipment implementation in IT
+CTR-0290,Mahindra Defence Systems,Department of Space,1571880.99,2023-02-21,Installation and commissioning of air conditioning units at Space facilities
+CTR-0291,Bharat Electronics Ltd,Ministry of Power,1786881.35,2023-11-08,Annual maintenance contract for air conditioning units across Power offices
+CTR-0292,Zensar Technologies,Ministry of Power,6570991.29,2022-10-28,Rate contract for supply of office furniture to Power for FY 2024-25
+CTR-0293,Ashok Leyland,Ministry of Defence,4189033.99,2022-08-03,Turnkey project for satellite communication equipment modernization at Defence
+CTR-0294,Garden Reach Shipbuilders,Ministry of Finance,1750169.9,2022-06-10,Supply of railway signalling systems for Finance under annual maintenance contract
+CTR-0295,Infosys Ltd,Ministry of Defence,358014.27,2022-06-01,Turnkey project for security systems modernization at Defence
+CTR-0296,Cummins India,Ministry of Finance,3265682.03,2023-04-24,Supply of office furniture for Finance under annual maintenance contract
+CTR-0297,ECIL Hyderabad,Department of Atomic Energy,877633.62,2022-04-29,Turnkey project for power transformers modernization at Atomic Energy
+CTR-0298,Central Electronics Ltd,Ministry of Urban Development,4009082.9,2022-02-08,Installation and commissioning of office furniture at Urban Development facilities
+CTR-0299,Bharat Electronics Ltd,Ministry of Finance,670508382.52,2023-08-07,Procurement of office furniture for government offices in Bangalore
+CTR-0300,Reliance Jio Infocomm,Ministry of Power,786223.64,2022-10-31,Rate contract for supply of air conditioning units to Power for FY 2024-25
+CTR-0301,ITI Ltd,Ministry of Education,100000.0,2023-07-19,Supply of server infrastructure for Education under annual maintenance contract
+CTR-0302,Ashok Leyland,Ministry of Urban Development,289016.28,2023-06-16,Procurement of laboratory equipment for government offices in Jaipur
+CTR-0303,Bharat Dynamics Ltd,Ministry of Urban Development,1863427.18,2023-12-14,Rate contract for supply of IT hardware to Urban Development for FY 2024-25
+CTR-0304,BEL Optronic Devices,Ministry of Railways,100000.0,2023-10-25,"Design, supply, and installation of server infrastructure for Railways"
+CTR-0305,ONGC Videsh,Department of Space,281618425.89,2022-10-09,Miscellaneous procurement of items for departmental offices
+CTR-0306,Tata Consulting Services,Ministry of Finance,7828919.69,2023-01-29,Turnkey project for radar systems modernization at Finance
+CTR-0307,Mahindra Defence Systems,Ministry of Education,2695506.15,2023-08-10,Empanelment of vendors for railway signalling systems supply to Education
+CTR-0308,HCL Technologies,Ministry of Agriculture,1408280.59,2022-08-17,Rate contract for supply of network equipment to Agriculture for FY 2024-25
+CTR-0309,ABB India Ltd,Department of Space,950469.7,2022-04-15,Procurement of IT hardware for government offices in Jaipur
+CTR-0310,Cyient Ltd,Ministry of Finance,2103515.41,2023-06-15,Turnkey project for fire safety systems modernization at Finance
+CTR-0311,Bharat Dynamics Ltd,Ministry of Education,468479.7,2023-07-22,Procurement of medical equipment for government offices in Kolkata
+CTR-0312,Tata Consulitng Services,Department of Atomic Energy,542252018.55,2023-10-14,Annual maintenance contract for communication devices across Atomic Energy offices
+CTR-0313,Garden Reach Shipbuilders,Ministry of Finance,864712.4,2022-07-02,"Design, supply, and installation of IT hardware for Finance"
+CTR-0314,IRCON International,Ministry of Home Affairs,436441.3,2023-08-23,Annual maintenance contract for air conditioning units across Home Affairs offices
+CTR-0315,NTPC Limited,Ministry of Home Affairs,160866.47,2022-04-23,"Design, supply, and installation of fire safety systems for Home Affairs"
+CTR-0316,HCL Technologies,Ministry of Agriculture,13180357.88,2022-02-14,Annual maintenance contract for water treatment plants across Agriculture offices
+CTR-0317,Tata Consulitng Services,Ministry of Power,206604191.19,2023-11-09,Comprehensive maintenance of power transformers systems at Power locations
+CTR-0318,Infosys Ltd,Ministry of Health,1950711.17,2023-04-07,Procurement of IT hardware for government offices in Pune
+CTR-0319,Mphasis Ltd,Ministry of Education,119927.61,2023-05-25,Turnkey project for water treatment plants modernization at Education
+CTR-0320,Cochin Shipyard Ltd,Ministry of IT,100000.0,2023-06-11,Turnkey project for security systems modernization at IT
+CTR-0321,L&T Infotech,Ministry of Agriculture,1058810.05,2022-05-08,Empanelment of vendors for railway signalling systems supply to Agriculture
+CTR-0322,Infosys Ltd,Ministry of Railways,230080.47,2023-05-17,Turnkey project for power transformers modernization at Railways
+CTR-0323,Schneider Electric India,Ministry of Health,4548892.47,2022-09-20,Turnkey project for radar systems modernization at Health
+CTR-0324,Engineers India Ltd,Ministry of Defence,3009580.52,2023-01-29,Procurement of network equipment for government offices in Hyderabad
+CTR-0325,WAPCOS Ltd,Ministry of Power,1620497855.32,2022-09-15,Installation and commissioning of solar panels at Power facilities
+CTR-0326,Thermax Ltd,Ministry of Urban Development,385656.16,2023-07-18,Comprehensive maintenance of water treatment plants systems at Urban Development locations
+CTR-0327,Mahindra Defence Systems,Ministry of Defence,517639.73,2023-01-16,Rate contract for supply of surveillance cameras to Defence for FY 2024-25
+CTR-0328,HCL Technologies,Ministry of Finance,973661.38,2023-12-07,Turnkey project for power transformers modernization at Finance
+CTR-0329,BEL Optronic Devices,Department of Atomic Energy,6298207.75,2023-04-02,Supply of laboratory equipment for Atomic Energy under annual maintenance contract
+CTR-0330,Cochin Shipyard Ltd,Ministry of Finance,6571137.21,2022-07-12,Installation and commissioning of railway signalling systems at Finance facilities
+CTR-0331,Cyient Ltd,Ministry of Defence,2155484.98,2023-03-06,Consultancy services for satellite communication equipment implementation in Defence
+CTR-0332,Garden Reach Shipbuilders,Ministry of Power,7837945.06,2022-02-23,Empanelment of vendors for solar panels supply to Power
+CTR-0333,Bharat Dynamics Ltd,Ministry of Home Affairs,221395.48,2023-03-20,Annual maintenance contract for air conditioning units across Home Affairs offices
+CTR-0334,L&T Infotech,Department of Space,6257849.27,2022-01-21,"Design, supply, and installation of medical equipment for Space"
+CTR-0335,Bharat Dynamics Ltd,Ministry of Defence,2043825.2,2022-12-26,"Design, supply, and installation of satellite communication equipment for Defence"
+CTR-0336,ONGC Videsh,Ministry of Education,199842.69,2023-10-24,Consultancy services for bridge components implementation in Education
+CTR-0337,Rail Vikas Nigam,Ministry of IT,228824.2,2022-02-04,Rate contract for supply of air conditioning units to IT for FY 2024-25
+CTR-0338,BEL Optronic Devices,Ministry of Power,597795.79,2022-04-15,Rate contract for supply of solar panels to Power for FY 2024-25
+CTR-0339,Tata Consulting Services,Department of Atomic Energy,2223643.7,2022-12-20,Installation and commissioning of bridge components at Atomic Energy facilities
+CTR-0340,NBCC India Ltd,Ministry of Railways,5605953.28,2023-08-27,Rate contract for supply of air conditioning units to Railways for FY 2024-25
+CTR-0341,Cummins India,Ministry of Agriculture,1642745.89,2023-03-20,Consultancy services for network equipment implementation in Agriculture
+CTR-0342,ABB India Ltd,Ministry of Urban Development,49193616.01,2022-12-03,Consultancy services for electrical substations implementation in Urban Development
+CTR-0343,Ashok Leyland,Ministry of Urban Development,762345.59,2022-01-02,Empanelment of vendors for security systems supply to Urban Development
+CTR-0344,Cyient Ltd,Department of Space,1571987.76,2023-01-23,Consultancy services for network equipment implementation in Space
+CTR-0345,Cyient Ltd,Ministry of Finance,890939.74,2023-06-02,Installation and commissioning of power transformers at Finance facilities
+CTR-0346,Cyient Ltd,Ministry of IT,2473643.04,2023-12-07,Comprehensive maintenance of network equipment systems at IT locations
+CTR-0347,Bharat Dynamics Ltd,Department of Atomic Energy,1451307.99,2022-07-03,Turnkey project for air conditioning units modernization at Atomic Energy
+CTR-0348,Tech Mahindra,Ministry of Agriculture,2462892.31,2022-01-01,"Design, supply, and installation of power transformers for Agriculture"
+CTR-0349,WAPCOS Ltd,Ministry of Finance,1197821.01,2023-01-04,Turnkey project for security systems modernization at Finance
+CTR-0350,Central Electronics Ltd,Ministry of IT,1187335.47,2023-02-15,Turnkey project for bridge components modernization at IT
+CTR-0351,MECON Ltd,Ministry of Railways,944974.69,2023-06-10,Empanelment of vendors for IT hardware supply to Railways
+CTR-0352,BEML Ltd,Ministry of Health,1527855.83,2022-03-28,Turnkey project for IT hardware modernization at Health
+CTR-0353,ITI Ltd,Ministry of Power,28790255.59,2023-06-03,Procurement of surveillance cameras for government offices in Bangalore
+CTR-0354,ECIL Hyderabad,Ministry of Agriculture,363340.86,2022-08-13,Consultancy services for electrical substations implementation in Agriculture
+CTR-0355,Engineers India Ltd,Ministry of Defence,4670047.58,2023-02-15,Procurement of laboratory equipment for government offices in Jaipur
+CTR-0356,Hindustan Aeronautics Ltd,Ministry of Home Affairs,261518.97,2023-12-01,Rate contract for supply of medical equipment to Home Affairs for FY 2024-25
+CTR-0357,Garden Reach Shipbuilders,Department of Space,881002.46,2022-12-30,Annual maintenance contract for fire safety systems across Space offices
+CTR-0358,Rail Vikas Nigam,Ministry of Finance,1074030.26,2022-09-27,Consultancy services for road construction materials implementation in Finance
+CTR-0359,L&T Infotech,Ministry of Agriculture,656059.14,2023-01-15,Rate contract for supply of satellite communication equipment to Agriculture for FY 2024-25
+CTR-0360,Ashok Leyland,Ministry of Health,307283.03,2022-03-21,Installation and commissioning of server infrastructure at Health facilities
+CTR-0361,Cochin Shipyard Ltd,Ministry of Agriculture,6241167.96,2022-04-03,Rate contract for supply of surveillance cameras to Agriculture for FY 2024-25
+CTR-0362,Zensar Technologies,Ministry of Health,2797981.78,2022-04-15,Annual maintenance contract for road construction materials across Health offices
+CTR-0363,BEML Ltd,Department of Space,3929936.91,2023-04-27,Empanelment of vendors for solar panels supply to Space
+CTR-0364,ITI Ltd,Ministry of Finance,688699.93,2022-06-26,Supply of road construction materials for Finance under annual maintenance contract
+CTR-0365,Kirloskar Brothers,Ministry of Agriculture,2265306.25,2022-05-05,Supply of medical equipment for Agriculture under annual maintenance contract
+CTR-0366,Engineers India Ltd,Ministry of Education,1454226.08,2023-08-02,Comprehensive maintenance of communication devices systems at Education locations
+CTR-0367,Wipro Technologies,Ministry of Defence,10666865.13,2022-02-22,Turnkey project for bridge components modernization at Defence
+CTR-0368,Ashok Leyland,Ministry of Defence,853617279.82,2022-12-04,Supply of bridge components for Defence under annual maintenance contract
+CTR-0369,Rolta India,Ministry of Health,774090.77,2023-02-07,"Design, supply, and installation of railway signalling systems for Health"
+CTR-0370,Ashok Leyland,Ministry of Education,176060.48,2023-12-19,Rate contract for supply of radar systems to Education for FY 2024-25
+CTR-0371,Siemens India,Ministry of Health,1504040832.98,2022-11-02,Supply of bridge components for Health under annual maintenance contract
+CTR-0372,NTPC Limited,Ministry of Home Affairs,2682916.41,2022-12-07,Procurement of water treatment plants for government offices in Hyderabad
+CTR-0373,Kirloskar Brothers,Ministry of Home Affairs,960703.69,2022-03-01,Comprehensive maintenance of laboratory equipment systems at Home Affairs locations
+CTR-0374,Zensar Technologies,Department of Atomic Energy,8785916.08,2022-08-29,Installation and commissioning of security systems at Atomic Energy facilities
+CTR-0375,Zensar Technologies,Ministry of Education,1355818.52,2022-06-17,Empanelment of vendors for road construction materials supply to Education
+CTR-0376,WAPCOS Ltd,Ministry of Urban Development,520913.98,2023-02-16,Comprehensive maintenance of road construction materials systems at Urban Development locations
+CTR-0377,Mphasis Ltd,Ministry of Finance,159170.84,2022-04-16,Supply of surveillance cameras for Finance under annual maintenance contract
+CTR-0378,Godrej & Boyce,Ministry of Education,4998935.82,2023-10-26,Procurement of electrical substations for government offices in Lucknow
+CTR-0379,ECIL Hyderabad,Ministry of Finance,2984073.8,2022-09-11,Installation and commissioning of server infrastructure at Finance facilities
+CTR-0380,BEL Optronic Devices,Ministry of IT,971100.88,2022-10-11,Procurement of communication devices for government offices in Pune
+CTR-0381,BEML Ltd,Ministry of IT,2432996.74,2022-04-24,"Design, supply, and installation of water treatment plants for IT"
+CTR-0382,Thermax Ltd,Ministry of Education,2043995.83,2022-02-28,Consultancy services for electrical substations implementation in Education
+CTR-0383,Cyient Ltd,Ministry of Finance,1014452.68,2022-10-14,"Design, supply, and installation of security systems for Finance"
+CTR-0384,Mazagon Dock Shipbuilders,Department of Atomic Energy,896138.87,2022-04-21,Comprehensive maintenance of network equipment systems at Atomic Energy locations
+CTR-0385,Mphasis Ltd,Ministry of IT,31364561.68,2023-03-28,Turnkey project for power transformers modernization at IT
+CTR-0386,Infosys Ltd,Ministry of Education,570123.37,2022-01-25,Consultancy services for medical equipment implementation in Education
+CTR-0387,IRCON International,Ministry of IT,699483.76,2023-09-16,Installation and commissioning of network equipment at IT facilities
+CTR-0388,RITES Ltd,Department of Space,929287.34,2023-02-19,Comprehensive maintenance of communication devices systems at Space locations
+CTR-0389,Wipro Technologies,Ministry of Urban Development,2554306.78,2022-04-26,Empanelment of vendors for electrical substations supply to Urban Development
+CTR-0390,MECON Ltd,Ministry of Education,1165387.71,2023-06-10,Installation and commissioning of network equipment at Education facilities
+CTR-0391,ONGC Videsh,Ministry of Railways,5383301.78,2022-04-04,Installation and commissioning of electrical substations at Railways facilities
+CTR-0392,BEML Ltd,Ministry of Home Affairs,1471415.75,2022-10-08,Comprehensive maintenance of road construction materials systems at Home Affairs locations
+CTR-0393,MECON Ltd,Ministry of Education,8718309.37,2022-02-02,Installation and commissioning of security systems at Education facilities
+CTR-0394,Larsen & Toubro,Ministry of IT,102191.02,2023-01-08,Installation and commissioning of water treatment plants at IT facilities
+CTR-0395,RITES Ltd,Ministry of Health,369216.43,2023-11-05,Rate contract for supply of railway signalling systems to Health for FY 2024-25
+CTR-0396,Schneider Electric India,Ministry of Home Affairs,617353.22,2023-01-24,Procurement of railway signalling systems for government offices in Kolkata
+CTR-0397,Cyient Ltd,Department of Atomic Energy,1779125.95,2023-12-31,Empanelment of vendors for air conditioning units supply to Atomic Energy
+CTR-0398,Wipro Technologies,Department of Atomic Energy,1023510.02,2023-05-21,Comprehensive maintenance of office furniture systems at Atomic Energy locations
+CTR-0399,Rail Vikas Nigam,Ministry of Defence,171511.45,2022-08-28,Comprehensive maintenance of road construction materials systems at Defence locations
+CTR-0400,Garden Reach Shipbuilders,Ministry of Finance,258421.29,2023-08-19,"Design, supply, and installation of security systems for Finance"
+CTR-0401,Tata Consulting Services,Ministry of Defence,175843083.52,2023-08-02,Supply of misc items for general use in department offices
+CTR-0402,Rail Vikas Nigam,Ministry of Power,100000.0,2022-02-16,"Design, supply, and installation of IT hardware for Power"
+CTR-0403,Reliance Jio Infocomm,Ministry of Education,149332430.29,2022-05-27,Supply of miscellaneous items for general departmental use
+CTR-0404,MECON Ltd,Ministry of Home Affairs,186670.98,2023-02-10,Procurement of water treatment plants for government offices in Mumbai
+CTR-0405,Schneider Electric India,Ministry of Agriculture,347818.22,2022-10-10,Supply of bridge components for Agriculture under annual maintenance contract
+CTR-0406,Power Grid Corp,Ministry of Education,2069341.39,2022-10-09,Turnkey project for solar panels modernization at Education
+CTR-0407,ONGC Videsh,Ministry of Education,1583780.43,2022-07-19,Annual maintenance contract for solar panels across Education offices
+CTR-0408,Cyient Ltd,Ministry of Finance,2402435.76,2023-02-21,Annual maintenance contract for office furniture across Finance offices
+CTR-0409,Godrej & Boyce,Ministry of Power,100000.0,2022-10-16,Rate contract for supply of railway signalling systems to Power for FY 2024-25
+CTR-0410,MECON Ltd,Ministry of Agriculture,4595707.94,2023-09-22,Supply of road construction materials for Agriculture under annual maintenance contract
+CTR-0411,Thermax Ltd,Ministry of Power,197249.73,2023-09-06,Turnkey project for office furniture modernization at Power
+CTR-0412,NBCC India Ltd,Ministry of Agriculture,3331764.62,2023-08-23,Consultancy services for satellite communication equipment implementation in Agriculture
+CTR-0413,ECIL Hyderabad,Ministry of Railways,2371954.64,2023-09-05,Rate contract for supply of bridge components to Railways for FY 2024-25
+CTR-0414,ABB India Ltd,Ministry of Health,7609177.39,2023-06-17,Rate contract for supply of radar systems to Health for FY 2024-25
+CTR-0415,MECON Ltd,Ministry of Urban Development,2588653.16,2022-05-21,Rate contract for supply of radar systems to Urban Development for FY 2024-25
+CTR-0416,Engineers India Ltd,Ministry of Health,171766.72,2023-09-23,Comprehensive maintenance of surveillance cameras systems at Health locations
+CTR-0417,RITES Ltd,Ministry of Home Affairs,802382.87,2023-05-15,Supply of radar systems for Home Affairs under annual maintenance contract
+CTR-0418,Zensar Technologies,Ministry of IT,3995040.03,2023-06-18,Comprehensive maintenance of network equipment systems at IT locations
+CTR-0419,Tata Consulting Services,Ministry of Defence,43450958.66,2023-06-07,Installation and commissioning of IT hardware at Defence facilities
+CTR-0420,Tata Consulting Services,Ministry of Health,4223116.54,2022-12-19,Empanelment of vendors for railway signalling systems supply to Health
+CTR-0421,WAPCOS Ltd,Ministry of Home Affairs,7997161.53,2022-07-11,Annual maintenance contract for fire safety systems across Home Affairs offices
+CTR-0422,Mphasis Ltd,Ministry of Power,1089387.11,2023-10-27,Comprehensive maintenance of bridge components systems at Power locations
+CTR-0423,Bharat Electronics Ltd,Ministry of Health,8302384.71,2022-12-29,Annual maintenance contract for radar systems across Health offices
+CTR-0424,Thermax Ltd,Ministry of Home Affairs,2510294.65,2022-02-07,Rate contract for supply of office furniture to Home Affairs for FY 2024-25
+CTR-0425,Zensar Technologies,Department of Space,795923.46,2022-01-28,Annual maintenance contract for road construction materials across Space offices
+CTR-0426,Bharat Electronics Ltd,Department of Atomic Energy,1479400.1,2022-01-20,Rate contract for supply of office furniture to Atomic Energy for FY 2024-25
+CTR-0427,Thermax Ltd,Ministry of Power,4839300.06,2022-06-23,Installation and commissioning of satellite communication equipment at Power facilities
+CTR-0428,WAPCOS Ltd,Ministry of Health,1317562.98,2022-05-26,Installation and commissioning of power transformers at Health facilities
+CTR-0429,Tata Consulitng Services,Ministry of Agriculture,188431445.79,2023-11-01,"Design, supply, and installation of server infrastructure for Agriculture"
+CTR-0430,WAPCOS Ltd,Department of Atomic Energy,887252.82,2022-02-18,Annual maintenance contract for fire safety systems across Atomic Energy offices
+CTR-0431,Tata Consulting Services,Ministry of Home Affairs,6579627.17,2023-11-10,Consultancy services for surveillance cameras implementation in Home Affairs
+CTR-0432,Wipro Technologies,Ministry of Defence,199673786.27,2022-06-18,Supply of misc items for general use in department offices
+CTR-0433,Mahindra Defence Systems,Department of Atomic Energy,951175.1,2023-12-14,"Design, supply, and installation of laboratory equipment for Atomic Energy"
+CTR-0434,Tech Mahindra,Ministry of Power,2905842.23,2022-06-14,Empanelment of vendors for fire safety systems supply to Power
+CTR-0435,Cyient Ltd,Ministry of Finance,1006314.45,2023-01-11,Procurement of water treatment plants for government offices in Jaipur
+CTR-0436,Tata Consulting Services,Ministry of Agriculture,1567869.52,2023-04-09,Annual maintenance contract for server infrastructure across Agriculture offices
+CTR-0437,Garden Reach Shipbuilders,Ministry of Power,881128.37,2023-01-23,Consultancy services for fire safety systems implementation in Power
+CTR-0438,HCL Technologies,Ministry of Education,186430.87,2023-08-26,"Design, supply, and installation of security systems for Education"
+CTR-0439,Bharat Dynamics Ltd,Ministry of Railways,9126881.49,2022-04-07,Empanelment of vendors for security systems supply to Railways
+CTR-0440,L&T Infotech,Ministry of Power,208589.88,2023-05-20,Annual maintenance contract for security systems across Power offices
+CTR-0441,Rail Vikas Nigam,Ministry of Finance,1911267.11,2022-11-05,Rate contract for supply of solar panels to Finance for FY 2024-25
+CTR-0442,Reliance Jio Infocomm,Ministry of Urban Development,1139226.68,2023-07-08,Installation and commissioning of road construction materials at Urban Development facilities
+CTR-0443,Cyient Ltd,Department of Atomic Energy,3207106.28,2023-04-09,Comprehensive maintenance of surveillance cameras systems at Atomic Energy locations
+CTR-0444,Mahindra Defence Systems,Ministry of Agriculture,11635368.85,2022-06-23,"Design, supply, and installation of server infrastructure for Agriculture"
+CTR-0445,RITES Ltd,Department of Atomic Energy,3135078.97,2023-06-08,Installation and commissioning of bridge components at Atomic Energy facilities
+CTR-0446,WAPCOS Ltd,Department of Atomic Energy,138662.35,2022-10-30,Rate contract for supply of radar systems to Atomic Energy for FY 2024-25
+CTR-0447,Schneider Electric India,Ministry of Urban Development,3997788.67,2022-08-02,Turnkey project for railway signalling systems modernization at Urban Development
+CTR-0448,Cummins India,Ministry of Finance,207960.89,2022-01-22,Annual maintenance contract for fire safety systems across Finance offices
+CTR-0449,BEL Optronic Devices,Ministry of Home Affairs,108934622.42,2022-09-12,Miscellaneous procurement of items for departmental offices
+CTR-0450,RITES Ltd,Ministry of Railways,606481.67,2022-01-06,Empanelment of vendors for electrical substations supply to Railways
+CTR-0451,Garden Reach Shipbuilders,Department of Space,4927780.66,2022-07-21,Rate contract for supply of water treatment plants to Space for FY 2024-25
+CTR-0452,NBCC India Ltd,Ministry of Health,273315.66,2022-12-30,Supply of satellite communication equipment for Health under annual maintenance contract
+CTR-0453,Hindustan Aeronautics Ltd,Ministry of Health,3774603.16,2022-07-01,Supply of road construction materials for Health under annual maintenance contract
+CTR-0454,Bharatt Electronics Ltd,Ministry of Urban Development,254229927.98,2022-10-15,Supply of surveillance cameras for Urban Development under annual maintenance contract
+CTR-0455,Bharat Electronics Ltd,Ministry of Railways,995589.49,2023-05-26,Turnkey project for fire safety systems modernization at Railways
+CTR-0456,MECON Ltd,Ministry of Urban Development,749586.55,2022-04-24,Consultancy services for radar systems implementation in Urban Development
+CTR-0457,IRCON International,Ministry of Home Affairs,1532620.51,2022-10-03,Turnkey project for electrical substations modernization at Home Affairs
+CTR-0458,Zensar Technologies,Ministry of Power,100000.0,2022-09-07,Empanelment of vendors for server infrastructure supply to Power
+CTR-0459,NTPC Limited,Ministry of Health,248274.2,2023-10-18,Turnkey project for communication devices modernization at Health
+CTR-0460,Wipro Technologies,Ministry of IT,133328.56,2022-11-11,Procurement of road construction materials for government offices in Hyderabad
+CTR-0461,Engineers India Ltd,Ministry of Power,410346.63,2023-08-05,Empanelment of vendors for server infrastructure supply to Power
+CTR-0462,Rail Vikas Nigam,Ministry of Defence,100000.0,2023-04-06,Rate contract for supply of satellite communication equipment to Defence for FY 2024-25
+CTR-0463,Tech Mahindra,Ministry of Power,4877674.66,2022-09-09,Supply of fire safety systems for Power under annual maintenance contract
+CTR-0464,ONGC Videsh,Ministry of Finance,3059918.98,2022-02-05,Comprehensive maintenance of security systems systems at Finance locations
+CTR-0465,Thermax Ltd,Ministry of Defence,199491.15,2023-02-20,Turnkey project for fire safety systems modernization at Defence
+CTR-0466,Rolta India,Department of Space,2458029.14,2022-07-09,Turnkey project for radar systems modernization at Space
+CTR-0467,Mazagon Dock Shipbuilders,Ministry of Education,1159642.16,2023-11-15,Supply of server infrastructure for Education under annual maintenance contract
+CTR-0468,Engineers India Ltd,Ministry of Home Affairs,1523218.27,2022-05-13,Rate contract for supply of radar systems to Home Affairs for FY 2024-25
+CTR-0469,Mahindra Defence Systems,Ministry of Railways,100000.0,2022-03-07,Empanelment of vendors for fire safety systems supply to Railways
+CTR-0470,NBCC India Ltd,Ministry of Agriculture,1414466.89,2023-07-23,Consultancy services for fire safety systems implementation in Agriculture
+CTR-0471,Kirloskar Brothers,Ministry of Urban Development,159629.67,2022-06-29,Installation and commissioning of network equipment at Urban Development facilities
+CTR-0472,ECIL Hyderabad,Ministry of IT,111031388.8,2023-03-05,Supply of misc items for general use in department offices
+CTR-0473,Garden Reach Shipbuilders,Ministry of IT,100000.0,2022-01-30,Empanelment of vendors for surveillance cameras supply to IT
+CTR-0474,Schneider Electric India,Ministry of Finance,255943.37,2023-05-16,Empanelment of vendors for railway signalling systems supply to Finance
+CTR-0475,Cyient Ltd,Ministry of Education,662152.46,2022-04-30,Supply of satellite communication equipment for Education under annual maintenance contract
+CTR-0476,Bharat Dynamics Ltd,Ministry of Railways,1941940.2,2023-09-27,Consultancy services for electrical substations implementation in Railways
+CTR-0477,NBCC India Ltd,Ministry of Health,380009.54,2022-11-03,"Design, supply, and installation of laboratory equipment for Health"
+CTR-0478,ABB India Ltd,Ministry of Health,23998668.83,2023-01-15,Installation and commissioning of IT hardware at Health facilities
+CTR-0479,RITES Ltd,Ministry of Power,900512.98,2022-01-08,Turnkey project for surveillance cameras modernization at Power
+CTR-0480,Hindustan Aeronautics Ltd,Ministry of Finance,746371.71,2023-10-31,Supply of security systems for Finance under annual maintenance contract
+CTR-0481,RITES Ltd,Ministry of IT,659936.03,2023-03-21,Rate contract for supply of fire safety systems to IT for FY 2024-25
+CTR-0482,Larsen & Toubro,Ministry of Urban Development,1047147.94,2023-12-03,Empanelment of vendors for office furniture supply to Urban Development
+CTR-0483,Bharatt Electronics Ltd,Ministry of Finance,470192475.27,2022-10-09,Supply of water treatment plants for Finance under annual maintenance contract
+CTR-0484,ECIL Hyderabad,Ministry of Finance,356053.85,2023-11-06,Annual maintenance contract for fire safety systems across Finance offices
+CTR-0485,RITES Ltd,Ministry of Education,274113.15,2022-09-22,Annual maintenance contract for solar panels across Education offices
+CTR-0486,Bharat Dynamics Ltd,Ministry of Urban Development,6237640.76,2022-10-24,"Design, supply, and installation of IT hardware for Urban Development"
+CTR-0487,HCL Technologies,Ministry of Urban Development,2734188.31,2022-08-14,Annual maintenance contract for road construction materials across Urban Development offices
+CTR-0488,Garden Reach Shipbuilders,Ministry of Railways,767546309.57,2022-04-08,Supply of network equipment for Railways under annual maintenance contract
+CTR-0489,L&T Infotech,Ministry of Power,658247.6,2023-09-30,Turnkey project for medical equipment modernization at Power
+CTR-0490,Rail Vikas Nigam,Department of Space,314184.73,2022-04-12,Rate contract for supply of network equipment to Space for FY 2024-25
+CTR-0491,ECIL Hyderabad,Ministry of Home Affairs,1370936.09,2023-05-26,Turnkey project for railway signalling systems modernization at Home Affairs
+CTR-0492,IRCON International,Department of Space,1128484.13,2023-09-18,Turnkey project for bridge components modernization at Space
+CTR-0493,L&T Infotech,Ministry of Education,585289.83,2023-03-01,Rate contract for supply of communication devices to Education for FY 2024-25
+CTR-0494,Mazagon Dock Shipbuilders,Ministry of Health,715868.43,2023-11-05,Consultancy services for surveillance cameras implementation in Health
+CTR-0495,Cochin Shipyard Ltd,Department of Space,3080054.37,2022-11-10,Procurement of office furniture for government offices in Jaipur
+CTR-0496,Tech Mahindra,Department of Atomic Energy,1759522.44,2022-05-23,Turnkey project for surveillance cameras modernization at Atomic Energy
+CTR-0497,Cochin Shipyard Ltd,Ministry of Urban Development,100000.0,2023-05-14,Empanelment of vendors for fire safety systems supply to Urban Development
+CTR-0498,Engineers India Ltd,Ministry of Power,3667853.72,2022-07-14,"Design, supply, and installation of surveillance cameras for Power"
+CTR-0499,HCL Technologies,Ministry of Railways,1139533.62,2022-10-14,Installation and commissioning of IT hardware at Railways facilities
+CTR-0500,Mahindra Defence Systems,Ministry of Health,2024850.16,2022-06-18,"Design, supply, and installation of communication devices for Health"

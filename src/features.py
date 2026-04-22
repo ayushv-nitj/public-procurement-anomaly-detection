@@ -74,6 +74,10 @@ def build_feature_matrix(df):
         "dept_encoded"
     ]
 
+    # Fill any NaN values before scaling
+    # NaN can occur in small datasets (e.g., amount_zscore when dept has only 1 contract)
+    df[feature_cols] = df[feature_cols].fillna(0)
+
     # Scale features
     scaler = StandardScaler()
     feature_matrix = scaler.fit_transform(df[feature_cols].values)

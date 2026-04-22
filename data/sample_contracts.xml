@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contracts>
+  <contract>
+    <contract_id>CTR-XML-001</contract_id>
+    <vendor_name>Accenture India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>22000000</amount>
+    <award_date>2023-01-10</award_date>
+    <description>Financial system modernization and digital transformation</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-002</contract_id>
+    <vendor_name>Capgemini India</vendor_name>
+    <dept>Ministry of Commerce</dept>
+    <amount>18500000</amount>
+    <award_date>2023-02-14</award_date>
+    <description>Trade portal development and integration services</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-003</contract_id>
+    <vendor_name>Oracle Financial Services</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>35000000</amount>
+    <award_date>2023-03-20</award_date>
+    <description>Core banking system implementation for government banks</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-004</contract_id>
+    <vendor_name>IBM India</vendor_name>
+    <dept>Ministry of Health</dept>
+    <amount>28000000</amount>
+    <award_date>2023-04-15</award_date>
+    <description>Healthcare analytics platform and AI integration</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-005</contract_id>
+    <vendor_name>SAP India</vendor_name>
+    <dept>Ministry of Commerce</dept>
+    <amount>42000000</amount>
+    <award_date>2023-05-22</award_date>
+    <description>Enterprise resource planning system deployment</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-006</contract_id>
+    <vendor_name>Deloitte Consulting</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>19500000</amount>
+    <award_date>2023-06-08</award_date>
+    <description>Tax administration system consulting and implementation</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-007</contract_id>
+    <vendor_name>PwC India</vendor_name>
+    <dept>Ministry of Commerce</dept>
+    <amount>16800000</amount>
+    <award_date>2023-07-12</award_date>
+    <description>Export promotion strategy and digital platform development</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-008</contract_id>
+    <vendor_name>EY India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>21000000</amount>
+    <award_date>2023-08-18</award_date>
+    <description>Financial audit automation and compliance system</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-009</contract_id>
+    <vendor_name>KPMG India</vendor_name>
+    <dept>Ministry of Commerce</dept>
+    <amount>14500000</amount>
+    <award_date>2023-09-25</award_date>
+    <description>Trade facilitation and customs modernization consulting</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-010</contract_id>
+    <vendor_name>Microsoft India</vendor_name>
+    <dept>Ministry of Education</dept>
+    <amount>55000000</amount>
+    <award_date>2023-10-30</award_date>
+    <description>Cloud infrastructure and Office 365 deployment for schools</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-011</contract_id>
+    <vendor_name>Amazon Web Services</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>68000000</amount>
+    <award_date>2023-11-15</award_date>
+    <description>Government cloud infrastructure and data center services</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-012</contract_id>
+    <vendor_name>Google Cloud India</vendor_name>
+    <dept>Ministry of Education</dept>
+    <amount>48000000</amount>
+    <award_date>2023-12-20</award_date>
+    <description>Educational technology platform and G Suite deployment</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-013</contract_id>
+    <vendor_name>Cisco Systems India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>38500000</amount>
+    <award_date>2024-01-08</award_date>
+    <description>Network security infrastructure and firewall systems</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-014</contract_id>
+    <vendor_name>Dell Technologies</vendor_name>
+    <dept>Ministry of Education</dept>
+    <amount>32000000</amount>
+    <award_date>2024-02-12</award_date>
+    <description>Computer hardware and server infrastructure for universities</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-015</contract_id>
+    <vendor_name>HP Enterprise India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>29500000</amount>
+    <award_date>2024-03-18</award_date>
+    <description>Data center equipment and storage solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-016</contract_id>
+    <vendor_name>Accenture India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>950000000</amount>
+    <award_date>2024-04-05</award_date>
+    <description>Miscellaneous items for general departmental use</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-017</contract_id>
+    <vendor_name>Lenovo India</vendor_name>
+    <dept>Ministry of Education</dept>
+    <amount>26000000</amount>
+    <award_date>2024-05-10</award_date>
+    <description>Laptop and tablet procurement for digital classrooms</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-018</contract_id>
+    <vendor_name>Adobe Systems India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>12500000</amount>
+    <award_date>2024-06-15</award_date>
+    <description>Creative Cloud licenses and digital media tools</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-019</contract_id>
+    <vendor_name>Salesforce India</vendor_name>
+    <dept>Ministry of Commerce</dept>
+    <amount>24000000</amount>
+    <award_date>2024-07-20</award_date>
+    <description>CRM platform for trade and export management</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-020</contract_id>
+    <vendor_name>VMware India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>31000000</amount>
+    <award_date>2024-08-25</award_date>
+    <description>Virtualization infrastructure and cloud management</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-021</contract_id>
+    <vendor_name>Red Hat India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>18800000</amount>
+    <award_date>2024-09-30</award_date>
+    <description>Linux enterprise solutions and OpenShift platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-022</contract_id>
+    <vendor_name>Palo Alto Networks</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>27500000</amount>
+    <award_date>2024-10-15</award_date>
+    <description>Next-generation firewall and cybersecurity solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-023</contract_id>
+    <vendor_name>Fortinet India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>22000000</amount>
+    <award_date>2024-11-20</award_date>
+    <description>Network security appliances and threat protection</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-024</contract_id>
+    <vendor_name>Symantec India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>15500000</amount>
+    <award_date>2024-12-10</award_date>
+    <description>Endpoint security and antivirus solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-025</contract_id>
+    <vendor_name>McAfee India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>13800000</amount>
+    <award_date>2023-01-28</award_date>
+    <description>Enterprise security and data loss prevention</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-026</contract_id>
+    <vendor_name>Trend Micro India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>11200000</amount>
+    <award_date>2023-02-25</award_date>
+    <description>Cloud security and hybrid defense solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-027</contract_id>
+    <vendor_name>Check Point Software</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>19800000</amount>
+    <award_date>2023-03-30</award_date>
+    <description>Advanced threat prevention and security gateway</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-028</contract_id>
+    <vendor_name>Juniper Networks India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>33000000</amount>
+    <award_date>2023-04-25</award_date>
+    <description>Enterprise routing and switching infrastructure</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-029</contract_id>
+    <vendor_name>Arista Networks</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>28500000</amount>
+    <award_date>2023-05-30</award_date>
+    <description>Cloud networking and data center switches</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-030</contract_id>
+    <vendor_name>F5 Networks India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>24500000</amount>
+    <award_date>2023-06-28</award_date>
+    <description>Application delivery and load balancing solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-031</contract_id>
+    <vendor_name>NetApp India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>36000000</amount>
+    <award_date>2023-07-25</award_date>
+    <description>Enterprise storage systems and data management</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-032</contract_id>
+    <vendor_name>Pure Storage India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>31500000</amount>
+    <award_date>2023-08-30</award_date>
+    <description>All-flash storage arrays and cloud block storage</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-033</contract_id>
+    <vendor_name>Nutanix India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>42000000</amount>
+    <award_date>2023-09-28</award_date>
+    <description>Hyperconverged infrastructure and cloud platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-034</contract_id>
+    <vendor_name>Splunk India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>26500000</amount>
+    <award_date>2023-10-25</award_date>
+    <description>Security information and event management platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-035</contract_id>
+    <vendor_name>ServiceNow India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>29000000</amount>
+    <award_date>2023-11-30</award_date>
+    <description>IT service management and workflow automation</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-036</contract_id>
+    <vendor_name>Tableau Software</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>16500000</amount>
+    <award_date>2023-12-28</award_date>
+    <description>Business intelligence and data visualization platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-037</contract_id>
+    <vendor_name>Qlik India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>14800000</amount>
+    <award_date>2024-01-25</award_date>
+    <description>Data analytics and associative analytics engine</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-038</contract_id>
+    <vendor_name>MicroStrategy India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>12200000</amount>
+    <award_date>2024-02-28</award_date>
+    <description>Enterprise analytics and mobility platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-039</contract_id>
+    <vendor_name>Informatica India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>23500000</amount>
+    <award_date>2024-03-25</award_date>
+    <description>Data integration and master data management</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-040</contract_id>
+    <vendor_name>Accenture India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>880000000</amount>
+    <award_date>2024-04-08</award_date>
+    <description>Supply of sundry materials for miscellaneous departmental needs</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-041</contract_id>
+    <vendor_name>Talend India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>17500000</amount>
+    <award_date>2024-05-28</award_date>
+    <description>Cloud data integration and data quality solutions</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-042</contract_id>
+    <vendor_name>Cloudera India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>38000000</amount>
+    <award_date>2024-06-25</award_date>
+    <description>Big data platform and machine learning infrastructure</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-043</contract_id>
+    <vendor_name>Accenture India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>820000000</amount>
+    <award_date>2024-07-10</award_date>
+    <description>General supply of sundry materials for office requirements</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-044</contract_id>
+    <vendor_name>Accenture India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>760000000</amount>
+    <award_date>2024-07-12</award_date>
+    <description>Miscellaneous procurement of items for departmental offices</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-045</contract_id>
+    <vendor_name>MongoDB India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>21500000</amount>
+    <award_date>2024-08-28</award_date>
+    <description>NoSQL database platform and cloud database services</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-046</contract_id>
+    <vendor_name>Elastic India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>19200000</amount>
+    <award_date>2024-09-25</award_date>
+    <description>Search and analytics engine for log management</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-047</contract_id>
+    <vendor_name>Confluent India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>25000000</amount>
+    <award_date>2024-10-30</award_date>
+    <description>Event streaming platform based on Apache Kafka</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-048</contract_id>
+    <vendor_name>DataStax India</vendor_name>
+    <dept>Ministry of IT</dept>
+    <amount>22500000</amount>
+    <award_date>2024-11-28</award_date>
+    <description>Distributed database and real-time data platform</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-049</contract_id>
+    <vendor_name>Accenturre India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>520000000</amount>
+    <award_date>2024-12-15</award_date>
+    <description>Supply of misc items for general use in department</description>
+  </contract>
+  <contract>
+    <contract_id>CTR-XML-050</contract_id>
+    <vendor_name>Snowflake India</vendor_name>
+    <dept>Ministry of Finance</dept>
+    <amount>45000000</amount>
+    <award_date>2024-12-28</award_date>
+    <description>Cloud data warehouse and analytics platform</description>
+  </contract>
+</contracts>

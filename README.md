@@ -7,6 +7,32 @@
 
 ---
 
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run with existing data (fastest)
+python run_pipeline.py --source csv --filepath data/contracts.csv
+
+# OR generate fresh synthetic data
+python run_pipeline.py --source synthetic
+
+# OR load from JSON/XML
+python run_pipeline.py --source json --filepath data/sample_contracts.json
+
+# OR fetch from API (requires API key)
+python run_pipeline.py --source api --api-url "..." --api-key "..."
+
+# View results
+cd frontend && python -m http.server 8080  # Open http://localhost:8080
+```
+
+**📖 See [USAGE_GUIDE.md](USAGE_GUIDE.md) for detailed examples and API integration**
+
+---
+
 ## Table of Contents
 
 - [What This Project Does](#what-this-project-does)
@@ -106,9 +132,30 @@ Understanding these terms is essential before diving into the pipeline:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    DATA GENERATION LAYER                        │
-│  data/generate_data.py → data/contracts.csv (500 records)       │
-└───────────────────────┬─────────────────────────────────────────┘
+│                    DATA INPUT LAYER (NEW!)                      │
+│                                                                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
+│  │  Synthetic   │  │   CSV File   │  │  JSON File   │         │
+│  │  Generator   │  │              │  │              │         │
+│  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘         │
+│         │                 │                 │                  │
+│  ┌──────┴───────┐  ┌──────┴───────────────────────┐           │
+│  │  XML File    │  │  Government API (data.gov.in) │           │
+│  │              │  │  Requires: API Key + Approval │           │
+│  └──────┬───────┘  └──────┬───────────────────────┘           │
+│         │                 │                                    │
+│         └─────────┬───────┴──────────┐                         │
+│                   ▼                  ▼                         │
+│         ┌─────────────────────────────────┐                    │
+│         │   src/data_loader.py            │                    │
+│         │   - Auto column normalization   │                    │
+│         │   - Format conversion           │                    │
+│         │   - Schema validation           │                    │
+│         └─────────────┬─────────────────┘                      │
+└───────────────────────┼─────────────────────────────────────────┘
+                        │
+                        ▼
+              data/contracts.csv (standardized)
                         │
                         ▼
 ┌─────────────────────────────────────────────────────────────────┐
@@ -117,7 +164,7 @@ Understanding these terms is essential before diving into the pipeline:
 │                                                                 │
 │  Raw CSV → vendor_freq, amount_zscore, days_since_last,         │
 │            amount_dept_ratio, vendor_encoded, dept_encoded       │
-│         → StandardScaler → Feature Matrix (500 × 7)             │
+│         → StandardScaler → Feature Matrix (N × 7)               │
 └──────────┬──────────────────┬───────────────────────────────────┘
            │                  │
            ▼                  ▼
@@ -386,10 +433,13 @@ public-procurement-anomaly-detection/
 │
 ├── data/
 │   ├── generate_data.py        # Synthetic dataset generator (450 normal + 50 anomalous)
-│   └── contracts.csv           # Generated dataset (500 rows × 6 columns)
+│   ├── contracts.csv           # Generated dataset (500 rows × 6 columns)
+│   ├── sample_contracts.json   # Sample JSON format for testing
+│   └── sample_contracts.xml    # Sample XML format for testing
 │
 ├── src/
 │   ├── __init__.py             # Makes src a Python package
+│   ├── data_loader.py          # NEW: Multi-source data loader (CSV/JSON/XML/API/Synthetic)
 │   ├── features.py             # Feature engineering (7 features + scaling)
 │   ├── models.py               # Isolation Forest + One-Class SVM ensemble
 │   ├── nlp.py                  # TF-IDF vectorization + cosine similarity
@@ -409,8 +459,10 @@ public-procurement-anomaly-detection/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Actions → GitHub Pages deployment
 │
-├── run_pipeline.py             # Runs full ML pipeline + exports results.json
-├── requirements.txt            # Python dependencies
+├── run_pipeline.py             # NEW: Enhanced with multi-source support + CLI args
+├── test_data_sources.py        # NEW: Test script for all data sources
+├── requirements.txt            # Python dependencies (added: requests)
+├── USAGE_GUIDE.md              # NEW: Comprehensive usage guide for all data sources
 ├── setup.md                    # Detailed setup guide
 ├── walkthrough.md              # Development walkthrough
 └── README.md                   # This file
@@ -419,6 +471,31 @@ public-procurement-anomaly-detection/
 ---
 
 ## Dataset Schema
+
+### Supported Data Sources
+
+The application now supports **5 data input methods**:
+
+| Source | Use Case | Command Example |
+|--------|----------|-----------------|
+| **Synthetic** | Demo/testing with realistic fake data | `--source synthetic` |
+| **CSV** | Local CSV files | `--source csv --filepath data/contracts.csv` |
+| **JSON** | Local JSON files | `--source json --filepath data/contracts.json` |
+| **XML** | Local XML files | `--source xml --filepath data/contracts.xml` |
+| **API** | Live government data portals | `--source api --api-url "..." --api-key "..."` |
+
+### Column Name Flexibility
+
+The data loader automatically normalizes column names. You can use any of these variations:
+
+| Standard Column | Accepted Variations |
+|----------------|---------------------|
+| `contract_id` | id, contract_number, tender_id |
+| `vendor_name` | vendor, supplier, contractor, company |
+| `dept` | department, ministry, agency |
+| `amount` | value, contract_value, price, cost |
+| `award_date` | date, contract_date, award |
+| `description` | desc, title, tender_description, item |
 
 ### Raw Data (`data/contracts.csv`)
 
@@ -477,18 +554,63 @@ pip install -r requirements.txt
 
 ### Run the pipeline
 
+The pipeline now supports **multiple data sources**: synthetic generation, CSV, JSON, XML, and API.
+
+#### Option 1: Use existing CSV data (default)
 ```bash
-# Step 1: Generate synthetic data
+python run_pipeline.py --source csv --filepath data/contracts.csv
+```
+
+#### Option 2: Generate synthetic data
+```bash
+# First generate the data
 python data/generate_data.py
 
-# Step 2: Run ML pipeline (generates frontend/results.json)
-python run_pipeline.py
+# Then run pipeline
+python run_pipeline.py --source synthetic
+```
 
-# Step 3a: View the premium frontend dashboard
+#### Option 3: Load from JSON file
+```bash
+python run_pipeline.py --source json --filepath data/sample_contracts.json
+```
+
+#### Option 4: Load from XML file
+```bash
+python run_pipeline.py --source xml --filepath data/sample_contracts.xml
+```
+
+#### Option 5: Fetch from API (e.g., Government Open Data)
+```bash
+# Example with Indian Government Open Data API
+python run_pipeline.py --source api \
+  --api-url "https://api.data.gov.in/resource/YOUR_RESOURCE_ID" \
+  --api-key "YOUR_API_KEY" \
+  --format json \
+  --limit 100
+```
+
+**API Parameters:**
+- `--api-url`: Full API endpoint URL (required)
+- `--api-key`: API key for authentication (optional, if required by API)
+- `--format`: Response format - json/xml/csv (optional)
+- `--offset`: Pagination offset (default: 0)
+- `--limit`: Maximum records to fetch (default: 100)
+
+**Note:** For Government Open Data APIs that require access approval, you'll need to:
+1. Register on the data portal (e.g., data.gov.in)
+2. Request access from the data officer
+3. Generate an API key from your account
+4. Use the API key in the command above
+
+### View Results
+
+```bash
+# View the premium frontend dashboard
 cd frontend && python -m http.server 8080
 # Open http://localhost:8080
 
-# Step 3b: View the Streamlit interactive dashboard (in a separate terminal)
+# View the Streamlit interactive dashboard (in a separate terminal)
 streamlit run dashboard/app.py
 # Opens http://localhost:8501
 ```
@@ -566,6 +688,33 @@ Each component is normalized to 0–100 before fusion. The final score is clippe
 - **No network analysis** — doesn't analyze vendor–department relationship graphs
 - **TF-IDF only** — doesn't use modern transformer embeddings for deeper semantic understanding
 - **No temporal modeling** — doesn't account for seasonal spending patterns
+
+### API Integration Notes
+
+The application is **ready to work with government procurement APIs** like:
+- **India:** data.gov.in Open Government Data Platform
+- **USA:** USAspending.gov API
+- **UK:** Contracts Finder API
+- **EU:** Tenders Electronic Daily (TED)
+
+**Important:** Most government APIs require:
+1. User registration on the data portal
+2. Access approval from data officers (can take 1-7 days)
+3. API key generation from your account dashboard
+
+**Example API workflow:**
+```bash
+# 1. Register at data.gov.in and request access
+# 2. Generate API key from "My Account" → "API Key"
+# 3. Find resource ID from dataset page URL
+# 4. Run pipeline:
+python run_pipeline.py --source api \
+  --api-url "https://api.data.gov.in/resource/RESOURCE_ID" \
+  --api-key "YOUR_API_KEY" \
+  --format json --limit 500
+```
+
+The data loader handles common API response formats automatically and normalizes column names to match the expected schema.
 
 ### Future Scope
 - 🔌 Plug in real GeM (Government e-Marketplace) data via their API

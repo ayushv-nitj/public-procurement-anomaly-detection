@@ -8,10 +8,14 @@ import numpy as np
 import os
 import random
 from datetime import datetime, timedelta
+import time
 
-# Seed for reproducibility
-np.random.seed(42)
-random.seed(42)
+# Use current time as seed for random data generation
+# This ensures different data each time the script runs
+seed = int(time.time())
+np.random.seed(seed)
+random.seed(seed)
+print(f"Using random seed: {seed} (data will be different each run)")
 
 # --- Configuration ---
 NUM_RECORDS = 500

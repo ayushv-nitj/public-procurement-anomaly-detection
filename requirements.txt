@@ -6,3 +6,4 @@ streamlit
 plotly
 fuzzywuzzy
 python-Levenshtein
+requests
