@@ -491,8 +491,8 @@ public-procurement-anomaly-detection/
 │   └── explainer.py                 # SHAP TreeExplainer wrapper
 │
 ├── 📂 dashboard/                    # Streamlit Apps (Python UI)
-│   ├── app.py                       # Basic Streamlit dashboard
-│   ├── app_interactive.py           # Full-featured interactive dashboard ⭐
+│   ├── app.py                       # Full-featured interactive dashboard ⭐
+│   ├── app_basic.py                 # Basic Streamlit dashboard (backup)
 │   └── pages/
 │       └── about.py                 # About page with team info
 │
@@ -730,7 +730,7 @@ Modern, feature-rich dashboard with complete navigation and team information.
 
 **Run:**
 ```bash
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 # OR
 start_streamlit_interactive.bat
 ```
@@ -937,7 +937,7 @@ Browser (8080) ← Dashboard Page ← Results Loaded
 
 **Start:**
 ```bash
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 ```
 
 **Access:** http://localhost:8501
@@ -1022,7 +1022,7 @@ python start_servers.py
 # Upload data → View dashboard
 
 # Option 2: Streamlit
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 # Open: http://localhost:8501
 # Use sidebar to upload → See results immediately
 ```

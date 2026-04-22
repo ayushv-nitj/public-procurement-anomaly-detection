@@ -86,7 +86,7 @@ python start_servers.py
 
 ```bash
 # Start the interactive dashboard
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 # Open http://localhost:8501
 ```
 

@@ -116,7 +116,7 @@ Step 1: Start Streamlit
 ┌──────────────────────┐
 │ streamlit run        │
 │ dashboard/           │
-│ app_interactive.py   │
+│ app.py   │
 └──────────┬───────────┘
            │
            ▼
@@ -191,7 +191,7 @@ Step 5: View Results
 ### Quick Start
 ```bash
 # Start Streamlit
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 
 # Or use batch file
 start_streamlit_interactive.bat
@@ -300,7 +300,7 @@ URL: http://localhost:8080/upload.html
    - Real-time updates
    - SHAP explanations
 
-Command: streamlit run dashboard/app_interactive.py
+Command: streamlit run dashboard/app.py
 URL: http://localhost:8501
 ```
 
@@ -376,7 +376,7 @@ Command: python run_pipeline.py --source synthetic
 python start_servers.py
 
 # Streamlit Dashboard (Port 8501)
-streamlit run dashboard/app_interactive.py
+streamlit run dashboard/app.py
 
 # Command Line Processing
 python run_pipeline.py --source synthetic
