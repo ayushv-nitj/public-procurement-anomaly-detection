@@ -489,42 +489,77 @@ An AI system flagging government contracts must be **explainable**. Auditors nee
 ```
 public-procurement-anomaly-detection/
 │
-├── data/
-│   ├── generate_data.py        # Synthetic dataset generator (450 normal + 50 anomalous)
-│   ├── contracts.csv           # Generated dataset (500 rows × 6 columns)
-│   ├── sample_contracts.json   # Sample JSON format for testing
-│   └── sample_contracts.xml    # Sample XML format for testing
+├── 📂 data/                         # Data Files
+│   ├── generate_data.py             # Synthetic dataset generator (450 normal + 50 anomalous)
+│   ├── contracts.csv                # Generated dataset (500 rows × 6 columns) [gitignored]
+│   ├── sample_contracts.json        # Sample JSON format for testing
+│   ├── sample_contracts.xml         # Sample XML format for testing
+│   └── README.md                    # Data documentation
 │
-├── src/
-│   ├── __init__.py             # Makes src a Python package
-│   ├── data_loader.py          # NEW: Multi-source data loader (CSV/JSON/XML/API/Synthetic)
-│   ├── features.py             # Feature engineering (7 features + scaling)
-│   ├── models.py               # Isolation Forest + One-Class SVM ensemble
-│   ├── nlp.py                  # TF-IDF vectorization + cosine similarity
-│   ├── risk_score.py           # Weighted risk score fusion (0–100)
-│   └── explainer.py            # SHAP TreeExplainer wrapper
+├── 📂 src/                          # Core ML Pipeline (Backend Logic)
+│   ├── __init__.py                  # Makes src a Python package
+│   ├── data_loader.py               # Multi-source data loader (CSV/JSON/XML/API/Synthetic)
+│   ├── features.py                  # Feature engineering (7 features + scaling)
+│   ├── models.py                    # Isolation Forest + One-Class SVM ensemble
+│   ├── nlp.py                       # TF-IDF vectorization + cosine similarity
+│   ├── risk_score.py                # Weighted risk score fusion (0–100)
+│   └── explainer.py                 # SHAP TreeExplainer wrapper
 │
-├── dashboard/
-│   └── app.py                  # Streamlit interactive dashboard
+├── 📂 dashboard/                    # Streamlit Apps (Python UI)
+│   ├── app.py                       # Basic Streamlit dashboard
+│   ├── app_interactive.py           # Full-featured interactive dashboard ⭐
+│   └── pages/
+│       └── about.py                 # About page with team info
 │
-├── frontend/
-│   ├── index.html              # Premium dark-themed dashboard page
-│   ├── styles.css              # Glassmorphism CSS with animations
-│   ├── app.js                  # Chart.js visualizations + interactive table
-│   └── results.json            # Pipeline output consumed by frontend
+├── 📂 frontend/                     # Static Web Interface (HTML/CSS/JS)
+│   ├── index.html                   # Upload interface
+│   ├── dashboard.html               # Dashboard view
+│   ├── upload.js                    # Upload logic and API calls
+│   ├── app.js                       # Chart.js visualizations + interactive table
+│   ├── styles.css                   # Glassmorphism CSS with animations
+│   └── results.json                 # Pipeline output [gitignored]
 │
-├── .github/
+├── 📂 docs/                         # Documentation
+│   ├── setup.md                     # Detailed setup guide
+│   ├── walkthrough.md               # Development walkthrough
+│   ├── DEMO_SCRIPT.md               # Demo guide for presentations
+│   ├── COMPLETE_WORKFLOW.md         # Complete workflow guide
+│   ├── DEPLOYMENT.md                # Deployment guide
+│   └── PROJECT_STRUCTURE.md         # Project structure documentation
+│
+├── 📂 tests/                        # Test Files
+│   ├── __init__.py                  # Makes tests a Python package
+│   └── test_data_sources.py         # Test script for all data sources
+│
+├── 📂 assets/                       # Images and Media
+│   └── procurement_dashboard_ui.svg # UI mockup/diagram
+│
+├── 📂 .github/                      # GitHub Configuration
 │   └── workflows/
-│       └── deploy.yml          # GitHub Actions → GitHub Pages deployment
+│       └── deploy.yml               # GitHub Actions → GitHub Pages deployment
 │
-├── run_pipeline.py             # NEW: Enhanced with multi-source support + CLI args
-├── test_data_sources.py        # NEW: Test script for all data sources
-├── requirements.txt            # Python dependencies (added: requests)
-├── USAGE_GUIDE.md              # NEW: Comprehensive usage guide for all data sources
-├── setup.md                    # Detailed setup guide
-├── walkthrough.md              # Development walkthrough
-└── README.md                   # This file
+├── 📂 .streamlit/                   # Streamlit Configuration
+│   └── config.toml                  # Theme and server settings
+│
+├── 📂 .devcontainer/                # Dev Container Configuration
+│   └── devcontainer.json            # VS Code dev container setup
+│
+├── 📄 app.py                        # Flask backend server (for upload interface)
+├── 📄 run_pipeline.py               # CLI pipeline runner with multi-source support
+├── 📄 start_servers.py              # Start Flask + Frontend servers
+├── 📄 requirements.txt              # Python dependencies
+├── 📄 .gitignore                    # Git ignore rules
+├── 📄 USAGE_GUIDE.md                # Comprehensive usage guide
+└── 📄 README.md                     # This file (main documentation)
 ```
+
+**Key Folders**:
+- **`src/`** - Core ML pipeline (backend logic)
+- **`dashboard/`** - Streamlit apps (Python UI) - **Recommended for deployment**
+- **`frontend/`** - Static HTML/CSS/JS (web interface)
+- **`docs/`** - All documentation in one place
+- **`tests/`** - Test files
+- **`assets/`** - Images and media files
 
 ---
 
@@ -1004,11 +1039,13 @@ python test_data_sources.py
 ## 📖 Additional Documentation
 
 - **QUICK_REFERENCE.md** - Quick command reference for all features
-- **DEMO_SCRIPT.md** - Step-by-step demo guide for presentations
-- **COMPLETE_WORKFLOW.md** - Detailed explanation of all three workflows
+- **docs/DEMO_SCRIPT.md** - Step-by-step demo guide for presentations
+- **docs/COMPLETE_WORKFLOW.md** - Detailed explanation of all three workflows
+- **docs/DEPLOYMENT.md** - Deployment guide for Streamlit Cloud and GitHub Pages
 - **NAVIGATION_FEATURES.md** - UI enhancements and navigation guide
-- **setup.md** - Detailed setup instructions
-- **walkthrough.md** - Development walkthrough
+- **docs/setup.md** - Detailed setup instructions
+- **docs/walkthrough.md** - Development walkthrough
+- **docs/PROJECT_STRUCTURE.md** - Project structure and organization
 
 ---
 

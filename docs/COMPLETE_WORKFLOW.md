@@ -393,10 +393,12 @@ cd frontend && python -m http.server 8080
 ## 📞 Support
 
 See detailed guides:
-- `UPLOAD_INTERFACE_GUIDE.md` - Upload interface details
-- `DEMO_SCRIPT.md` - Demo walkthrough
-- `QUICK_REFERENCE.md` - Quick commands
+- `UPLOAD_INTERFACE_GUIDE.md` - Upload interface details (if exists)
+- `docs/DEMO_SCRIPT.md` - Demo walkthrough
+- `QUICK_REFERENCE.md` - Quick commands (if exists)
 - `README.md` - Full documentation
+- `docs/PROJECT_STRUCTURE.md` - Project structure
+- `docs/DEPLOYMENT.md` - Deployment guide
 
 ---
 
